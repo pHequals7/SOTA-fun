@@ -292,6 +292,20 @@ swe_bench_verified:
   contamination_risk: medium
   benchmark_status: active
   notes: Never compare without scaffold/protocol labels.
+swe_bench_pro:
+  benchmark_id: swe_bench_pro
+  name: SWE-bench Pro
+  family: coding
+  capability: software_engineering
+  modality: text
+  primary_metric: resolved_rate
+  higher_is_better: true
+  aliases: [SWE Bench Pro, SWE-bench Pro]
+  description: Harder long-horizon software engineering benchmark derived from SWE-bench style tasks.
+  official_url: https://scale.com/leaderboard/swe-bench-pro
+  contamination_risk: medium
+  benchmark_status: active
+  notes: Track scaffold, public/private split, and Scale SEAL or provider methodology separately.
 aider_polyglot:
   benchmark_id: aider_polyglot
   name: Aider Polyglot
@@ -642,4 +656,3 @@ jailbreak_prompt_injection:
   contamination_risk: unknown
   benchmark_status: unknown
   notes: Never merge distinct suites without explicit variant.
-
