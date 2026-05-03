@@ -104,3 +104,11 @@ sarvam:
   source_urls:
     - https://www.sarvam.ai/blog
   notes: Initial tracked lab.
+minimax:
+  lab_id: minimax
+  name: MiniMax
+  website: https://www.minimax.io
+  source_urls:
+    - https://www.minimax.io/news
+    - https://huggingface.co/MiniMaxAI
+  notes: Initial tracked lab added for MiniMax M2.5 benchmark seeding.

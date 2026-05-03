@@ -248,6 +248,71 @@ models:
   input_price_usd_per_mtok: 1.4
   output_price_usd_per_mtok: 4.4
   model_card_url: https://huggingface.co/zai-org/GLM-5.1
+- model_id: claude_sonnet_4_6
+  lab_id: anthropic
+  canonical_name: Claude Sonnet 4.6
+  aliases:
+  - claude-sonnet-4-6
+  release_date: '2026-02-17'
+  model_family: Claude
+  openness: closed_api
+  license: Proprietary
+  parameter_count_total: null
+  parameter_count_active: null
+  context_window_tokens: 1000000
+  modalities:
+  - text
+  - vision
+  supports_tools: true
+  supports_json_schema: null
+  input_price_usd_per_mtok: 3.0
+  output_price_usd_per_mtok: 15.0
+  model_card_url: https://www.anthropic.com/claude-sonnet-4-6-system-card
+- model_id: qwen3_6_plus
+  lab_id: qwen
+  canonical_name: Qwen3.6-Plus
+  aliases:
+  - Qwen 3.6 Plus
+  - Qwen3.6 Plus
+  - qwen3.6-plus
+  - qwen/qwen3.6-plus
+  release_date: '2026-04-01'
+  model_family: Qwen
+  openness: closed_api
+  license: Proprietary
+  parameter_count_total: null
+  parameter_count_active: null
+  context_window_tokens: 1000000
+  modalities:
+  - text
+  - image
+  - video
+  supports_tools: true
+  supports_json_schema: null
+  input_price_usd_per_mtok: null
+  output_price_usd_per_mtok: null
+  model_card_url: https://qwen.ai/blog?id=qwen3.6
+- model_id: minimax_m2_5
+  lab_id: minimax
+  canonical_name: MiniMax-M2.5
+  aliases:
+  - MiniMax M2.5
+  - minimax-m2.5
+  - MiniMaxAI/MiniMax-M2.5
+  release_date: '2026-02-12'
+  model_family: MiniMax M
+  openness: open_weight
+  license: Modified MIT
+  parameter_count_total: 229000000000
+  parameter_count_active: 10000000000
+  context_window_tokens: 196608
+  modalities:
+  - text
+  supports_tools: true
+  supports_json_schema: null
+  input_price_usd_per_mtok: 0.15
+  output_price_usd_per_mtok: 1.2
+  model_card_url: https://huggingface.co/MiniMaxAI/MiniMax-M2.5
 sources:
 - source_id: synthetic_seed_2026_04_27
   source_name: Synthetic seed data
@@ -386,6 +451,56 @@ sources:
   content_hash: null
   license: MIT
   notes: Official Z.AI GLM-5.1 model card and benchmark table.
+- source_id: anthropic_sonnet_4_6_system_card_2026_02_17
+  source_name: Anthropic Claude Sonnet 4.6 system card
+  source_type: official_lab
+  url: https://www.anthropic.com/claude-sonnet-4-6-system-card
+  title: Claude Sonnet 4.6 System Card
+  published_at: '2026-02-17'
+  fetched_at: '2026-05-03T00:00:00+00:00'
+  content_hash: null
+  license: null
+  notes: Official Anthropic system card with benchmark methodology and reported scores.
+- source_id: qwen3_6_plus_blog_2026_04_01
+  source_name: Qwen3.6-Plus official blog post
+  source_type: official_lab
+  url: https://qwen.ai/blog?id=qwen3.6
+  title: 'Qwen3.6-Plus: Towards Real World Agents'
+  published_at: '2026-04-01'
+  fetched_at: '2026-05-03T00:00:00+00:00'
+  content_hash: null
+  license: null
+  notes: Official Qwen blog post with model release metadata and benchmark tables.
+- source_id: minimax_m2_5_launch_2026_02_12
+  source_name: MiniMax M2.5 launch post
+  source_type: official_lab
+  url: https://www.minimax.io/news/minimax-m25
+  title: 'MiniMax M2.5: Built for Real-World Productivity.'
+  published_at: '2026-02-12'
+  fetched_at: '2026-05-03T00:00:00+00:00'
+  content_hash: null
+  license: null
+  notes: Official MiniMax launch post with provider-reported coding benchmark results.
+- source_id: swebench_minimax_m2_5_2026_02_17
+  source_name: SWE-bench official leaderboard
+  source_type: official_benchmark
+  url: https://www.swebench.com/
+  title: SWE-bench Leaderboards
+  published_at: '2026-02-17'
+  fetched_at: '2026-05-03T00:00:00+00:00'
+  content_hash: null
+  license: null
+  notes: Official SWE-bench leaderboard row for mini-SWE-agent + MiniMax M2.5.
+- source_id: minimax_m2_5_hf_2026_02_13
+  source_name: MiniMax M2.5 Hugging Face model card and eval files
+  source_type: official_lab
+  url: https://huggingface.co/MiniMaxAI/MiniMax-M2.5
+  title: MiniMaxAI/MiniMax-M2.5
+  published_at: '2026-02-13'
+  fetched_at: '2026-05-03T00:00:00+00:00'
+  content_hash: null
+  license: Modified MIT
+  notes: MiniMax Hugging Face model card and eval result files.
 scores:
 - lab_id: anthropic
   model_id: claude_opus_4_7
@@ -1715,3 +1830,834 @@ scores:
   verification_status: official
   notes: Official Z.AI model-card score; variant preserved for comparability.
   raw_quote: MCP-Atlas (Public Set) 71.8
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Claude Sonnet 4.6
+    benchmark: swe_bench_verified
+    variant: verified_adaptive_thinking_max_effort
+    score: 79.6
+    unit: '%'
+  normalized_json:
+    source_id: anthropic_sonnet_4_6_system_card_2026_02_17
+    synthetic_example: false
+  lab_id: anthropic
+  model_id: claude_sonnet_4_6
+  model_display_name: Claude Sonnet 4.6
+  model_release_date: '2026-02-17'
+  benchmark_id: swe_bench_verified
+  benchmark_family: coding
+  benchmark_variant: verified_adaptive_thinking_max_effort
+  capability: software_engineering
+  score: 79.6
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: averaged over 10 trials; adaptive thinking; max effort; default sampling settings
+  num_trials: 10
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: Anthropic SWE-bench Verified setup; thinking blocks included in sampling results
+  source_type: official_lab
+  source_url: https://www.anthropic.com/claude-sonnet-4-6-system-card
+  source_title: Claude Sonnet 4.6 System Card
+  source_published_at: '2026-02-17'
+  confidence: 0.94
+  verification_status: official
+  notes: Official Anthropic system-card score; variant preserves effort, tool, or scaffold setting.
+  raw_quote: 79.6% on SWE-bench Verified
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Claude Sonnet 4.6
+    benchmark: terminal_bench
+    variant: terminal_bench_2_0
+    score: 59.1
+    unit: '%'
+  normalized_json:
+    source_id: anthropic_sonnet_4_6_system_card_2026_02_17
+    synthetic_example: false
+  lab_id: anthropic
+  model_id: claude_sonnet_4_6
+  model_display_name: Claude Sonnet 4.6
+  model_release_date: '2026-02-17'
+  benchmark_id: terminal_bench
+  benchmark_family: coding
+  benchmark_variant: terminal_bench_2_0
+  capability: software_engineering
+  score: 59.1
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: all 89 tasks; 5 runs each; no thinking budget; no effort level set
+  num_trials: 5
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: Harbor scaffold; Terminus-2 harness; default parser; GKE n2-standard-32; 1x guaranteed/3x ceiling resources
+  source_type: official_lab
+  source_url: https://www.anthropic.com/claude-sonnet-4-6-system-card
+  source_title: Claude Sonnet 4.6 System Card
+  source_published_at: '2026-02-17'
+  confidence: 0.94
+  verification_status: official
+  notes: Official Anthropic system-card score; variant preserves effort, tool, or scaffold setting.
+  raw_quote: 59.1% pass rate
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Claude Sonnet 4.6
+    benchmark: osworld
+    variant: osworld_verified
+    score: 72.5
+    unit: '%'
+  normalized_json:
+    source_id: anthropic_sonnet_4_6_system_card_2026_02_17
+    synthetic_example: false
+  lab_id: anthropic
+  model_id: claude_sonnet_4_6
+  model_display_name: Claude Sonnet 4.6
+  model_release_date: '2026-02-17'
+  benchmark_id: osworld
+  benchmark_family: tool_agents
+  benchmark_variant: osworld_verified
+  capability: computer_use
+  score: 72.5
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: first-attempt success rate; averaged over five runs
+  num_trials: 5
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: default settings; 1080p resolution; max 100 action steps per task
+  source_type: official_lab
+  source_url: https://www.anthropic.com/claude-sonnet-4-6-system-card
+  source_title: Claude Sonnet 4.6 System Card
+  source_published_at: '2026-02-17'
+  confidence: 0.94
+  verification_status: official
+  notes: Official Anthropic system-card score; variant preserves effort, tool, or scaffold setting.
+  raw_quote: OSWorld-Verified score of 72.5%
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Claude Sonnet 4.6
+    benchmark: gpqa_diamond
+    variant: adaptive_thinking_max_effort
+    score: 89.9
+    unit: '%'
+  normalized_json:
+    source_id: anthropic_sonnet_4_6_system_card_2026_02_17
+    synthetic_example: false
+  lab_id: anthropic
+  model_id: claude_sonnet_4_6
+  model_display_name: Claude Sonnet 4.6
+  model_release_date: '2026-02-17'
+  benchmark_id: gpqa_diamond
+  benchmark_family: reasoning_science
+  benchmark_variant: adaptive_thinking_max_effort
+  capability: expert_reasoning
+  score: 89.9
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: averaged over 10 trials; adaptive thinking; max effort; default sampling settings
+  num_trials: 10
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://www.anthropic.com/claude-sonnet-4-6-system-card
+  source_title: Claude Sonnet 4.6 System Card
+  source_published_at: '2026-02-17'
+  confidence: 0.94
+  verification_status: official
+  notes: Official Anthropic system-card score; variant preserves effort, tool, or scaffold setting.
+  raw_quote: 89.9% on GPQA Diamond
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Claude Sonnet 4.6
+    benchmark: aime_2025
+    variant: no_tools_adaptive_thinking_max_effort
+    score: 95.6
+    unit: '%'
+  normalized_json:
+    source_id: anthropic_sonnet_4_6_system_card_2026_02_17
+    synthetic_example: false
+  lab_id: anthropic
+  model_id: claude_sonnet_4_6
+  model_display_name: Claude Sonnet 4.6
+  model_release_date: '2026-02-17'
+  benchmark_id: aime_2025
+  benchmark_family: math
+  benchmark_variant: no_tools_adaptive_thinking_max_effort
+  capability: math
+  score: 95.6
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: averaged over 10 trials; adaptive thinking; max effort; default sampling settings; no tools
+  num_trials: 10
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://www.anthropic.com/claude-sonnet-4-6-system-card
+  source_title: Claude Sonnet 4.6 System Card
+  source_published_at: '2026-02-17'
+  confidence: 0.86
+  verification_status: unverified
+  notes: Official Anthropic system-card score; variant preserves effort, tool, or scaffold setting. AIME row carries Anthropic
+    contamination caveat.
+  raw_quote: 95.6% without tools
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Claude Sonnet 4.6
+    benchmark: mmmlu
+    variant: non_english_adaptive_thinking_max_effort
+    score: 89.3
+    unit: '%'
+  normalized_json:
+    source_id: anthropic_sonnet_4_6_system_card_2026_02_17
+    synthetic_example: false
+  lab_id: anthropic
+  model_id: claude_sonnet_4_6
+  model_display_name: Claude Sonnet 4.6
+  model_release_date: '2026-02-17'
+  benchmark_id: mmmlu
+  benchmark_family: general
+  benchmark_variant: non_english_adaptive_thinking_max_effort
+  capability: multilingual_knowledge
+  score: 89.3
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: averaged over 10 trials on all non-English language pairings; adaptive thinking; max effort
+  num_trials: 10
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://www.anthropic.com/claude-sonnet-4-6-system-card
+  source_title: Claude Sonnet 4.6 System Card
+  source_published_at: '2026-02-17'
+  confidence: 0.94
+  verification_status: official
+  notes: Official Anthropic system-card score; variant preserves effort, tool, or scaffold setting.
+  raw_quote: MMMLU ... 89.3%
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Claude Sonnet 4.6
+    benchmark: mcp_atlas
+    variant: max_effort
+    score: 61.3
+    unit: '%'
+  normalized_json:
+    source_id: anthropic_sonnet_4_6_system_card_2026_02_17
+    synthetic_example: false
+  lab_id: anthropic
+  model_id: claude_sonnet_4_6
+  model_display_name: Claude Sonnet 4.6
+  model_release_date: '2026-02-17'
+  benchmark_id: mcp_atlas
+  benchmark_family: tool_agents
+  benchmark_variant: max_effort
+  capability: tool_use
+  score: 61.3
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: max effort settings
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: MCP tool-use workflow with production-like MCP server environments
+  source_type: official_lab
+  source_url: https://www.anthropic.com/claude-sonnet-4-6-system-card
+  source_title: Claude Sonnet 4.6 System Card
+  source_published_at: '2026-02-17'
+  confidence: 0.88
+  verification_status: unverified
+  notes: Official Anthropic system-card score; variant preserves effort, tool, or scaffold setting.
+  raw_quote: scored 61.3% on MCP-Atlas
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Qwen3.6-Plus
+    benchmark: swe_bench_verified
+    variant: qwen_reported_internal_agent
+    score: 78.8
+    unit: '%'
+  normalized_json:
+    source_id: qwen3_6_plus_blog_2026_04_01
+    synthetic_example: false
+  lab_id: qwen
+  model_id: qwen3_6_plus
+  model_display_name: Qwen3.6-Plus
+  model_release_date: '2026-04-01'
+  benchmark_id: swe_bench_verified
+  benchmark_family: coding
+  benchmark_variant: qwen_reported_internal_agent
+  capability: software_engineering
+  score: 78.8
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Qwen-reported agentic coding eval
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: internal agent scaffold; bash/file-edit tools; 200K context per secondary summary
+  source_type: official_lab
+  source_url: https://qwen.ai/blog?id=qwen3.6
+  source_title: 'Qwen3.6-Plus: Towards Real World Agents'
+  source_published_at: '2026-04-01'
+  confidence: 0.88
+  verification_status: official
+  notes: Official Qwen-reported score; variant preserved for comparability. GPQA was skipped due base-vs-diamond ambiguity.
+  raw_quote: SWE-bench Verified | 76.2 | 78.8
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Qwen3.6-Plus
+    benchmark: terminal_bench
+    variant: terminal_bench_2_0
+    score: 61.6
+    unit: '%'
+  normalized_json:
+    source_id: qwen3_6_plus_blog_2026_04_01
+    synthetic_example: false
+  lab_id: qwen
+  model_id: qwen3_6_plus
+  model_display_name: Qwen3.6-Plus
+  model_release_date: '2026-04-01'
+  benchmark_id: terminal_bench
+  benchmark_family: coding
+  benchmark_variant: terminal_bench_2_0
+  capability: software_engineering
+  score: 61.6
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Qwen-reported Terminal-Bench 2.0
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: unknown
+  source_type: official_lab
+  source_url: https://qwen.ai/blog?id=qwen3.6
+  source_title: 'Qwen3.6-Plus: Towards Real World Agents'
+  source_published_at: '2026-04-01'
+  confidence: 0.9
+  verification_status: official
+  notes: Official Qwen-reported score; variant preserved for comparability. GPQA was skipped due base-vs-diamond ambiguity.
+  raw_quote: Terminal-Bench 2.0 | 52.5 | 61.6
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Qwen3.6-Plus
+    benchmark: mmlu_pro
+    variant: qwen_reported_default
+    score: 88.5
+    unit: '%'
+  normalized_json:
+    source_id: qwen3_6_plus_blog_2026_04_01
+    synthetic_example: false
+  lab_id: qwen
+  model_id: qwen3_6_plus
+  model_display_name: Qwen3.6-Plus
+  model_release_date: '2026-04-01'
+  benchmark_id: mmlu_pro
+  benchmark_family: general
+  benchmark_variant: qwen_reported_default
+  capability: general_knowledge
+  score: 88.5
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Qwen-reported knowledge eval
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://qwen.ai/blog?id=qwen3.6
+  source_title: 'Qwen3.6-Plus: Towards Real World Agents'
+  source_published_at: '2026-04-01'
+  confidence: 0.82
+  verification_status: official
+  notes: Official Qwen-reported score; shot/protocol not visible in retrieved snippet, so keep provider variant explicit.
+  raw_quote: MMLU-Pro ... 88.5
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Qwen3.6-Plus
+    benchmark: ifeval
+    variant: strict_prompt
+    score: 94.3
+    unit: '%'
+  normalized_json:
+    source_id: qwen3_6_plus_blog_2026_04_01
+    synthetic_example: false
+  lab_id: qwen
+  model_id: qwen3_6_plus
+  model_display_name: Qwen3.6-Plus
+  model_release_date: '2026-04-01'
+  benchmark_id: ifeval
+  benchmark_family: general
+  benchmark_variant: strict_prompt
+  capability: instruction_following
+  score: 94.3
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Qwen-reported IFEval strict prompt
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://qwen.ai/blog?id=qwen3.6
+  source_title: 'Qwen3.6-Plus: Towards Real World Agents'
+  source_published_at: '2026-04-01'
+  confidence: 0.82
+  verification_status: official
+  notes: Official Qwen-reported score; variant preserved for comparability. GPQA was skipped due base-vs-diamond ambiguity.
+  raw_quote: IFEval_{strict prompt} ... 94.3
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Qwen3.6-Plus
+    benchmark: livecodebench
+    variant: v6
+    score: 87.1
+    unit: '%'
+  normalized_json:
+    source_id: qwen3_6_plus_blog_2026_04_01
+    synthetic_example: false
+  lab_id: qwen
+  model_id: qwen3_6_plus
+  model_display_name: Qwen3.6-Plus
+  model_release_date: '2026-04-01'
+  benchmark_id: livecodebench
+  benchmark_family: coding
+  benchmark_variant: v6
+  capability: coding
+  score: 87.1
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Qwen-reported LiveCodeBench v6
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://qwen.ai/blog?id=qwen3.6
+  source_title: 'Qwen3.6-Plus: Towards Real World Agents'
+  source_published_at: '2026-04-01'
+  confidence: 0.86
+  verification_status: official
+  notes: Official Qwen-reported score; variant preserved for comparability. GPQA was skipped due base-vs-diamond ambiguity.
+  raw_quote: LiveCodeBench v6 ... 87.1
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Qwen3.6-Plus
+    benchmark: humanitys_last_exam
+    variant: no_tools_unspecified
+    score: 28.8
+    unit: '%'
+  normalized_json:
+    source_id: qwen3_6_plus_blog_2026_04_01
+    synthetic_example: false
+  lab_id: qwen
+  model_id: qwen3_6_plus
+  model_display_name: Qwen3.6-Plus
+  model_release_date: '2026-04-01'
+  benchmark_id: humanitys_last_exam
+  benchmark_family: reasoning_science
+  benchmark_variant: no_tools_unspecified
+  capability: expert_reasoning
+  score: 28.8
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Qwen-reported HLE in STEM/reasoning table
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://qwen.ai/blog?id=qwen3.6
+  source_title: 'Qwen3.6-Plus: Towards Real World Agents'
+  source_published_at: '2026-04-01'
+  confidence: 0.76
+  verification_status: unverified
+  notes: Official Qwen-reported score; variant preserved for comparability. GPQA was skipped due base-vs-diamond ambiguity.
+  raw_quote: HLE ... 28.8
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Qwen3.6-Plus
+    benchmark: mmmlu
+    variant: qwen_reported_default
+    score: 89.5
+    unit: '%'
+  normalized_json:
+    source_id: qwen3_6_plus_blog_2026_04_01
+    synthetic_example: false
+  lab_id: qwen
+  model_id: qwen3_6_plus
+  model_display_name: Qwen3.6-Plus
+  model_release_date: '2026-04-01'
+  benchmark_id: mmmlu
+  benchmark_family: general
+  benchmark_variant: qwen_reported_default
+  capability: multilingual_knowledge
+  score: 89.5
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Qwen-reported multilingual eval
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://qwen.ai/blog?id=qwen3.6
+  source_title: 'Qwen3.6-Plus: Towards Real World Agents'
+  source_published_at: '2026-04-01'
+  confidence: 0.82
+  verification_status: official
+  notes: Official Qwen-reported score; variant preserved for comparability. GPQA was skipped due base-vs-diamond ambiguity.
+  raw_quote: MMMLU ... 89.5
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Qwen3.6-Plus
+    benchmark: mmmu
+    variant: stem
+    score: 86.0
+    unit: '%'
+  normalized_json:
+    source_id: qwen3_6_plus_blog_2026_04_01
+    synthetic_example: false
+  lab_id: qwen
+  model_id: qwen3_6_plus
+  model_display_name: Qwen3.6-Plus
+  model_release_date: '2026-04-01'
+  benchmark_id: mmmu
+  benchmark_family: multimodal
+  benchmark_variant: stem
+  capability: multimodal_reasoning
+  score: 86.0
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Qwen-reported multimodal MMMU STEM
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://qwen.ai/blog?id=qwen3.6
+  source_title: 'Qwen3.6-Plus: Towards Real World Agents'
+  source_published_at: '2026-04-01'
+  confidence: 0.78
+  verification_status: unverified
+  notes: Official Qwen-reported score; variant preserved for comparability. GPQA was skipped due base-vs-diamond ambiguity.
+  raw_quote: MMMU (STEM) | 85.0 | 86.0
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Qwen3.6-Plus
+    benchmark: video_mme
+    variant: with_subtitles
+    score: 87.8
+    unit: '%'
+  normalized_json:
+    source_id: qwen3_6_plus_blog_2026_04_01
+    synthetic_example: false
+  lab_id: qwen
+  model_id: qwen3_6_plus
+  model_display_name: Qwen3.6-Plus
+  model_release_date: '2026-04-01'
+  benchmark_id: video_mme
+  benchmark_family: multimodal
+  benchmark_variant: with_subtitles
+  capability: multimodal_reasoning
+  score: 87.8
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Qwen-reported VideoMME with subtitles
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://qwen.ai/blog?id=qwen3.6
+  source_title: 'Qwen3.6-Plus: Towards Real World Agents'
+  source_published_at: '2026-04-01'
+  confidence: 0.84
+  verification_status: official
+  notes: Official Qwen-reported score; variant preserved for comparability. GPQA was skipped due base-vs-diamond ambiguity.
+  raw_quote: VideoMME (w/ subs) | 87.5 | 87.8
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: MiniMax-M2.5
+    benchmark: swe_bench_verified
+    variant: verified_minimax_reported_claude_code_scaffold_avg_4_runs
+    score: 80.2
+    unit: '%'
+  normalized_json:
+    source_id: minimax_m2_5_launch_2026_02_12
+    synthetic_example: false
+  lab_id: minimax
+  model_id: minimax_m2_5
+  model_display_name: MiniMax-M2.5
+  model_release_date: '2026-02-12'
+  benchmark_id: swe_bench_verified
+  benchmark_family: coding
+  benchmark_variant: verified_minimax_reported_claude_code_scaffold_avg_4_runs
+  capability: software_engineering
+  score: 80.2
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: MiniMax-reported SWE-bench Verified; internal infrastructure; Claude Code scaffold; default system prompt
+    overridden; averaged over 4 runs.
+  num_trials: 4
+  pass_at_k: 1
+  context_setting: 196,608 token context
+  scaffold: Claude Code
+  source_type: official_lab
+  source_url: https://www.minimax.io/news/minimax-m25
+  source_title: 'MiniMax M2.5: Built for Real-World Productivity.'
+  source_published_at: '2026-02-12'
+  confidence: 0.92
+  verification_status: official
+  notes: MiniMax M2.5 score; variant preserves scaffold/protocol. Do not merge with other SWE-bench Verified scaffold rows.
+  raw_quote: boasting scores of 80.2% in SWE-Bench Verified
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: MiniMax-M2.5
+    benchmark: swe_bench_verified
+    variant: verified_droid_default_prompt
+    score: 79.7
+    unit: '%'
+  normalized_json:
+    source_id: minimax_m2_5_launch_2026_02_12
+    synthetic_example: false
+  lab_id: minimax
+  model_id: minimax_m2_5
+  model_display_name: MiniMax-M2.5
+  model_release_date: '2026-02-12'
+  benchmark_id: swe_bench_verified
+  benchmark_family: coding
+  benchmark_variant: verified_droid_default_prompt
+  capability: software_engineering
+  score: 79.7
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: MiniMax-reported SWE-bench Verified on Droid scaffold using default prompt.
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 196,608 token context
+  scaffold: Droid
+  source_type: official_lab
+  source_url: https://www.minimax.io/news/minimax-m25
+  source_title: 'MiniMax M2.5: Built for Real-World Productivity.'
+  source_published_at: '2026-02-12'
+  confidence: 0.9
+  verification_status: official
+  notes: MiniMax M2.5 score; variant preserves scaffold/protocol. Do not merge with other SWE-bench Verified scaffold rows.
+  raw_quote: 'On Droid: 79.7(M2.5) > 78.9(Opus 4.6)'
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: MiniMax-M2.5
+    benchmark: swe_bench_verified
+    variant: verified_opencode_default_prompt
+    score: 76.1
+    unit: '%'
+  normalized_json:
+    source_id: minimax_m2_5_launch_2026_02_12
+    synthetic_example: false
+  lab_id: minimax
+  model_id: minimax_m2_5
+  model_display_name: MiniMax-M2.5
+  model_release_date: '2026-02-12'
+  benchmark_id: swe_bench_verified
+  benchmark_family: coding
+  benchmark_variant: verified_opencode_default_prompt
+  capability: software_engineering
+  score: 76.1
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: MiniMax-reported SWE-bench Verified on OpenCode scaffold using default prompt.
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 196,608 token context
+  scaffold: OpenCode
+  source_type: official_lab
+  source_url: https://www.minimax.io/news/minimax-m25
+  source_title: 'MiniMax M2.5: Built for Real-World Productivity.'
+  source_published_at: '2026-02-12'
+  confidence: 0.9
+  verification_status: official
+  notes: MiniMax M2.5 score; variant preserves scaffold/protocol. Do not merge with other SWE-bench Verified scaffold rows.
+  raw_quote: 'On OpenCode: 76.1(M2.5) > 75.9(Opus 4.6)'
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: MiniMax-M2.5
+    benchmark: swe_bench_verified
+    variant: verified_mini_swe_agent_v2_high_reasoning_attempts_1
+    score: 75.8
+    unit: '%'
+  normalized_json:
+    source_id: swebench_minimax_m2_5_2026_02_17
+    synthetic_example: false
+  lab_id: minimax
+  model_id: minimax_m2_5
+  model_display_name: MiniMax-M2.5
+  model_release_date: '2026-02-12'
+  benchmark_id: swe_bench_verified
+  benchmark_family: coding
+  benchmark_variant: verified_mini_swe_agent_v2_high_reasoning_attempts_1
+  capability: software_engineering
+  score: 75.8
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Official SWE-bench leaderboard embedded data; MiniMax M2.5 high reasoning; 500 Verified instances.
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 196,608 token context
+  scaffold: mini-SWE-agent v2.0.0
+  source_type: official_benchmark
+  source_url: https://www.swebench.com/
+  source_title: SWE-bench Leaderboards
+  source_published_at: '2026-02-17'
+  confidence: 0.96
+  verification_status: official
+  notes: MiniMax M2.5 score; variant preserves scaffold/protocol. Do not merge with other SWE-bench Verified scaffold rows.
+  raw_quote: 'name: mini-SWE-agent + MiniMax M2.5 (high reasoning); resolved: 75.8'
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: MiniMax-M2.5
+    benchmark: gpqa_diamond
+    variant: diamond_huggingface_eval_result
+    score: 85.2
+    unit: '%'
+  normalized_json:
+    source_id: minimax_m2_5_hf_2026_02_13
+    synthetic_example: false
+  lab_id: minimax
+  model_id: minimax_m2_5
+  model_display_name: MiniMax-M2.5
+  model_release_date: '2026-02-12'
+  benchmark_id: gpqa_diamond
+  benchmark_family: reasoning_science
+  benchmark_variant: diamond_huggingface_eval_result
+  capability: expert_reasoning
+  score: 85.2
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Hugging Face eval result file for Idavidrein/gpqa task_id diamond.
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 196,608 token context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/MiniMaxAI/MiniMax-M2.5
+  source_title: MiniMaxAI/MiniMax-M2.5
+  source_published_at: '2026-02-13'
+  confidence: 0.88
+  verification_status: community_verified
+  notes: MiniMax M2.5 score; variant preserved for comparability.
+  raw_quote: 'id: Idavidrein/gpqa; task_id: diamond; value: 85.2'
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: MiniMax-M2.5
+    benchmark: humanitys_last_exam
+    variant: no_tools_huggingface_eval_result
+    score: 19.4
+    unit: '%'
+  normalized_json:
+    source_id: minimax_m2_5_hf_2026_02_13
+    synthetic_example: false
+  lab_id: minimax
+  model_id: minimax_m2_5
+  model_display_name: MiniMax-M2.5
+  model_release_date: '2026-02-12'
+  benchmark_id: humanitys_last_exam
+  benchmark_family: reasoning_science
+  benchmark_variant: no_tools_huggingface_eval_result
+  capability: expert_reasoning
+  score: 19.4
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Hugging Face eval result file for cais/hle; official appendix labels this HLE w/o tools.
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 196,608 token context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/MiniMaxAI/MiniMax-M2.5
+  source_title: MiniMaxAI/MiniMax-M2.5
+  source_published_at: '2026-02-13'
+  confidence: 0.82
+  verification_status: community_verified
+  notes: MiniMax M2.5 score; variant preserved for comparability.
+  raw_quote: 'id: cais/hle; task_id: hle; value: 19.4'
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: MiniMax-M2.5
+    benchmark: aime_2025
+    variant: official_appendix_internal_test_artificial_analysis_methods
+    score: 86.3
+    unit: '%'
+  normalized_json:
+    source_id: minimax_m2_5_hf_2026_02_13
+    synthetic_example: false
+  lab_id: minimax
+  model_id: minimax_m2_5
+  model_display_name: MiniMax-M2.5
+  model_release_date: '2026-02-12'
+  benchmark_id: aime_2025
+  benchmark_family: math
+  benchmark_variant: official_appendix_internal_test_artificial_analysis_methods
+  capability: math
+  score: 86.3
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: MiniMax appendix; AIME25 obtained through internal testing based on public evaluation sets and Artificial
+    Analysis Intelligence Index methods.
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 196,608 token context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/MiniMaxAI/MiniMax-M2.5
+  source_title: MiniMaxAI/MiniMax-M2.5
+  source_published_at: '2026-02-13'
+  confidence: 0.84
+  verification_status: unverified
+  notes: MiniMax M2.5 score; variant preserved for comparability.
+  raw_quote: AIME25 86.3

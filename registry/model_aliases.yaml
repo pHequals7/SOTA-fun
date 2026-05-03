@@ -42,3 +42,17 @@ glm_5_1:
 - glm-5.1
 - GLM 5.1
 - zai-org/GLM-5.1
+claude_sonnet_4_6:
+- Claude Sonnet 4.6
+- claude-sonnet-4-6
+qwen3_6_plus:
+- Qwen3.6-Plus
+- Qwen 3.6 Plus
+- Qwen3.6 Plus
+- qwen3.6-plus
+- qwen/qwen3.6-plus
+minimax_m2_5:
+- MiniMax-M2.5
+- MiniMax M2.5
+- minimax-m2.5
+- MiniMaxAI/MiniMax-M2.5
