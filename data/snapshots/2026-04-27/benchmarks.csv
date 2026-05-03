@@ -1,0 +1,47 @@
+benchmark_id,name,family,capability,modality,primary_metric,higher_is_better,aliases,description,official_url,contamination_risk,benchmark_status,notes
+mmlu,MMLU,general,general_knowledge,text,accuracy,True,"[""Massive Multitask Language Understanding""]",Broad multiple-choice academic knowledge benchmark.,https://github.com/hendrycks/test,high,saturated,Preserve exact protocol and shot count in score rows.
+mmlu_pro,MMLU-Pro,general,general_knowledge,text,accuracy,True,"[""MMLU Pro"", ""MMLU-Pro""]",More challenging variant of MMLU.,https://github.com/TIGER-AI-Lab/MMLU-Pro,medium,active,
+mmmlu,MMMLU,general,multilingual_knowledge,text,accuracy,True,"[""Multilingual MMLU""]",Multilingual MMLU-style benchmark.,,medium,active,
+ifeval,IFEval,general,instruction_following,text,accuracy,True,"[""Instruction Following Eval"", ""IF-Eval""]",Verifiable instruction-following benchmark.,https://github.com/google-research/google-research/tree/master/instruction_following_eval,medium,active,
+ifbench,IFBench,general,instruction_following,text,accuracy,True,"[""Instruction Following Benchmark""]",Placeholder registry card for instruction-following benchmarks.,,unknown,unknown,Add exact benchmark card before accepting verified scores.
+bbh,BBH,general,reasoning,text,accuracy,True,"[""BIG-Bench Hard"", ""Big Bench Hard""]",Hard subset of BIG-Bench tasks.,https://github.com/suzgunmirac/BIG-Bench-Hard,high,active,
+musr,MuSR,general,reasoning,text,accuracy,True,"[""Multistep Soft Reasoning""]",Multistep reasoning benchmark.,,medium,active,
+gpqa,GPQA,reasoning_science,expert_reasoning,text,accuracy,True,"[""Graduate-Level Google-Proof Q&A""]",Graduate-level science QA benchmark.,https://github.com/idavidrein/gpqa,medium,active,
+gpqa_diamond,GPQA Diamond,reasoning_science,expert_reasoning,text,accuracy,True,"[""GPQA-Diamond"", ""GPQA Diamond subset""]",Expert-filtered GPQA subset.,https://github.com/idavidrein/gpqa,medium,active,
+humanitys_last_exam,Humanity's Last Exam,reasoning_science,expert_reasoning,text,accuracy,True,"[""HLE"", ""Humanitys Last Exam""]",Broad difficult expert reasoning benchmark.,,unknown,active,Track exact release/version.
+arc_agi,ARC-AGI,reasoning_science,abstract_reasoning,text,accuracy,True,"[""ARC AGI"", ""ARC Prize""]",Abstraction and reasoning benchmark.,https://arcprize.org,low,active,
+gsm8k,GSM8K,math,math,text,accuracy,True,"[""Grade School Math 8K""]",Grade-school math word problems.,https://github.com/openai/grade-school-math,high,saturated,
+math,MATH,math,math,text,accuracy,True,"[""MATH benchmark""]",Competition-style math benchmark.,https://github.com/hendrycks/math,high,active,
+math_500,MATH-500,math,math,text,accuracy,True,"[""MATH 500""]",500-problem subset used in modern reports.,,medium,active,
+aime_2024,AIME 2024,math,math,text,accuracy,True,"[""AIME24"", ""AIME 2024""]",American Invitational Mathematics Examination 2024 problems.,,low,active,
+aime_2025,AIME 2025,math,math,text,accuracy,True,"[""AIME25"", ""AIME 2025""]",American Invitational Mathematics Examination 2025 problems.,,low,active,
+humaneval,HumanEval,coding,coding,text,pass@1,True,"[""Human Eval""]",Python function synthesis benchmark.,https://github.com/openai/human-eval,high,saturated,
+mbpp,MBPP,coding,coding,text,pass@1,True,"[""Mostly Basic Python Problems""]",Python programming benchmark.,,high,saturated,
+livecodebench,LiveCodeBench,coding,coding,text,pass@1,True,"[""Live Code Bench"", ""LCB""]",Continuously updated coding benchmark.,https://livecodebench.github.io,low,active,Track date range/version.
+swe_bench,SWE-bench,coding,software_engineering,text,resolved_rate,True,"[""SWE bench""]",Real-world GitHub issue resolution benchmark.,https://www.swebench.com,medium,active,Scaffold matters heavily.
+swe_bench_verified,SWE-bench Verified,coding,software_engineering,text,resolved_rate,True,"[""SWE Bench Verified"", ""SWE-bench Verified""]",Human-verified subset of SWE-bench.,https://www.swebench.com,medium,active,Never compare without scaffold/protocol labels.
+aider_polyglot,Aider Polyglot,coding,software_engineering,text,pass_rate,True,"[""Aider benchmark"", ""Aider Polyglot benchmark""]",Multi-language coding benchmark used by Aider.,https://aider.chat/docs/leaderboards,medium,active,
+terminal_bench,Terminal-bench,coding,software_engineering,text,resolved_rate,True,"[""Terminal Bench"", ""terminalbench""]",Terminal-based coding agent benchmark.,,unknown,active,
+bigcodebench,BigCodeBench,coding,coding,text,pass@1,True,"[""Big Code Bench""]",Practical code generation benchmark.,https://bigcode-bench.github.io,medium,active,
+bfcl,Berkeley Function Calling Leaderboard,tool_agents,tool_use,text,accuracy,True,"[""BFCL"", ""Function Calling Leaderboard"", ""Berkeley Function Calling""]",Function and tool-calling benchmark.,https://gorilla.cs.berkeley.edu/leaderboard.html,medium,active,Track BFCL version.
+tau_bench,TAU-bench,tool_agents,tool_use,text,success_rate,True,"[""TAU bench""]",Tool-agent benchmark.,,unknown,active,
+webarena,WebArena,tool_agents,web_agents,multimodal,success_rate,True,"[""Web Arena""]",Web-based autonomous agent benchmark.,https://webarena.dev,medium,active,
+osworld,OSWorld,tool_agents,computer_use,multimodal,success_rate,True,"[""OS World""]",Computer-use benchmark.,https://os-world.github.io,medium,active,
+mcp_atlas,MCP-Atlas,tool_agents,tool_use,text,success_rate,True,"[""MCP Atlas""]",Placeholder registry card for MCP tool-use evaluations.,,unknown,unknown,Add exact benchmark card before accepting verified scores.
+mmmu,MMMU,multimodal,multimodal_reasoning,multimodal,accuracy,True,"[""Massive Multi-discipline Multimodal Understanding""]",Multimodal college-level benchmark.,https://mmmu-benchmark.github.io,medium,active,
+mathvista,MathVista,multimodal,multimodal_reasoning,multimodal,accuracy,True,"[""Math Vista""]",Visual math reasoning benchmark.,https://mathvista.github.io,medium,active,
+chartqa,ChartQA,multimodal,multimodal_reasoning,multimodal,accuracy,True,"[""Chart QA""]",Chart understanding benchmark.,,medium,active,
+docvqa,DocVQA,multimodal,multimodal_reasoning,multimodal,accuracy,True,"[""Document VQA"", ""Doc VQA""]",Document visual question answering benchmark.,https://www.docvqa.org,medium,active,
+video_mme,Video-MME,multimodal,multimodal_reasoning,video,accuracy,True,"[""Video MME""]",Video understanding benchmark.,,medium,active,
+longbench,LongBench,long_context,long_context,text,score,True,"[""Long Bench""]",Long-context language model benchmark.,https://github.com/THUDM/LongBench,medium,active,
+ruler,RULER,long_context,long_context,text,accuracy,True,"[""Ruler""]",Long-context synthetic retrieval and reasoning benchmark.,,low,active,Track context length.
+needle_in_a_haystack,Needle-in-a-Haystack,long_context,long_context,text,retrieval_accuracy,True,"[""NIAH"", ""Needle in a Haystack""]",Long-context retrieval stress test.,,low,active,Track needle depth and context length.
+loogle,Loogle,long_context,long_context,text,score,True,"[""Loogle benchmark""]",Long-context benchmark.,,unknown,active,
+lmarena,LMArena,preference,preference,text,Elo,True,"[""Chatbot Arena"", ""LMSYS Arena"", ""LM Arena""]",Pairwise human preference leaderboard.,https://lmarena.ai,low,active,Elo values are time-varying.
+arenahard,ArenaHard,preference,preference,text,win_rate,True,"[""Arena Hard"", ""Arena-Hard""]",Automated preference benchmark.,,medium,active,
+alpacaeval,AlpacaEval,preference,preference,text,win_rate,True,"[""Alpaca Eval""]",Instruction-following preference benchmark.,https://tatsu-lab.github.io/alpaca_eval,medium,active,
+mt_bench,MT-Bench,preference,preference,text,score,True,"[""MT Bench""]",Multi-turn chat benchmark.,,high,stale,
+wildchat,WildChat,safety,safety,text,score,True,"[""Wild Chat""]",Real-world chat safety data/eval family.,,unknown,active,Define exact metric before accepting rows.
+xstest,XSTest,safety,safety,text,refusal_accuracy,True,"[""XS Test""]",Exaggerated safety test benchmark.,,medium,active,
+harmbench,HarmBench,safety,safety,text,safety_score,True,"[""Harm Bench""]",Harmful behavior evaluation benchmark.,,medium,active,
+jailbreak_prompt_injection,Jailbreak / Prompt-Injection Suites,safety,safety,text,attack_success_rate,False,"[""jailbreak"", ""prompt injection"", ""prompt-injection""]",Family card for jailbreak and prompt-injection suites.,,unknown,unknown,Never merge distinct suites without explicit variant.

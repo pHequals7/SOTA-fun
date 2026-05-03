@@ -1,0 +1,46 @@
+coding_agent:
+  description: Benchmarks relevant for autonomous coding agents.
+  benchmarks:
+    - swe_bench_verified
+    - livecodebench
+    - aider_polyglot
+    - terminal_bench
+    - bigcodebench
+function_calling:
+  description: Tool calling and function-calling capability.
+  benchmarks:
+    - bfcl
+    - tau_bench
+math_reasoning:
+  description: Competitive math and formal-ish reasoning.
+  benchmarks:
+    - aime_2024
+    - aime_2025
+    - math_500
+    - math
+expert_reasoning:
+  description: Graduate-level science and expert reasoning.
+  benchmarks:
+    - gpqa_diamond
+    - humanitys_last_exam
+instruction_following:
+  description: Verifiable instruction-following and formatting.
+  benchmarks:
+    - ifeval
+    - ifbench
+multimodal_reasoning:
+  description: Visual, chart, document, and multimodal reasoning.
+  benchmarks:
+    - mmmu
+    - mathvista
+    - chartqa
+    - docvqa
+    - video_mme
+long_context:
+  description: Long-context retrieval and reasoning.
+  benchmarks:
+    - ruler
+    - longbench
+    - needle_in_a_haystack
+    - loogle
+

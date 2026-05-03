@@ -1,0 +1,645 @@
+mmlu:
+  benchmark_id: mmlu
+  name: MMLU
+  family: general
+  capability: general_knowledge
+  modality: text
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [Massive Multitask Language Understanding]
+  description: Broad multiple-choice academic knowledge benchmark.
+  official_url: https://github.com/hendrycks/test
+  contamination_risk: high
+  benchmark_status: saturated
+  notes: Preserve exact protocol and shot count in score rows.
+mmlu_pro:
+  benchmark_id: mmlu_pro
+  name: MMLU-Pro
+  family: general
+  capability: general_knowledge
+  modality: text
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [MMLU Pro, MMLU-Pro]
+  description: More challenging variant of MMLU.
+  official_url: https://github.com/TIGER-AI-Lab/MMLU-Pro
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+mmmlu:
+  benchmark_id: mmmlu
+  name: MMMLU
+  family: general
+  capability: multilingual_knowledge
+  modality: text
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [Multilingual MMLU]
+  description: Multilingual MMLU-style benchmark.
+  official_url:
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+ifeval:
+  benchmark_id: ifeval
+  name: IFEval
+  family: general
+  capability: instruction_following
+  modality: text
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [Instruction Following Eval, IF-Eval]
+  description: Verifiable instruction-following benchmark.
+  official_url: https://github.com/google-research/google-research/tree/master/instruction_following_eval
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+ifbench:
+  benchmark_id: ifbench
+  name: IFBench
+  family: general
+  capability: instruction_following
+  modality: text
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [Instruction Following Benchmark]
+  description: Placeholder registry card for instruction-following benchmarks.
+  official_url:
+  contamination_risk: unknown
+  benchmark_status: unknown
+  notes: Add exact benchmark card before accepting verified scores.
+bbh:
+  benchmark_id: bbh
+  name: BBH
+  family: general
+  capability: reasoning
+  modality: text
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [BIG-Bench Hard, Big Bench Hard]
+  description: Hard subset of BIG-Bench tasks.
+  official_url: https://github.com/suzgunmirac/BIG-Bench-Hard
+  contamination_risk: high
+  benchmark_status: active
+  notes: ""
+musr:
+  benchmark_id: musr
+  name: MuSR
+  family: general
+  capability: reasoning
+  modality: text
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [Multistep Soft Reasoning]
+  description: Multistep reasoning benchmark.
+  official_url:
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+gpqa:
+  benchmark_id: gpqa
+  name: GPQA
+  family: reasoning_science
+  capability: expert_reasoning
+  modality: text
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [Graduate-Level Google-Proof Q&A]
+  description: Graduate-level science QA benchmark.
+  official_url: https://github.com/idavidrein/gpqa
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+gpqa_diamond:
+  benchmark_id: gpqa_diamond
+  name: GPQA Diamond
+  family: reasoning_science
+  capability: expert_reasoning
+  modality: text
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [GPQA-Diamond, GPQA Diamond subset]
+  description: Expert-filtered GPQA subset.
+  official_url: https://github.com/idavidrein/gpqa
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+humanitys_last_exam:
+  benchmark_id: humanitys_last_exam
+  name: Humanity's Last Exam
+  family: reasoning_science
+  capability: expert_reasoning
+  modality: text
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [HLE, Humanitys Last Exam]
+  description: Broad difficult expert reasoning benchmark.
+  official_url:
+  contamination_risk: unknown
+  benchmark_status: active
+  notes: Track exact release/version.
+arc_agi:
+  benchmark_id: arc_agi
+  name: ARC-AGI
+  family: reasoning_science
+  capability: abstract_reasoning
+  modality: text
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [ARC AGI, ARC Prize]
+  description: Abstraction and reasoning benchmark.
+  official_url: https://arcprize.org
+  contamination_risk: low
+  benchmark_status: active
+  notes: ""
+gsm8k:
+  benchmark_id: gsm8k
+  name: GSM8K
+  family: math
+  capability: math
+  modality: text
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [Grade School Math 8K]
+  description: Grade-school math word problems.
+  official_url: https://github.com/openai/grade-school-math
+  contamination_risk: high
+  benchmark_status: saturated
+  notes: ""
+math:
+  benchmark_id: math
+  name: MATH
+  family: math
+  capability: math
+  modality: text
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [MATH benchmark]
+  description: Competition-style math benchmark.
+  official_url: https://github.com/hendrycks/math
+  contamination_risk: high
+  benchmark_status: active
+  notes: ""
+math_500:
+  benchmark_id: math_500
+  name: MATH-500
+  family: math
+  capability: math
+  modality: text
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [MATH 500]
+  description: 500-problem subset used in modern reports.
+  official_url:
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+aime_2024:
+  benchmark_id: aime_2024
+  name: AIME 2024
+  family: math
+  capability: math
+  modality: text
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [AIME24, AIME 2024]
+  description: American Invitational Mathematics Examination 2024 problems.
+  official_url:
+  contamination_risk: low
+  benchmark_status: active
+  notes: ""
+aime_2025:
+  benchmark_id: aime_2025
+  name: AIME 2025
+  family: math
+  capability: math
+  modality: text
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [AIME25, AIME 2025]
+  description: American Invitational Mathematics Examination 2025 problems.
+  official_url:
+  contamination_risk: low
+  benchmark_status: active
+  notes: ""
+humaneval:
+  benchmark_id: humaneval
+  name: HumanEval
+  family: coding
+  capability: coding
+  modality: text
+  primary_metric: pass@1
+  higher_is_better: true
+  aliases: [Human Eval]
+  description: Python function synthesis benchmark.
+  official_url: https://github.com/openai/human-eval
+  contamination_risk: high
+  benchmark_status: saturated
+  notes: ""
+mbpp:
+  benchmark_id: mbpp
+  name: MBPP
+  family: coding
+  capability: coding
+  modality: text
+  primary_metric: pass@1
+  higher_is_better: true
+  aliases: [Mostly Basic Python Problems]
+  description: Python programming benchmark.
+  official_url:
+  contamination_risk: high
+  benchmark_status: saturated
+  notes: ""
+livecodebench:
+  benchmark_id: livecodebench
+  name: LiveCodeBench
+  family: coding
+  capability: coding
+  modality: text
+  primary_metric: pass@1
+  higher_is_better: true
+  aliases: [Live Code Bench, LCB]
+  description: Continuously updated coding benchmark.
+  official_url: https://livecodebench.github.io
+  contamination_risk: low
+  benchmark_status: active
+  notes: Track date range/version.
+swe_bench:
+  benchmark_id: swe_bench
+  name: SWE-bench
+  family: coding
+  capability: software_engineering
+  modality: text
+  primary_metric: resolved_rate
+  higher_is_better: true
+  aliases: [SWE bench]
+  description: Real-world GitHub issue resolution benchmark.
+  official_url: https://www.swebench.com
+  contamination_risk: medium
+  benchmark_status: active
+  notes: Scaffold matters heavily.
+swe_bench_verified:
+  benchmark_id: swe_bench_verified
+  name: SWE-bench Verified
+  family: coding
+  capability: software_engineering
+  modality: text
+  primary_metric: resolved_rate
+  higher_is_better: true
+  aliases: [SWE Bench Verified, SWE-bench Verified]
+  description: Human-verified subset of SWE-bench.
+  official_url: https://www.swebench.com
+  contamination_risk: medium
+  benchmark_status: active
+  notes: Never compare without scaffold/protocol labels.
+aider_polyglot:
+  benchmark_id: aider_polyglot
+  name: Aider Polyglot
+  family: coding
+  capability: software_engineering
+  modality: text
+  primary_metric: pass_rate
+  higher_is_better: true
+  aliases: [Aider benchmark, Aider Polyglot benchmark]
+  description: Multi-language coding benchmark used by Aider.
+  official_url: https://aider.chat/docs/leaderboards
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+terminal_bench:
+  benchmark_id: terminal_bench
+  name: Terminal-bench
+  family: coding
+  capability: software_engineering
+  modality: text
+  primary_metric: resolved_rate
+  higher_is_better: true
+  aliases: [Terminal Bench, terminalbench]
+  description: Terminal-based coding agent benchmark.
+  official_url:
+  contamination_risk: unknown
+  benchmark_status: active
+  notes: ""
+bigcodebench:
+  benchmark_id: bigcodebench
+  name: BigCodeBench
+  family: coding
+  capability: coding
+  modality: text
+  primary_metric: pass@1
+  higher_is_better: true
+  aliases: [Big Code Bench]
+  description: Practical code generation benchmark.
+  official_url: https://bigcode-bench.github.io
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+bfcl:
+  benchmark_id: bfcl
+  name: Berkeley Function Calling Leaderboard
+  family: tool_agents
+  capability: tool_use
+  modality: text
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [BFCL, Function Calling Leaderboard, Berkeley Function Calling]
+  description: Function and tool-calling benchmark.
+  official_url: https://gorilla.cs.berkeley.edu/leaderboard.html
+  contamination_risk: medium
+  benchmark_status: active
+  notes: Track BFCL version.
+tau_bench:
+  benchmark_id: tau_bench
+  name: TAU-bench
+  family: tool_agents
+  capability: tool_use
+  modality: text
+  primary_metric: success_rate
+  higher_is_better: true
+  aliases: [TAU bench]
+  description: Tool-agent benchmark.
+  official_url:
+  contamination_risk: unknown
+  benchmark_status: active
+  notes: ""
+webarena:
+  benchmark_id: webarena
+  name: WebArena
+  family: tool_agents
+  capability: web_agents
+  modality: multimodal
+  primary_metric: success_rate
+  higher_is_better: true
+  aliases: [Web Arena]
+  description: Web-based autonomous agent benchmark.
+  official_url: https://webarena.dev
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+osworld:
+  benchmark_id: osworld
+  name: OSWorld
+  family: tool_agents
+  capability: computer_use
+  modality: multimodal
+  primary_metric: success_rate
+  higher_is_better: true
+  aliases: [OS World]
+  description: Computer-use benchmark.
+  official_url: https://os-world.github.io
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+mcp_atlas:
+  benchmark_id: mcp_atlas
+  name: MCP-Atlas
+  family: tool_agents
+  capability: tool_use
+  modality: text
+  primary_metric: success_rate
+  higher_is_better: true
+  aliases: [MCP Atlas]
+  description: Placeholder registry card for MCP tool-use evaluations.
+  official_url:
+  contamination_risk: unknown
+  benchmark_status: unknown
+  notes: Add exact benchmark card before accepting verified scores.
+mmmu:
+  benchmark_id: mmmu
+  name: MMMU
+  family: multimodal
+  capability: multimodal_reasoning
+  modality: multimodal
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [Massive Multi-discipline Multimodal Understanding]
+  description: Multimodal college-level benchmark.
+  official_url: https://mmmu-benchmark.github.io
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+mathvista:
+  benchmark_id: mathvista
+  name: MathVista
+  family: multimodal
+  capability: multimodal_reasoning
+  modality: multimodal
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [Math Vista]
+  description: Visual math reasoning benchmark.
+  official_url: https://mathvista.github.io
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+chartqa:
+  benchmark_id: chartqa
+  name: ChartQA
+  family: multimodal
+  capability: multimodal_reasoning
+  modality: multimodal
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [Chart QA]
+  description: Chart understanding benchmark.
+  official_url:
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+docvqa:
+  benchmark_id: docvqa
+  name: DocVQA
+  family: multimodal
+  capability: multimodal_reasoning
+  modality: multimodal
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [Document VQA, Doc VQA]
+  description: Document visual question answering benchmark.
+  official_url: https://www.docvqa.org
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+video_mme:
+  benchmark_id: video_mme
+  name: Video-MME
+  family: multimodal
+  capability: multimodal_reasoning
+  modality: video
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [Video MME]
+  description: Video understanding benchmark.
+  official_url:
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+longbench:
+  benchmark_id: longbench
+  name: LongBench
+  family: long_context
+  capability: long_context
+  modality: text
+  primary_metric: score
+  higher_is_better: true
+  aliases: [Long Bench]
+  description: Long-context language model benchmark.
+  official_url: https://github.com/THUDM/LongBench
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+ruler:
+  benchmark_id: ruler
+  name: RULER
+  family: long_context
+  capability: long_context
+  modality: text
+  primary_metric: accuracy
+  higher_is_better: true
+  aliases: [Ruler]
+  description: Long-context synthetic retrieval and reasoning benchmark.
+  official_url:
+  contamination_risk: low
+  benchmark_status: active
+  notes: Track context length.
+needle_in_a_haystack:
+  benchmark_id: needle_in_a_haystack
+  name: Needle-in-a-Haystack
+  family: long_context
+  capability: long_context
+  modality: text
+  primary_metric: retrieval_accuracy
+  higher_is_better: true
+  aliases: [NIAH, Needle in a Haystack]
+  description: Long-context retrieval stress test.
+  official_url:
+  contamination_risk: low
+  benchmark_status: active
+  notes: Track needle depth and context length.
+loogle:
+  benchmark_id: loogle
+  name: Loogle
+  family: long_context
+  capability: long_context
+  modality: text
+  primary_metric: score
+  higher_is_better: true
+  aliases: [Loogle benchmark]
+  description: Long-context benchmark.
+  official_url:
+  contamination_risk: unknown
+  benchmark_status: active
+  notes: ""
+lmarena:
+  benchmark_id: lmarena
+  name: LMArena
+  family: preference
+  capability: preference
+  modality: text
+  primary_metric: Elo
+  higher_is_better: true
+  aliases: [Chatbot Arena, LMSYS Arena, LM Arena]
+  description: Pairwise human preference leaderboard.
+  official_url: https://lmarena.ai
+  contamination_risk: low
+  benchmark_status: active
+  notes: Elo values are time-varying.
+arenahard:
+  benchmark_id: arenahard
+  name: ArenaHard
+  family: preference
+  capability: preference
+  modality: text
+  primary_metric: win_rate
+  higher_is_better: true
+  aliases: [Arena Hard, Arena-Hard]
+  description: Automated preference benchmark.
+  official_url:
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+alpacaeval:
+  benchmark_id: alpacaeval
+  name: AlpacaEval
+  family: preference
+  capability: preference
+  modality: text
+  primary_metric: win_rate
+  higher_is_better: true
+  aliases: [Alpaca Eval]
+  description: Instruction-following preference benchmark.
+  official_url: https://tatsu-lab.github.io/alpaca_eval
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+mt_bench:
+  benchmark_id: mt_bench
+  name: MT-Bench
+  family: preference
+  capability: preference
+  modality: text
+  primary_metric: score
+  higher_is_better: true
+  aliases: [MT Bench]
+  description: Multi-turn chat benchmark.
+  official_url:
+  contamination_risk: high
+  benchmark_status: stale
+  notes: ""
+wildchat:
+  benchmark_id: wildchat
+  name: WildChat
+  family: safety
+  capability: safety
+  modality: text
+  primary_metric: score
+  higher_is_better: true
+  aliases: [Wild Chat]
+  description: Real-world chat safety data/eval family.
+  official_url:
+  contamination_risk: unknown
+  benchmark_status: active
+  notes: Define exact metric before accepting rows.
+xstest:
+  benchmark_id: xstest
+  name: XSTest
+  family: safety
+  capability: safety
+  modality: text
+  primary_metric: refusal_accuracy
+  higher_is_better: true
+  aliases: [XS Test]
+  description: Exaggerated safety test benchmark.
+  official_url:
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+harmbench:
+  benchmark_id: harmbench
+  name: HarmBench
+  family: safety
+  capability: safety
+  modality: text
+  primary_metric: safety_score
+  higher_is_better: true
+  aliases: [Harm Bench]
+  description: Harmful behavior evaluation benchmark.
+  official_url:
+  contamination_risk: medium
+  benchmark_status: active
+  notes: ""
+jailbreak_prompt_injection:
+  benchmark_id: jailbreak_prompt_injection
+  name: Jailbreak / Prompt-Injection Suites
+  family: safety
+  capability: safety
+  modality: text
+  primary_metric: attack_success_rate
+  higher_is_better: false
+  aliases: [jailbreak, prompt injection, prompt-injection]
+  description: Family card for jailbreak and prompt-injection suites.
+  official_url:
+  contamination_risk: unknown
+  benchmark_status: unknown
+  notes: Never merge distinct suites without explicit variant.
+

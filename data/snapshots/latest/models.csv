@@ -1,0 +1,8 @@
+model_id,lab_id,canonical_name,aliases,release_date,model_family,openness,license,parameter_count_total,parameter_count_active,context_window_tokens,modalities,supports_tools,supports_json_schema,input_price_usd_per_mtok,output_price_usd_per_mtok,model_card_url,last_seen_at
+gpt_4_1,openai,GPT-4.1,"[""gpt-4.1"", ""GPT 4.1""]",,GPT,closed_api,,,,,"[""text"", ""vision""]",True,True,,,,
+claude_opus_4_1,anthropic,Claude Opus 4.1,"[""claude-opus-4-1""]",,Claude,closed_api,,,,,"[""text"", ""vision""]",True,True,,,,
+claude_sonnet_4,anthropic,Claude Sonnet 4,"[""claude-sonnet-4""]",,Claude,closed_api,,,,,"[""text"", ""vision""]",True,True,,,,
+gemini_2_5_pro,google_deepmind,Gemini 2.5 Pro,"[""gemini-2.5-pro""]",,Gemini,closed_api,,,,,"[""text"", ""vision"", ""audio"", ""video""]",True,True,,,,
+deepseek_r1,deepseek,DeepSeek R1,"[""deepseek-r1""]",,DeepSeek R,open_weight,,,,,"[""text""]",,,,,,
+llama_4,meta,Llama 4,"[""Meta Llama 4""]",,Llama,open_weight,,,,,"[""text"", ""vision""]",,,,,,
+qwen3,qwen,Qwen3,"[""Qwen 3""]",,Qwen,open_weight,,,,,"[""text""]",True,,,,,

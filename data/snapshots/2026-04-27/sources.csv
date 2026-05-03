@@ -1,0 +1,2 @@
+source_id,source_name,source_type,url,title,published_at,fetched_at,content_hash,license,notes
+synthetic_seed_2026_04_27,Synthetic seed data,community,https://example.com/llm-benchmark-db/synthetic-seed,Synthetic seed rows for API development,2026-04-27,2026-04-27T00:00:00,synthetic,CC0-1.0,Scores are synthetic examples only and must not be interpreted as real claims.

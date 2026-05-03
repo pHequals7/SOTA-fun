@@ -1,0 +1,107 @@
+openai:
+  lab_id: openai
+  name: OpenAI
+  website: https://openai.com
+  source_urls:
+    - https://openai.com/research
+    - https://openai.com/index
+  notes: Initial tracked lab.
+anthropic:
+  lab_id: anthropic
+  name: Anthropic
+  website: https://www.anthropic.com
+  source_urls:
+    - https://www.anthropic.com/news
+  notes: Initial tracked lab.
+google_deepmind:
+  lab_id: google_deepmind
+  name: Google DeepMind
+  website: https://deepmind.google
+  source_urls:
+    - https://deepmind.google/discover/blog
+  notes: Initial tracked lab.
+meta:
+  lab_id: meta
+  name: Meta
+  website: https://ai.meta.com
+  source_urls:
+    - https://ai.meta.com/blog
+  notes: Initial tracked lab.
+mistral:
+  lab_id: mistral
+  name: Mistral AI
+  website: https://mistral.ai
+  source_urls:
+    - https://mistral.ai/news
+  notes: Initial tracked lab.
+deepseek:
+  lab_id: deepseek
+  name: DeepSeek
+  website: https://www.deepseek.com
+  source_urls:
+    - https://www.deepseek.com
+  notes: Initial tracked lab.
+xai:
+  lab_id: xai
+  name: xAI
+  website: https://x.ai
+  source_urls:
+    - https://x.ai/news
+  notes: Initial tracked lab.
+qwen:
+  lab_id: qwen
+  name: Qwen
+  website: https://qwenlm.github.io
+  source_urls:
+    - https://qwenlm.github.io
+  notes: Initial tracked lab.
+zhipu:
+  lab_id: zhipu
+  name: Zhipu AI
+  website: https://www.zhipuai.cn
+  source_urls:
+    - https://www.zhipuai.cn
+  notes: Initial tracked lab.
+moonshot:
+  lab_id: moonshot
+  name: Moonshot AI
+  website: https://www.moonshot.cn
+  source_urls:
+    - https://www.moonshot.cn
+  notes: Initial tracked lab.
+cohere:
+  lab_id: cohere
+  name: Cohere
+  website: https://cohere.com
+  source_urls:
+    - https://cohere.com/blog
+  notes: Initial tracked lab.
+ai21:
+  lab_id: ai21
+  name: AI21 Labs
+  website: https://www.ai21.com
+  source_urls:
+    - https://www.ai21.com/blog
+  notes: Initial tracked lab.
+nvidia:
+  lab_id: nvidia
+  name: NVIDIA
+  website: https://www.nvidia.com
+  source_urls:
+    - https://www.nvidia.com/en-us/ai-data-science
+  notes: Initial tracked lab.
+amazon:
+  lab_id: amazon
+  name: Amazon
+  website: https://aws.amazon.com/ai
+  source_urls:
+    - https://aws.amazon.com/blogs/machine-learning
+  notes: Initial tracked lab.
+microsoft:
+  lab_id: microsoft
+  name: Microsoft
+  website: https://www.microsoft.com/ai
+  source_urls:
+    - https://www.microsoft.com/en-us/research/blog
+  notes: Initial tracked lab.
+

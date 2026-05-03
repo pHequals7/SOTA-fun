@@ -1,0 +1,336 @@
+models:
+  - model_id: gpt_4_1
+    lab_id: openai
+    canonical_name: GPT-4.1
+    aliases: [gpt-4.1, GPT 4.1]
+    release_date: null
+    model_family: GPT
+    openness: closed_api
+    license: null
+    parameter_count_total: null
+    parameter_count_active: null
+    context_window_tokens: null
+    modalities: [text, vision]
+    supports_tools: true
+    supports_json_schema: true
+    input_price_usd_per_mtok: null
+    output_price_usd_per_mtok: null
+    model_card_url: null
+  - model_id: claude_opus_4_1
+    lab_id: anthropic
+    canonical_name: Claude Opus 4.1
+    aliases: [claude-opus-4-1]
+    release_date: null
+    model_family: Claude
+    openness: closed_api
+    license: null
+    parameter_count_total: null
+    parameter_count_active: null
+    context_window_tokens: null
+    modalities: [text, vision]
+    supports_tools: true
+    supports_json_schema: true
+    input_price_usd_per_mtok: null
+    output_price_usd_per_mtok: null
+    model_card_url: null
+  - model_id: claude_sonnet_4
+    lab_id: anthropic
+    canonical_name: Claude Sonnet 4
+    aliases: [claude-sonnet-4]
+    release_date: null
+    model_family: Claude
+    openness: closed_api
+    license: null
+    parameter_count_total: null
+    parameter_count_active: null
+    context_window_tokens: null
+    modalities: [text, vision]
+    supports_tools: true
+    supports_json_schema: true
+    input_price_usd_per_mtok: null
+    output_price_usd_per_mtok: null
+    model_card_url: null
+  - model_id: gemini_2_5_pro
+    lab_id: google_deepmind
+    canonical_name: Gemini 2.5 Pro
+    aliases: [gemini-2.5-pro]
+    release_date: null
+    model_family: Gemini
+    openness: closed_api
+    license: null
+    parameter_count_total: null
+    parameter_count_active: null
+    context_window_tokens: null
+    modalities: [text, vision, audio, video]
+    supports_tools: true
+    supports_json_schema: true
+    input_price_usd_per_mtok: null
+    output_price_usd_per_mtok: null
+    model_card_url: null
+  - model_id: deepseek_r1
+    lab_id: deepseek
+    canonical_name: DeepSeek R1
+    aliases: [deepseek-r1]
+    release_date: null
+    model_family: DeepSeek R
+    openness: open_weight
+    license: null
+    parameter_count_total: null
+    parameter_count_active: null
+    context_window_tokens: null
+    modalities: [text]
+    supports_tools: null
+    supports_json_schema: null
+    input_price_usd_per_mtok: null
+    output_price_usd_per_mtok: null
+    model_card_url: null
+  - model_id: llama_4
+    lab_id: meta
+    canonical_name: Llama 4
+    aliases: [Meta Llama 4]
+    release_date: null
+    model_family: Llama
+    openness: open_weight
+    license: null
+    parameter_count_total: null
+    parameter_count_active: null
+    context_window_tokens: null
+    modalities: [text, vision]
+    supports_tools: null
+    supports_json_schema: null
+    input_price_usd_per_mtok: null
+    output_price_usd_per_mtok: null
+    model_card_url: null
+  - model_id: qwen3
+    lab_id: qwen
+    canonical_name: Qwen3
+    aliases: [Qwen 3]
+    release_date: null
+    model_family: Qwen
+    openness: open_weight
+    license: null
+    parameter_count_total: null
+    parameter_count_active: null
+    context_window_tokens: null
+    modalities: [text]
+    supports_tools: true
+    supports_json_schema: null
+    input_price_usd_per_mtok: null
+    output_price_usd_per_mtok: null
+    model_card_url: null
+sources:
+  - source_id: synthetic_seed_2026_04_27
+    source_name: Synthetic seed data
+    source_type: community
+    url: https://example.com/llm-benchmark-db/synthetic-seed
+    title: Synthetic seed rows for API development
+    published_at: 2026-04-27
+    fetched_at: 2026-04-27T00:00:00+00:00
+    content_hash: synthetic
+    license: CC0-1.0
+    notes: Scores are synthetic examples only and must not be interpreted as real claims.
+scores:
+  - lab_id: anthropic
+    model_id: claude_opus_4_1
+    model_display_name: Claude Opus 4.1
+    model_release_date: null
+    benchmark_id: swe_bench_verified
+    benchmark_family: coding
+    benchmark_variant: verified
+    capability: software_engineering
+    score: 74.5
+    score_unit: "%"
+    higher_is_better: true
+    eval_setting: synthetic example, reported-style agent scaffold
+    num_trials: null
+    pass_at_k: null
+    context_setting: null
+    scaffold: synthetic agent scaffold A
+    source_type: community
+    source_url: https://example.com/llm-benchmark-db/synthetic-seed
+    source_title: Synthetic seed rows for API development
+    source_published_at: 2026-04-27
+    extracted_at: 2026-04-27T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 1.0
+    verification_status: unverified
+    notes: Synthetic example score for API testing, not a real benchmark claim.
+    raw_quote: Synthetic seed row.
+    raw_table_json: {}
+    normalized_json: {synthetic_example: true}
+  - lab_id: anthropic
+    model_id: claude_sonnet_4
+    model_display_name: Claude Sonnet 4
+    model_release_date: null
+    benchmark_id: swe_bench_verified
+    benchmark_family: coding
+    benchmark_variant: verified
+    capability: software_engineering
+    score: 68.2
+    score_unit: "%"
+    higher_is_better: true
+    eval_setting: synthetic example, reported-style agent scaffold
+    num_trials: null
+    pass_at_k: null
+    context_setting: null
+    scaffold: synthetic agent scaffold A
+    source_type: community
+    source_url: https://example.com/llm-benchmark-db/synthetic-seed
+    source_title: Synthetic seed rows for API development
+    source_published_at: 2026-04-27
+    extracted_at: 2026-04-27T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 1.0
+    verification_status: unverified
+    notes: Synthetic example score for API testing, not a real benchmark claim.
+    raw_quote: Synthetic seed row.
+    raw_table_json: {}
+    normalized_json: {synthetic_example: true}
+  - lab_id: google_deepmind
+    model_id: gemini_2_5_pro
+    model_display_name: Gemini 2.5 Pro
+    model_release_date: null
+    benchmark_id: gpqa_diamond
+    benchmark_family: reasoning_science
+    benchmark_variant: diamond
+    capability: expert_reasoning
+    score: 83.1
+    score_unit: "%"
+    higher_is_better: true
+    eval_setting: synthetic example, no tools
+    num_trials: null
+    pass_at_k: null
+    context_setting: null
+    scaffold: none
+    source_type: community
+    source_url: https://example.com/llm-benchmark-db/synthetic-seed
+    source_title: Synthetic seed rows for API development
+    source_published_at: 2026-04-27
+    extracted_at: 2026-04-27T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 1.0
+    verification_status: unverified
+    notes: Synthetic example score for API testing, not a real benchmark claim.
+    raw_quote: Synthetic seed row.
+    raw_table_json: {}
+    normalized_json: {synthetic_example: true}
+  - lab_id: deepseek
+    model_id: deepseek_r1
+    model_display_name: DeepSeek R1
+    model_release_date: null
+    benchmark_id: aime_2025
+    benchmark_family: math
+    benchmark_variant: 2025
+    capability: math
+    score: 78.0
+    score_unit: "%"
+    higher_is_better: true
+    eval_setting: synthetic example, pass@1
+    num_trials: null
+    pass_at_k: 1
+    context_setting: null
+    scaffold: none
+    source_type: community
+    source_url: https://example.com/llm-benchmark-db/synthetic-seed
+    source_title: Synthetic seed rows for API development
+    source_published_at: 2026-04-27
+    extracted_at: 2026-04-27T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 1.0
+    verification_status: unverified
+    notes: Synthetic example score for API testing, not a real benchmark claim.
+    raw_quote: Synthetic seed row.
+    raw_table_json: {}
+    normalized_json: {synthetic_example: true}
+  - lab_id: openai
+    model_id: gpt_4_1
+    model_display_name: GPT-4.1
+    model_release_date: null
+    benchmark_id: bfcl
+    benchmark_family: tool_agents
+    benchmark_variant: bfcl_v3
+    capability: tool_use
+    score: 86.4
+    score_unit: accuracy
+    higher_is_better: true
+    eval_setting: synthetic example, default leaderboard protocol
+    num_trials: null
+    pass_at_k: null
+    context_setting: null
+    scaffold: function calling harness
+    source_type: community
+    source_url: https://example.com/llm-benchmark-db/synthetic-seed
+    source_title: Synthetic seed rows for API development
+    source_published_at: 2026-04-27
+    extracted_at: 2026-04-27T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 1.0
+    verification_status: unverified
+    notes: Synthetic example score for API testing, not a real benchmark claim.
+    raw_quote: Synthetic seed row.
+    raw_table_json: {}
+    normalized_json: {synthetic_example: true}
+  - lab_id: qwen
+    model_id: qwen3
+    model_display_name: Qwen3
+    model_release_date: null
+    benchmark_id: mmlu_pro
+    benchmark_family: general
+    benchmark_variant: default
+    capability: general_knowledge
+    score: 75.9
+    score_unit: accuracy
+    higher_is_better: true
+    eval_setting: synthetic example, 5-shot
+    num_trials: null
+    pass_at_k: null
+    context_setting: null
+    scaffold: none
+    source_type: community
+    source_url: https://example.com/llm-benchmark-db/synthetic-seed
+    source_title: Synthetic seed rows for API development
+    source_published_at: 2026-04-27
+    extracted_at: 2026-04-27T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 1.0
+    verification_status: unverified
+    notes: Synthetic example score for API testing, not a real benchmark claim.
+    raw_quote: Synthetic seed row.
+    raw_table_json: {}
+    normalized_json: {synthetic_example: true}
+  - lab_id: meta
+    model_id: llama_4
+    model_display_name: Llama 4
+    model_release_date: null
+    benchmark_id: mmmu
+    benchmark_family: multimodal
+    benchmark_variant: default
+    capability: multimodal_reasoning
+    score: 70.2
+    score_unit: "%"
+    higher_is_better: true
+    eval_setting: synthetic example, no tools
+    num_trials: null
+    pass_at_k: null
+    context_setting: null
+    scaffold: none
+    source_type: community
+    source_url: https://example.com/llm-benchmark-db/synthetic-seed
+    source_title: Synthetic seed rows for API development
+    source_published_at: 2026-04-27
+    extracted_at: 2026-04-27T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 1.0
+    verification_status: unverified
+    notes: Synthetic example score for API testing, not a real benchmark claim.
+    raw_quote: Synthetic seed row.
+    raw_table_json: {}
+    normalized_json: {synthetic_example: true}
+
