@@ -1,826 +1,1717 @@
 models:
-  - model_id: gpt_4_1
-    lab_id: openai
-    canonical_name: GPT-4.1
-    aliases: [gpt-4.1, GPT 4.1]
-    release_date: null
-    model_family: GPT
-    openness: closed_api
-    license: null
-    parameter_count_total: null
-    parameter_count_active: null
-    context_window_tokens: null
-    modalities: [text, vision]
-    supports_tools: true
-    supports_json_schema: true
-    input_price_usd_per_mtok: null
-    output_price_usd_per_mtok: null
-    model_card_url: null
-  - model_id: gpt_5_5
-    lab_id: openai
-    canonical_name: GPT-5.5
-    aliases: [gpt-5.5, GPT 5.5, GPT‑5.5]
-    release_date: 2026-04-23
-    model_family: GPT
-    openness: closed_api
-    license: Proprietary
-    parameter_count_total: null
-    parameter_count_active: null
-    context_window_tokens: 1000000
-    modalities: [text, vision]
-    supports_tools: true
-    supports_json_schema: true
-    input_price_usd_per_mtok: null
-    output_price_usd_per_mtok: null
-    model_card_url: https://openai.com/index/gpt-5-5-system-card/
-  - model_id: claude_opus_4_1
-    lab_id: anthropic
-    canonical_name: Claude Opus 4.1
-    aliases: [claude-opus-4-1]
-    release_date: null
-    model_family: Claude
-    openness: closed_api
-    license: null
-    parameter_count_total: null
-    parameter_count_active: null
-    context_window_tokens: null
-    modalities: [text, vision]
-    supports_tools: true
-    supports_json_schema: true
-    input_price_usd_per_mtok: null
-    output_price_usd_per_mtok: null
-    model_card_url: null
-  - model_id: claude_opus_4_7
-    lab_id: anthropic
-    canonical_name: Claude Opus 4.7
-    aliases: [claude-opus-4-7, Opus 4.7]
-    release_date: 2026-04-16
-    model_family: Claude
-    openness: closed_api
-    license: Proprietary
-    parameter_count_total: null
-    parameter_count_active: null
-    context_window_tokens: 1000000
-    modalities: [text, vision]
-    supports_tools: true
-    supports_json_schema: null
-    input_price_usd_per_mtok: 5.0
-    output_price_usd_per_mtok: 25.0
-    model_card_url: https://www.anthropic.com/news/claude-opus-4-7
-  - model_id: claude_sonnet_4
-    lab_id: anthropic
-    canonical_name: Claude Sonnet 4
-    aliases: [claude-sonnet-4]
-    release_date: null
-    model_family: Claude
-    openness: closed_api
-    license: null
-    parameter_count_total: null
-    parameter_count_active: null
-    context_window_tokens: null
-    modalities: [text, vision]
-    supports_tools: true
-    supports_json_schema: true
-    input_price_usd_per_mtok: null
-    output_price_usd_per_mtok: null
-    model_card_url: null
-  - model_id: gemini_2_5_pro
-    lab_id: google_deepmind
-    canonical_name: Gemini 2.5 Pro
-    aliases: [gemini-2.5-pro]
-    release_date: null
-    model_family: Gemini
-    openness: closed_api
-    license: null
-    parameter_count_total: null
-    parameter_count_active: null
-    context_window_tokens: null
-    modalities: [text, vision, audio, video]
-    supports_tools: true
-    supports_json_schema: true
-    input_price_usd_per_mtok: null
-    output_price_usd_per_mtok: null
-    model_card_url: null
-  - model_id: deepseek_r1
-    lab_id: deepseek
-    canonical_name: DeepSeek R1
-    aliases: [deepseek-r1]
-    release_date: null
-    model_family: DeepSeek R
-    openness: open_weight
-    license: null
-    parameter_count_total: null
-    parameter_count_active: null
-    context_window_tokens: null
-    modalities: [text]
-    supports_tools: null
-    supports_json_schema: null
-    input_price_usd_per_mtok: null
-    output_price_usd_per_mtok: null
-    model_card_url: null
-  - model_id: llama_4
-    lab_id: meta
-    canonical_name: Llama 4
-    aliases: [Meta Llama 4]
-    release_date: null
-    model_family: Llama
-    openness: open_weight
-    license: null
-    parameter_count_total: null
-    parameter_count_active: null
-    context_window_tokens: null
-    modalities: [text, vision]
-    supports_tools: null
-    supports_json_schema: null
-    input_price_usd_per_mtok: null
-    output_price_usd_per_mtok: null
-    model_card_url: null
-  - model_id: qwen3
-    lab_id: qwen
-    canonical_name: Qwen3
-    aliases: [Qwen 3]
-    release_date: null
-    model_family: Qwen
-    openness: open_weight
-    license: null
-    parameter_count_total: null
-    parameter_count_active: null
-    context_window_tokens: null
-    modalities: [text]
-    supports_tools: true
-    supports_json_schema: null
-    input_price_usd_per_mtok: null
-    output_price_usd_per_mtok: null
-    model_card_url: null
+- model_id: gpt_4_1
+  lab_id: openai
+  canonical_name: GPT-4.1
+  aliases:
+  - gpt-4.1
+  - GPT 4.1
+  release_date: null
+  model_family: GPT
+  openness: closed_api
+  license: null
+  parameter_count_total: null
+  parameter_count_active: null
+  context_window_tokens: null
+  modalities:
+  - text
+  - vision
+  supports_tools: true
+  supports_json_schema: true
+  input_price_usd_per_mtok: null
+  output_price_usd_per_mtok: null
+  model_card_url: null
+- model_id: gpt_5_5
+  lab_id: openai
+  canonical_name: GPT-5.5
+  aliases:
+  - gpt-5.5
+  - GPT 5.5
+  - GPT‑5.5
+  release_date: 2026-04-23
+  model_family: GPT
+  openness: closed_api
+  license: Proprietary
+  parameter_count_total: null
+  parameter_count_active: null
+  context_window_tokens: 1000000
+  modalities:
+  - text
+  - vision
+  supports_tools: true
+  supports_json_schema: true
+  input_price_usd_per_mtok: null
+  output_price_usd_per_mtok: null
+  model_card_url: https://openai.com/index/gpt-5-5-system-card/
+- model_id: claude_opus_4_1
+  lab_id: anthropic
+  canonical_name: Claude Opus 4.1
+  aliases:
+  - claude-opus-4-1
+  release_date: null
+  model_family: Claude
+  openness: closed_api
+  license: null
+  parameter_count_total: null
+  parameter_count_active: null
+  context_window_tokens: null
+  modalities:
+  - text
+  - vision
+  supports_tools: true
+  supports_json_schema: true
+  input_price_usd_per_mtok: null
+  output_price_usd_per_mtok: null
+  model_card_url: null
+- model_id: claude_opus_4_7
+  lab_id: anthropic
+  canonical_name: Claude Opus 4.7
+  aliases:
+  - claude-opus-4-7
+  - Opus 4.7
+  release_date: 2026-04-16
+  model_family: Claude
+  openness: closed_api
+  license: Proprietary
+  parameter_count_total: null
+  parameter_count_active: null
+  context_window_tokens: 1000000
+  modalities:
+  - text
+  - vision
+  supports_tools: true
+  supports_json_schema: null
+  input_price_usd_per_mtok: 5.0
+  output_price_usd_per_mtok: 25.0
+  model_card_url: https://www.anthropic.com/news/claude-opus-4-7
+- model_id: claude_sonnet_4
+  lab_id: anthropic
+  canonical_name: Claude Sonnet 4
+  aliases:
+  - claude-sonnet-4
+  release_date: null
+  model_family: Claude
+  openness: closed_api
+  license: null
+  parameter_count_total: null
+  parameter_count_active: null
+  context_window_tokens: null
+  modalities:
+  - text
+  - vision
+  supports_tools: true
+  supports_json_schema: true
+  input_price_usd_per_mtok: null
+  output_price_usd_per_mtok: null
+  model_card_url: null
+- model_id: gemini_2_5_pro
+  lab_id: google_deepmind
+  canonical_name: Gemini 2.5 Pro
+  aliases:
+  - gemini-2.5-pro
+  release_date: null
+  model_family: Gemini
+  openness: closed_api
+  license: null
+  parameter_count_total: null
+  parameter_count_active: null
+  context_window_tokens: null
+  modalities:
+  - text
+  - vision
+  - audio
+  - video
+  supports_tools: true
+  supports_json_schema: true
+  input_price_usd_per_mtok: null
+  output_price_usd_per_mtok: null
+  model_card_url: null
+- model_id: deepseek_r1
+  lab_id: deepseek
+  canonical_name: DeepSeek R1
+  aliases:
+  - deepseek-r1
+  release_date: null
+  model_family: DeepSeek R
+  openness: open_weight
+  license: null
+  parameter_count_total: null
+  parameter_count_active: null
+  context_window_tokens: null
+  modalities:
+  - text
+  supports_tools: null
+  supports_json_schema: null
+  input_price_usd_per_mtok: null
+  output_price_usd_per_mtok: null
+  model_card_url: null
+- model_id: llama_4
+  lab_id: meta
+  canonical_name: Llama 4
+  aliases:
+  - Meta Llama 4
+  release_date: null
+  model_family: Llama
+  openness: open_weight
+  license: null
+  parameter_count_total: null
+  parameter_count_active: null
+  context_window_tokens: null
+  modalities:
+  - text
+  - vision
+  supports_tools: null
+  supports_json_schema: null
+  input_price_usd_per_mtok: null
+  output_price_usd_per_mtok: null
+  model_card_url: null
+- model_id: qwen3
+  lab_id: qwen
+  canonical_name: Qwen3
+  aliases:
+  - Qwen 3
+  release_date: null
+  model_family: Qwen
+  openness: open_weight
+  license: null
+  parameter_count_total: null
+  parameter_count_active: null
+  context_window_tokens: null
+  modalities:
+  - text
+  supports_tools: true
+  supports_json_schema: null
+  input_price_usd_per_mtok: null
+  output_price_usd_per_mtok: null
+  model_card_url: null
+- model_id: deepseek_v4_pro
+  lab_id: deepseek
+  canonical_name: DeepSeek V4 Pro
+  aliases:
+  - DeepSeek-V4-Pro
+  - deepseek-v4-pro
+  - DS-V4-Pro
+  release_date: '2026-04-24'
+  model_family: DeepSeek V
+  openness: open_weight
+  license: MIT
+  parameter_count_total: 1600000000000
+  parameter_count_active: 49000000000
+  context_window_tokens: 1000000
+  modalities:
+  - text
+  supports_tools: true
+  supports_json_schema: null
+  input_price_usd_per_mtok: 1.74
+  output_price_usd_per_mtok: 3.48
+  model_card_url: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
+- model_id: kimi_k2_6
+  lab_id: moonshot
+  canonical_name: Kimi K2.6
+  aliases:
+  - kimi-k2.6
+  - Kimi-K2.6
+  - moonshotai/Kimi-K2.6
+  release_date: '2026-04-20'
+  model_family: Kimi K
+  openness: open_weight
+  license: Modified MIT
+  parameter_count_total: 1000000000000
+  parameter_count_active: 32000000000
+  context_window_tokens: 262144
+  modalities:
+  - text
+  - vision
+  - video
+  supports_tools: true
+  supports_json_schema: true
+  input_price_usd_per_mtok: 0.95
+  output_price_usd_per_mtok: 4.0
+  model_card_url: https://huggingface.co/moonshotai/Kimi-K2.6
+- model_id: glm_5_1
+  lab_id: zhipu
+  canonical_name: GLM-5.1
+  aliases:
+  - glm-5.1
+  - GLM 5.1
+  - zai-org/GLM-5.1
+  release_date: '2026-04-07'
+  model_family: GLM
+  openness: open_weight
+  license: MIT
+  parameter_count_total: 754000000000
+  parameter_count_active: 40000000000
+  context_window_tokens: 200000
+  modalities:
+  - text
+  supports_tools: true
+  supports_json_schema: true
+  input_price_usd_per_mtok: 1.4
+  output_price_usd_per_mtok: 4.4
+  model_card_url: https://huggingface.co/zai-org/GLM-5.1
 sources:
-  - source_id: synthetic_seed_2026_04_27
-    source_name: Synthetic seed data
-    source_type: community
-    url: https://example.com/llm-benchmark-db/synthetic-seed
-    title: Synthetic seed rows for API development
-    published_at: 2026-04-27
-    fetched_at: 2026-04-27T00:00:00+00:00
-    content_hash: synthetic
-    license: CC0-1.0
-    notes: Scores are synthetic examples only and must not be interpreted as real claims.
-  - source_id: openai_gpt_5_5_launch_2026_04_23
-    source_name: OpenAI GPT-5.5 launch post
-    source_type: official_lab
-    url: https://openai.com/index/introducing-gpt-5-5/
-    title: Introducing GPT-5.5
-    published_at: 2026-04-23
-    fetched_at: 2026-05-03T00:00:00+00:00
-    content_hash: null
-    license: null
-    notes: Official OpenAI launch post. Rows from this source are provider-reported and should be labeled as official lab claims.
-  - source_id: artificial_analysis_gpqa_diamond_2026_05_03
-    source_name: Artificial Analysis GPQA Diamond leaderboard
-    source_type: independent
-    url: https://artificialanalysis.ai/evaluations/gpqa-diamond
-    title: GPQA Diamond Benchmark Leaderboard
-    published_at: null
-    fetched_at: 2026-05-03T00:00:00+00:00
-    content_hash: null
-    license: null
-    notes: Dynamic independent leaderboard page; no static publication date exposed, so freshness is represented by fetched_at and extracted_at.
-  - source_id: artificial_analysis_terminalbench_hard_2026_05_03
-    source_name: Artificial Analysis Terminal-Bench Hard leaderboard
-    source_type: independent
-    url: https://artificialanalysis.ai/evaluations/terminalbench-hard
-    title: Terminal-Bench Hard Benchmark Leaderboard
-    published_at: null
-    fetched_at: 2026-05-03T00:00:00+00:00
-    content_hash: null
-    license: null
-    notes: Dynamic independent leaderboard page; no static publication date exposed, so freshness is represented by fetched_at and extracted_at.
-  - source_id: anthropic_claude_opus_4_7_launch_2026_04_16
-    source_name: Anthropic Claude Opus 4.7 launch post
-    source_type: official_lab
-    url: https://www.anthropic.com/news/claude-opus-4-7
-    title: Introducing Claude Opus 4.7
-    published_at: 2026-04-16
-    fetched_at: 2026-05-03T00:00:00+00:00
-    content_hash: null
-    license: null
-    notes: Official Anthropic launch post. Numeric benchmark table is rendered as an image; text exposes methodology footnotes and release metadata.
-  - source_id: llm_stats_claude_opus_4_7_2026_04_16
-    source_name: LLM Stats Claude Opus 4.7 launch summary
-    source_type: provider_claim
-    url: https://llm-stats.com/blog/research/claude-opus-4-7-launch
-    title: "Claude Opus 4.7: Benchmarks, Pricing, Context & What's New"
-    published_at: 2026-04-16
-    fetched_at: 2026-05-03T00:00:00+00:00
-    content_hash: null
-    license: null
-    notes: Public summary of Anthropic-reported launch benchmark numbers; use as provider-claim provenance unless independently rerun.
-  - source_id: geta_claude_opus_4_7_2026_04_19
-    source_name: getA Claude Opus 4.7 agent benchmark analysis
-    source_type: provider_claim
-    url: https://blog.geta.team/claude-opus-4-7-just-dropped-heres-what-the-benchmarks-actually-mean-for-agent-builders/
-    title: "Claude Opus 4.7 Just Dropped. Here's What the Benchmarks Actually Mean for Agent Builders."
-    published_at: 2026-04-19
-    fetched_at: 2026-05-03T00:00:00+00:00
-    content_hash: null
-    license: null
-    notes: Public analysis summarizing Anthropic-reported agent benchmark numbers; use as provider-claim provenance unless independently rerun.
-  - source_id: officechai_claude_opus_4_7_2026_04_16
-    source_name: OfficeChai Claude Opus 4.7 benchmark summary
-    source_type: provider_claim
-    url: https://officechai.com/ai/ckaude-opus-4-7-benchmarks/
-    title: Anthropic Releases Claude Opus 4.7, Beats GPT-5.4, Gemini 3.1 Pro On Most Benchmarks
-    published_at: 2026-04-16
-    fetched_at: 2026-05-03T00:00:00+00:00
-    content_hash: null
-    license: null
-    notes: Public summary of Anthropic-reported launch benchmark numbers; use as provider-claim provenance unless independently rerun.
-  - source_id: binaryverse_claude_opus_4_7_2026_04_16
-    source_name: BinaryVerse Claude Opus 4.7 benchmark guide
-    source_type: provider_claim
-    url: https://binaryverseai.com/claude-opus-4-7-benchmarks-token-limits-mythos/
-    title: "Claude Opus 4.7: 7 Major Benchmarks And Token Limits Guide"
-    published_at: 2026-04-16
-    fetched_at: 2026-05-03T00:00:00+00:00
-    content_hash: null
-    license: null
-    notes: Public summary table of Anthropic-reported launch benchmark numbers; use as provider-claim provenance unless independently rerun.
+- source_id: synthetic_seed_2026_04_27
+  source_name: Synthetic seed data
+  source_type: community
+  url: https://example.com/llm-benchmark-db/synthetic-seed
+  title: Synthetic seed rows for API development
+  published_at: 2026-04-27
+  fetched_at: 2026-04-27 00:00:00+00:00
+  content_hash: synthetic
+  license: CC0-1.0
+  notes: Scores are synthetic examples only and must not be interpreted as real claims.
+- source_id: openai_gpt_5_5_launch_2026_04_23
+  source_name: OpenAI GPT-5.5 launch post
+  source_type: official_lab
+  url: https://openai.com/index/introducing-gpt-5-5/
+  title: Introducing GPT-5.5
+  published_at: 2026-04-23
+  fetched_at: 2026-05-03 00:00:00+00:00
+  content_hash: null
+  license: null
+  notes: Official OpenAI launch post. Rows from this source are provider-reported and should be labeled as official lab claims.
+- source_id: artificial_analysis_gpqa_diamond_2026_05_03
+  source_name: Artificial Analysis GPQA Diamond leaderboard
+  source_type: independent
+  url: https://artificialanalysis.ai/evaluations/gpqa-diamond
+  title: GPQA Diamond Benchmark Leaderboard
+  published_at: null
+  fetched_at: 2026-05-03 00:00:00+00:00
+  content_hash: null
+  license: null
+  notes: Dynamic independent leaderboard page; no static publication date exposed, so freshness is represented by fetched_at
+    and extracted_at.
+- source_id: artificial_analysis_terminalbench_hard_2026_05_03
+  source_name: Artificial Analysis Terminal-Bench Hard leaderboard
+  source_type: independent
+  url: https://artificialanalysis.ai/evaluations/terminalbench-hard
+  title: Terminal-Bench Hard Benchmark Leaderboard
+  published_at: null
+  fetched_at: 2026-05-03 00:00:00+00:00
+  content_hash: null
+  license: null
+  notes: Dynamic independent leaderboard page; no static publication date exposed, so freshness is represented by fetched_at
+    and extracted_at.
+- source_id: anthropic_claude_opus_4_7_launch_2026_04_16
+  source_name: Anthropic Claude Opus 4.7 launch post
+  source_type: official_lab
+  url: https://www.anthropic.com/news/claude-opus-4-7
+  title: Introducing Claude Opus 4.7
+  published_at: 2026-04-16
+  fetched_at: 2026-05-03 00:00:00+00:00
+  content_hash: null
+  license: null
+  notes: Official Anthropic launch post. Numeric benchmark table is rendered as an image; text exposes methodology footnotes
+    and release metadata.
+- source_id: llm_stats_claude_opus_4_7_2026_04_16
+  source_name: LLM Stats Claude Opus 4.7 launch summary
+  source_type: provider_claim
+  url: https://llm-stats.com/blog/research/claude-opus-4-7-launch
+  title: 'Claude Opus 4.7: Benchmarks, Pricing, Context & What''s New'
+  published_at: 2026-04-16
+  fetched_at: 2026-05-03 00:00:00+00:00
+  content_hash: null
+  license: null
+  notes: Public summary of Anthropic-reported launch benchmark numbers; use as provider-claim provenance unless independently
+    rerun.
+- source_id: geta_claude_opus_4_7_2026_04_19
+  source_name: getA Claude Opus 4.7 agent benchmark analysis
+  source_type: provider_claim
+  url: https://blog.geta.team/claude-opus-4-7-just-dropped-heres-what-the-benchmarks-actually-mean-for-agent-builders/
+  title: Claude Opus 4.7 Just Dropped. Here's What the Benchmarks Actually Mean for Agent Builders.
+  published_at: 2026-04-19
+  fetched_at: 2026-05-03 00:00:00+00:00
+  content_hash: null
+  license: null
+  notes: Public analysis summarizing Anthropic-reported agent benchmark numbers; use as provider-claim provenance unless independently
+    rerun.
+- source_id: officechai_claude_opus_4_7_2026_04_16
+  source_name: OfficeChai Claude Opus 4.7 benchmark summary
+  source_type: provider_claim
+  url: https://officechai.com/ai/ckaude-opus-4-7-benchmarks/
+  title: Anthropic Releases Claude Opus 4.7, Beats GPT-5.4, Gemini 3.1 Pro On Most Benchmarks
+  published_at: 2026-04-16
+  fetched_at: 2026-05-03 00:00:00+00:00
+  content_hash: null
+  license: null
+  notes: Public summary of Anthropic-reported launch benchmark numbers; use as provider-claim provenance unless independently
+    rerun.
+- source_id: binaryverse_claude_opus_4_7_2026_04_16
+  source_name: BinaryVerse Claude Opus 4.7 benchmark guide
+  source_type: provider_claim
+  url: https://binaryverseai.com/claude-opus-4-7-benchmarks-token-limits-mythos/
+  title: 'Claude Opus 4.7: 7 Major Benchmarks And Token Limits Guide'
+  published_at: 2026-04-16
+  fetched_at: 2026-05-03 00:00:00+00:00
+  content_hash: null
+  license: null
+  notes: Public summary table of Anthropic-reported launch benchmark numbers; use as provider-claim provenance unless independently
+    rerun.
+- source_id: deepseek_v4_pro_hf_2026_04_22
+  source_name: DeepSeek V4 Pro Hugging Face model card
+  source_type: official_lab
+  url: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
+  title: deepseek-ai/DeepSeek-V4-Pro
+  published_at: '2026-04-22'
+  fetched_at: '2026-05-03T00:00:00+00:00'
+  content_hash: null
+  license: MIT
+  notes: Official DeepSeek model card and reported benchmark table.
+- source_id: nist_caisi_deepseek_v4_pro_2026_05_01
+  source_name: NIST CAISI DeepSeek V4 Pro evaluation
+  source_type: independent
+  url: https://www.nist.gov/news-events/news/2026/05/caisi-evaluation-deepseek-v4-pro
+  title: CAISI Evaluation of DeepSeek V4 Pro
+  published_at: '2026-05-01'
+  fetched_at: '2026-05-03T00:00:00+00:00'
+  content_hash: null
+  license: null
+  notes: Independent CAISI/NIST evaluation. CAISI notes prompt, scaffold, and token-budget differences for SWE-bench Verified.
+- source_id: moonshot_kimi_k2_6_hf_2026_04_20
+  source_name: Moonshot Kimi K2.6 Hugging Face model card and eval files
+  source_type: official_lab
+  url: https://huggingface.co/moonshotai/Kimi-K2.6
+  title: moonshotai/Kimi-K2.6
+  published_at: '2026-04-20'
+  fetched_at: '2026-05-03T00:00:00+00:00'
+  content_hash: null
+  license: Modified MIT
+  notes: Official Moonshot model card plus .eval_results YAML files.
+- source_id: zai_glm_5_1_hf_2026_04_07
+  source_name: Z.AI GLM-5.1 Hugging Face model card
+  source_type: official_lab
+  url: https://huggingface.co/zai-org/GLM-5.1
+  title: zai-org/GLM-5.1
+  published_at: '2026-04-07'
+  fetched_at: '2026-05-03T00:00:00+00:00'
+  content_hash: null
+  license: MIT
+  notes: Official Z.AI GLM-5.1 model card and benchmark table.
 scores:
-  - lab_id: anthropic
-    model_id: claude_opus_4_7
-    model_display_name: Claude Opus 4.7
-    model_release_date: 2026-04-16
-    benchmark_id: swe_bench_verified
-    benchmark_family: coding
-    benchmark_variant: verified_anthropic_reported
-    capability: software_engineering
+- lab_id: anthropic
+  model_id: claude_opus_4_7
+  model_display_name: Claude Opus 4.7
+  model_release_date: 2026-04-16
+  benchmark_id: swe_bench_verified
+  benchmark_family: coding
+  benchmark_variant: verified_anthropic_reported
+  capability: software_engineering
+  score: 87.6
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: null
+  scaffold: Anthropic reported SWE-bench Verified setup
+  source_type: provider_claim
+  source_url: https://llm-stats.com/blog/research/claude-opus-4-7-launch
+  source_title: 'Claude Opus 4.7: Benchmarks, Pricing, Context & What''s New'
+  source_published_at: 2026-04-16
+  extracted_at: 2026-05-03 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 0.86
+  verification_status: unverified
+  notes: Provider-reported launch score summarized by LLM Stats; exact scaffold details should be verified against Anthropic
+    chart/source artifacts.
+  raw_quote: 87.6% on SWE-bench Verified
+  raw_table_json:
+    model: Claude Opus 4.7
+    benchmark: SWE-bench Verified
     score: 87.6
-    score_unit: "%"
-    higher_is_better: true
-    eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation
-    num_trials: null
-    pass_at_k: 1
-    context_setting: null
-    scaffold: Anthropic reported SWE-bench Verified setup
-    source_type: provider_claim
-    source_url: https://llm-stats.com/blog/research/claude-opus-4-7-launch
-    source_title: "Claude Opus 4.7: Benchmarks, Pricing, Context & What's New"
-    source_published_at: 2026-04-16
-    extracted_at: 2026-05-03T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 0.86
-    verification_status: unverified
-    notes: Provider-reported launch score summarized by LLM Stats; exact scaffold details should be verified against Anthropic chart/source artifacts.
-    raw_quote: "87.6% on SWE-bench Verified"
-    raw_table_json: {model: Claude Opus 4.7, benchmark: SWE-bench Verified, score: 87.6, unit: "%"}
-    normalized_json: {source_id: llm_stats_claude_opus_4_7_2026_04_16, synthetic_example: false}
-  - lab_id: anthropic
-    model_id: claude_opus_4_7
-    model_display_name: Claude Opus 4.7
-    model_release_date: 2026-04-16
-    benchmark_id: gpqa_diamond
-    benchmark_family: reasoning_science
-    benchmark_variant: anthropic_reported
-    capability: expert_reasoning
+    unit: '%'
+  normalized_json:
+    source_id: llm_stats_claude_opus_4_7_2026_04_16
+    synthetic_example: false
+- lab_id: anthropic
+  model_id: claude_opus_4_7
+  model_display_name: Claude Opus 4.7
+  model_release_date: 2026-04-16
+  benchmark_id: gpqa_diamond
+  benchmark_family: reasoning_science
+  benchmark_variant: anthropic_reported
+  capability: expert_reasoning
+  score: 94.2
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: null
+  scaffold: none
+  source_type: provider_claim
+  source_url: https://llm-stats.com/blog/research/claude-opus-4-7-launch
+  source_title: 'Claude Opus 4.7: Benchmarks, Pricing, Context & What''s New'
+  source_published_at: 2026-04-16
+  extracted_at: 2026-05-03 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 0.86
+  verification_status: unverified
+  notes: Provider-reported launch score summarized by LLM Stats; exact protocol should be verified against Anthropic chart/source
+    artifacts.
+  raw_quote: 94.2% on GPQA Diamond
+  raw_table_json:
+    model: Claude Opus 4.7
+    benchmark: GPQA Diamond
     score: 94.2
-    score_unit: "%"
-    higher_is_better: true
-    eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation
-    num_trials: null
-    pass_at_k: 1
-    context_setting: null
-    scaffold: none
-    source_type: provider_claim
-    source_url: https://llm-stats.com/blog/research/claude-opus-4-7-launch
-    source_title: "Claude Opus 4.7: Benchmarks, Pricing, Context & What's New"
-    source_published_at: 2026-04-16
-    extracted_at: 2026-05-03T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 0.86
-    verification_status: unverified
-    notes: Provider-reported launch score summarized by LLM Stats; exact protocol should be verified against Anthropic chart/source artifacts.
-    raw_quote: "94.2% on GPQA Diamond"
-    raw_table_json: {model: Claude Opus 4.7, benchmark: GPQA Diamond, score: 94.2, unit: "%"}
-    normalized_json: {source_id: llm_stats_claude_opus_4_7_2026_04_16, synthetic_example: false}
-  - lab_id: anthropic
-    model_id: claude_opus_4_7
-    model_display_name: Claude Opus 4.7
-    model_release_date: 2026-04-16
-    benchmark_id: terminal_bench
-    benchmark_family: coding
-    benchmark_variant: terminal_bench_2_0
-    capability: software_engineering
+    unit: '%'
+  normalized_json:
+    source_id: llm_stats_claude_opus_4_7_2026_04_16
+    synthetic_example: false
+- lab_id: anthropic
+  model_id: claude_opus_4_7
+  model_display_name: Claude Opus 4.7
+  model_release_date: 2026-04-16
+  benchmark_id: terminal_bench
+  benchmark_family: coding
+  benchmark_variant: terminal_bench_2_0
+  capability: software_engineering
+  score: 69.4
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation
+  num_trials: 5
+  pass_at_k: 1
+  context_setting: null
+  scaffold: Terminus-2 harness; thinking disabled; 1x guaranteed/3x ceiling resource allocation
+  source_type: provider_claim
+  source_url: https://llm-stats.com/blog/research/claude-opus-4-7-launch
+  source_title: 'Claude Opus 4.7: Benchmarks, Pricing, Context & What''s New'
+  source_published_at: 2026-04-16
+  extracted_at: 2026-05-03 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 0.86
+  verification_status: unverified
+  notes: Provider-reported launch score summarized by LLM Stats; Anthropic launch footnote says Terminal-Bench 2.0 used the
+    Terminus-2 harness with thinking disabled and averaged five attempts per task.
+  raw_quote: 69.4% on Terminal-Bench 2.0
+  raw_table_json:
+    model: Claude Opus 4.7
+    benchmark: Terminal-Bench 2.0
     score: 69.4
-    score_unit: "%"
-    higher_is_better: true
-    eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation
-    num_trials: 5
-    pass_at_k: 1
-    context_setting: null
-    scaffold: Terminus-2 harness; thinking disabled; 1x guaranteed/3x ceiling resource allocation
-    source_type: provider_claim
-    source_url: https://llm-stats.com/blog/research/claude-opus-4-7-launch
-    source_title: "Claude Opus 4.7: Benchmarks, Pricing, Context & What's New"
-    source_published_at: 2026-04-16
-    extracted_at: 2026-05-03T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 0.86
-    verification_status: unverified
-    notes: Provider-reported launch score summarized by LLM Stats; Anthropic launch footnote says Terminal-Bench 2.0 used the Terminus-2 harness with thinking disabled and averaged five attempts per task.
-    raw_quote: "69.4% on Terminal-Bench 2.0"
-    raw_table_json: {model: Claude Opus 4.7, benchmark: Terminal-Bench 2.0, score: 69.4, unit: "%"}
-    normalized_json: {source_id: llm_stats_claude_opus_4_7_2026_04_16, methodology_source_id: anthropic_claude_opus_4_7_launch_2026_04_16, synthetic_example: false}
-  - lab_id: anthropic
-    model_id: claude_opus_4_7
-    model_display_name: Claude Opus 4.7
-    model_release_date: 2026-04-16
-    benchmark_id: osworld
-    benchmark_family: tool_agents
-    benchmark_variant: osworld_verified
-    capability: computer_use
+    unit: '%'
+  normalized_json:
+    source_id: llm_stats_claude_opus_4_7_2026_04_16
+    methodology_source_id: anthropic_claude_opus_4_7_launch_2026_04_16
+    synthetic_example: false
+- lab_id: anthropic
+  model_id: claude_opus_4_7
+  model_display_name: Claude Opus 4.7
+  model_release_date: 2026-04-16
+  benchmark_id: osworld
+  benchmark_family: tool_agents
+  benchmark_variant: osworld_verified
+  capability: computer_use
+  score: 78.0
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: null
+  scaffold: Anthropic reported OSWorld-Verified setup
+  source_type: provider_claim
+  source_url: https://blog.geta.team/claude-opus-4-7-just-dropped-heres-what-the-benchmarks-actually-mean-for-agent-builders/
+  source_title: Claude Opus 4.7 Just Dropped. Here's What the Benchmarks Actually Mean for Agent Builders.
+  source_published_at: 2026-04-19
+  extracted_at: 2026-05-03 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 0.82
+  verification_status: unverified
+  notes: Provider-reported launch score summarized by getA; exact scaffold details should be verified against Anthropic chart/source
+    artifacts.
+  raw_quote: OSWorld-Verified hit 78%
+  raw_table_json:
+    model: Claude Opus 4.7
+    benchmark: OSWorld-Verified
     score: 78.0
-    score_unit: "%"
-    higher_is_better: true
-    eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation
-    num_trials: null
-    pass_at_k: 1
-    context_setting: null
-    scaffold: Anthropic reported OSWorld-Verified setup
-    source_type: provider_claim
-    source_url: https://blog.geta.team/claude-opus-4-7-just-dropped-heres-what-the-benchmarks-actually-mean-for-agent-builders/
-    source_title: "Claude Opus 4.7 Just Dropped. Here's What the Benchmarks Actually Mean for Agent Builders."
-    source_published_at: 2026-04-19
-    extracted_at: 2026-05-03T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 0.82
-    verification_status: unverified
-    notes: Provider-reported launch score summarized by getA; exact scaffold details should be verified against Anthropic chart/source artifacts.
-    raw_quote: "OSWorld-Verified hit 78%"
-    raw_table_json: {model: Claude Opus 4.7, benchmark: OSWorld-Verified, score: 78.0, unit: "%"}
-    normalized_json: {source_id: geta_claude_opus_4_7_2026_04_19, synthetic_example: false}
-  - lab_id: anthropic
-    model_id: claude_opus_4_7
-    model_display_name: Claude Opus 4.7
-    model_release_date: 2026-04-16
-    benchmark_id: mcp_atlas
-    benchmark_family: tool_agents
-    benchmark_variant: anthropic_reported_revised_grading
-    capability: tool_use
+    unit: '%'
+  normalized_json:
+    source_id: geta_claude_opus_4_7_2026_04_19
+    synthetic_example: false
+- lab_id: anthropic
+  model_id: claude_opus_4_7
+  model_display_name: Claude Opus 4.7
+  model_release_date: 2026-04-16
+  benchmark_id: mcp_atlas
+  benchmark_family: tool_agents
+  benchmark_variant: anthropic_reported_revised_grading
+  capability: tool_use
+  score: 77.3
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: null
+  scaffold: scaled tool-use workflow
+  source_type: provider_claim
+  source_url: https://blog.geta.team/claude-opus-4-7-just-dropped-heres-what-the-benchmarks-actually-mean-for-agent-builders/
+  source_title: Claude Opus 4.7 Just Dropped. Here's What the Benchmarks Actually Mean for Agent Builders.
+  source_published_at: 2026-04-19
+  extracted_at: 2026-05-03 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 0.82
+  verification_status: unverified
+  notes: Provider-reported launch score summarized by getA; Anthropic notes MCP-Atlas Opus 4.6 was updated under revised Scale
+    AI grading methodology.
+  raw_quote: MCP-Atlas ... shows 77.3% for Opus 4.7
+  raw_table_json:
+    model: Claude Opus 4.7
+    benchmark: MCP-Atlas
     score: 77.3
-    score_unit: "%"
-    higher_is_better: true
-    eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation
-    num_trials: null
-    pass_at_k: 1
-    context_setting: null
-    scaffold: scaled tool-use workflow
-    source_type: provider_claim
-    source_url: https://blog.geta.team/claude-opus-4-7-just-dropped-heres-what-the-benchmarks-actually-mean-for-agent-builders/
-    source_title: "Claude Opus 4.7 Just Dropped. Here's What the Benchmarks Actually Mean for Agent Builders."
-    source_published_at: 2026-04-19
-    extracted_at: 2026-05-03T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 0.82
-    verification_status: unverified
-    notes: Provider-reported launch score summarized by getA; Anthropic notes MCP-Atlas Opus 4.6 was updated under revised Scale AI grading methodology.
-    raw_quote: "MCP-Atlas ... shows 77.3% for Opus 4.7"
-    raw_table_json: {model: Claude Opus 4.7, benchmark: MCP-Atlas, score: 77.3, unit: "%"}
-    normalized_json: {source_id: geta_claude_opus_4_7_2026_04_19, methodology_source_id: anthropic_claude_opus_4_7_launch_2026_04_16, synthetic_example: false}
-  - lab_id: anthropic
-    model_id: claude_opus_4_7
-    model_display_name: Claude Opus 4.7
-    model_release_date: 2026-04-16
-    benchmark_id: mmmlu
-    benchmark_family: general
-    benchmark_variant: anthropic_reported
-    capability: multilingual_knowledge
+    unit: '%'
+  normalized_json:
+    source_id: geta_claude_opus_4_7_2026_04_19
+    methodology_source_id: anthropic_claude_opus_4_7_launch_2026_04_16
+    synthetic_example: false
+- lab_id: anthropic
+  model_id: claude_opus_4_7
+  model_display_name: Claude Opus 4.7
+  model_release_date: 2026-04-16
+  benchmark_id: mmmlu
+  benchmark_family: general
+  benchmark_variant: anthropic_reported
+  capability: multilingual_knowledge
+  score: 91.5
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: null
+  scaffold: none
+  source_type: provider_claim
+  source_url: https://officechai.com/ai/ckaude-opus-4-7-benchmarks/
+  source_title: Anthropic Releases Claude Opus 4.7, Beats GPT-5.4, Gemini 3.1 Pro On Most Benchmarks
+  source_published_at: 2026-04-16
+  extracted_at: 2026-05-03 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 0.8
+  verification_status: unverified
+  notes: Provider-reported launch score summarized by OfficeChai; exact protocol should be verified against Anthropic chart/source
+    artifacts.
+  raw_quote: 'MMMLU: 91.5% for Opus 4.7'
+  raw_table_json:
+    model: Claude Opus 4.7
+    benchmark: MMMLU
     score: 91.5
-    score_unit: "%"
-    higher_is_better: true
-    eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation
-    num_trials: null
-    pass_at_k: 1
-    context_setting: null
-    scaffold: none
-    source_type: provider_claim
-    source_url: https://officechai.com/ai/ckaude-opus-4-7-benchmarks/
-    source_title: Anthropic Releases Claude Opus 4.7, Beats GPT-5.4, Gemini 3.1 Pro On Most Benchmarks
-    source_published_at: 2026-04-16
-    extracted_at: 2026-05-03T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 0.8
-    verification_status: unverified
-    notes: Provider-reported launch score summarized by OfficeChai; exact protocol should be verified against Anthropic chart/source artifacts.
-    raw_quote: "MMMLU: 91.5% for Opus 4.7"
-    raw_table_json: {model: Claude Opus 4.7, benchmark: MMMLU, score: 91.5, unit: "%"}
-    normalized_json: {source_id: officechai_claude_opus_4_7_2026_04_16, synthetic_example: false}
-  - lab_id: anthropic
-    model_id: claude_opus_4_7
-    model_display_name: Claude Opus 4.7
-    model_release_date: 2026-04-16
-    benchmark_id: humanitys_last_exam
-    benchmark_family: reasoning_science
-    benchmark_variant: no_tools
-    capability: expert_reasoning
+    unit: '%'
+  normalized_json:
+    source_id: officechai_claude_opus_4_7_2026_04_16
+    synthetic_example: false
+- lab_id: anthropic
+  model_id: claude_opus_4_7
+  model_display_name: Claude Opus 4.7
+  model_release_date: 2026-04-16
+  benchmark_id: humanitys_last_exam
+  benchmark_family: reasoning_science
+  benchmark_variant: no_tools
+  capability: expert_reasoning
+  score: 46.9
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation; no tools
+  num_trials: null
+  pass_at_k: 1
+  context_setting: null
+  scaffold: none
+  source_type: provider_claim
+  source_url: https://binaryverseai.com/claude-opus-4-7-benchmarks-token-limits-mythos/
+  source_title: 'Claude Opus 4.7: 7 Major Benchmarks And Token Limits Guide'
+  source_published_at: 2026-04-16
+  extracted_at: 2026-05-03 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 0.78
+  verification_status: unverified
+  notes: Provider-reported launch score summarized by BinaryVerse. Kept separate from with-tools HLE because tool setting
+    changes comparability.
+  raw_quote: 'Humanity’s Last Exam, no tools: 46.9%'
+  raw_table_json:
+    model: Claude Opus 4.7
+    benchmark: Humanity's Last Exam
+    variant: no_tools
     score: 46.9
-    score_unit: "%"
-    higher_is_better: true
-    eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation; no tools
-    num_trials: null
-    pass_at_k: 1
-    context_setting: null
-    scaffold: none
-    source_type: provider_claim
-    source_url: https://binaryverseai.com/claude-opus-4-7-benchmarks-token-limits-mythos/
-    source_title: "Claude Opus 4.7: 7 Major Benchmarks And Token Limits Guide"
-    source_published_at: 2026-04-16
-    extracted_at: 2026-05-03T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 0.78
-    verification_status: unverified
-    notes: Provider-reported launch score summarized by BinaryVerse. Kept separate from with-tools HLE because tool setting changes comparability.
-    raw_quote: "Humanity’s Last Exam, no tools: 46.9%"
-    raw_table_json: {model: Claude Opus 4.7, benchmark: "Humanity's Last Exam", variant: no_tools, score: 46.9, unit: "%"}
-    normalized_json: {source_id: binaryverse_claude_opus_4_7_2026_04_16, synthetic_example: false}
-  - lab_id: anthropic
-    model_id: claude_opus_4_7
-    model_display_name: Claude Opus 4.7
-    model_release_date: 2026-04-16
-    benchmark_id: humanitys_last_exam
-    benchmark_family: reasoning_science
-    benchmark_variant: with_tools
-    capability: expert_reasoning
+    unit: '%'
+  normalized_json:
+    source_id: binaryverse_claude_opus_4_7_2026_04_16
+    synthetic_example: false
+- lab_id: anthropic
+  model_id: claude_opus_4_7
+  model_display_name: Claude Opus 4.7
+  model_release_date: 2026-04-16
+  benchmark_id: humanitys_last_exam
+  benchmark_family: reasoning_science
+  benchmark_variant: with_tools
+  capability: expert_reasoning
+  score: 54.7
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation; with tools
+  num_trials: null
+  pass_at_k: 1
+  context_setting: null
+  scaffold: tools enabled
+  source_type: provider_claim
+  source_url: https://binaryverseai.com/claude-opus-4-7-benchmarks-token-limits-mythos/
+  source_title: 'Claude Opus 4.7: 7 Major Benchmarks And Token Limits Guide'
+  source_published_at: 2026-04-16
+  extracted_at: 2026-05-03 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 0.78
+  verification_status: unverified
+  notes: Provider-reported launch score summarized by BinaryVerse. Kept separate from no-tools HLE because tool setting changes
+    comparability.
+  raw_quote: 'Humanity’s Last Exam, with tools: 54.7%'
+  raw_table_json:
+    model: Claude Opus 4.7
+    benchmark: Humanity's Last Exam
+    variant: with_tools
     score: 54.7
-    score_unit: "%"
-    higher_is_better: true
-    eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation; with tools
-    num_trials: null
-    pass_at_k: 1
-    context_setting: null
-    scaffold: tools enabled
-    source_type: provider_claim
-    source_url: https://binaryverseai.com/claude-opus-4-7-benchmarks-token-limits-mythos/
-    source_title: "Claude Opus 4.7: 7 Major Benchmarks And Token Limits Guide"
-    source_published_at: 2026-04-16
-    extracted_at: 2026-05-03T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 0.78
-    verification_status: unverified
-    notes: Provider-reported launch score summarized by BinaryVerse. Kept separate from no-tools HLE because tool setting changes comparability.
-    raw_quote: "Humanity’s Last Exam, with tools: 54.7%"
-    raw_table_json: {model: Claude Opus 4.7, benchmark: "Humanity's Last Exam", variant: with_tools, score: 54.7, unit: "%"}
-    normalized_json: {source_id: binaryverse_claude_opus_4_7_2026_04_16, synthetic_example: false}
-  - lab_id: openai
-    model_id: gpt_5_5
-    model_display_name: GPT-5.5
-    model_release_date: 2026-04-23
-    benchmark_id: terminal_bench
-    benchmark_family: coding
-    benchmark_variant: terminal_bench_2_0
-    capability: software_engineering
+    unit: '%'
+  normalized_json:
+    source_id: binaryverse_claude_opus_4_7_2026_04_16
+    synthetic_example: false
+- lab_id: openai
+  model_id: gpt_5_5
+  model_display_name: GPT-5.5
+  model_release_date: 2026-04-23
+  benchmark_id: terminal_bench
+  benchmark_family: coding
+  benchmark_variant: terminal_bench_2_0
+  capability: software_engineering
+  score: 82.7
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: OpenAI-reported GPT-5.5 launch evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: null
+  scaffold: OpenAI reported Terminal-Bench 2.0 setup
+  source_type: official_lab
+  source_url: https://openai.com/index/introducing-gpt-5-5/
+  source_title: Introducing GPT-5.5
+  source_published_at: 2026-04-23
+  extracted_at: 2026-05-03 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 0.98
+  verification_status: official
+  notes: Official lab-reported GPT-5.5 score. Not directly comparable with Terminal-Bench Hard or other Terminal-Bench variants.
+  raw_quote: 'Terminal-Bench 2.0: 82.7%'
+  raw_table_json:
+    model: GPT-5.5
+    benchmark: Terminal-Bench 2.0
     score: 82.7
-    score_unit: "%"
-    higher_is_better: true
-    eval_setting: OpenAI-reported GPT-5.5 launch evaluation
-    num_trials: null
-    pass_at_k: 1
-    context_setting: null
-    scaffold: OpenAI reported Terminal-Bench 2.0 setup
-    source_type: official_lab
-    source_url: https://openai.com/index/introducing-gpt-5-5/
-    source_title: Introducing GPT-5.5
-    source_published_at: 2026-04-23
-    extracted_at: 2026-05-03T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 0.98
-    verification_status: official
-    notes: Official lab-reported GPT-5.5 score. Not directly comparable with Terminal-Bench Hard or other Terminal-Bench variants.
-    raw_quote: "Terminal-Bench 2.0: 82.7%"
-    raw_table_json: {model: GPT-5.5, benchmark: Terminal-Bench 2.0, score: 82.7, unit: "%"}
-    normalized_json: {source_id: openai_gpt_5_5_launch_2026_04_23, synthetic_example: false}
-  - lab_id: openai
-    model_id: gpt_5_5
-    model_display_name: GPT-5.5
-    model_release_date: 2026-04-23
-    benchmark_id: osworld
-    benchmark_family: tool_agents
-    benchmark_variant: osworld_verified
-    capability: computer_use
+    unit: '%'
+  normalized_json:
+    source_id: openai_gpt_5_5_launch_2026_04_23
+    synthetic_example: false
+- lab_id: openai
+  model_id: gpt_5_5
+  model_display_name: GPT-5.5
+  model_release_date: 2026-04-23
+  benchmark_id: osworld
+  benchmark_family: tool_agents
+  benchmark_variant: osworld_verified
+  capability: computer_use
+  score: 78.7
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: OpenAI-reported GPT-5.5 launch evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: null
+  scaffold: OpenAI reported OSWorld-Verified setup
+  source_type: official_lab
+  source_url: https://openai.com/index/introducing-gpt-5-5/
+  source_title: Introducing GPT-5.5
+  source_published_at: 2026-04-23
+  extracted_at: 2026-05-03 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 0.98
+  verification_status: official
+  notes: Official lab-reported GPT-5.5 score for OSWorld-Verified.
+  raw_quote: 'OSWorld-Verified: 78.7%'
+  raw_table_json:
+    model: GPT-5.5
+    benchmark: OSWorld-Verified
     score: 78.7
-    score_unit: "%"
-    higher_is_better: true
-    eval_setting: OpenAI-reported GPT-5.5 launch evaluation
-    num_trials: null
-    pass_at_k: 1
-    context_setting: null
-    scaffold: OpenAI reported OSWorld-Verified setup
-    source_type: official_lab
-    source_url: https://openai.com/index/introducing-gpt-5-5/
-    source_title: Introducing GPT-5.5
-    source_published_at: 2026-04-23
-    extracted_at: 2026-05-03T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 0.98
-    verification_status: official
-    notes: Official lab-reported GPT-5.5 score for OSWorld-Verified.
-    raw_quote: "OSWorld-Verified: 78.7%"
-    raw_table_json: {model: GPT-5.5, benchmark: OSWorld-Verified, score: 78.7, unit: "%"}
-    normalized_json: {source_id: openai_gpt_5_5_launch_2026_04_23, synthetic_example: false}
-  - lab_id: openai
-    model_id: gpt_5_5
-    model_display_name: GPT-5.5
-    model_release_date: 2026-04-23
-    benchmark_id: tau_bench
-    benchmark_family: tool_agents
-    benchmark_variant: tau2_bench_telecom
-    capability: tool_use
+    unit: '%'
+  normalized_json:
+    source_id: openai_gpt_5_5_launch_2026_04_23
+    synthetic_example: false
+- lab_id: openai
+  model_id: gpt_5_5
+  model_display_name: GPT-5.5
+  model_release_date: 2026-04-23
+  benchmark_id: tau_bench
+  benchmark_family: tool_agents
+  benchmark_variant: tau2_bench_telecom
+  capability: tool_use
+  score: 98.0
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: OpenAI-reported GPT-5.5 launch evaluation; no prompt tuning; GPT-4.1 user model
+  num_trials: null
+  pass_at_k: 1
+  context_setting: null
+  scaffold: Tau2-bench Telecom dual-control simulation
+  source_type: official_lab
+  source_url: https://openai.com/index/introducing-gpt-5-5/
+  source_title: Introducing GPT-5.5
+  source_published_at: 2026-04-23
+  extracted_at: 2026-05-03 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 0.96
+  verification_status: official
+  notes: Official lab-reported Tau2-bench Telecom score. Kept as a TAU-bench variant and must not be compared to original
+    TAU-bench without variant labels.
+  raw_quote: 'Tau2-bench Telecom: 98.0%'
+  raw_table_json:
+    model: GPT-5.5
+    benchmark: Tau2-bench Telecom
     score: 98.0
-    score_unit: "%"
-    higher_is_better: true
-    eval_setting: OpenAI-reported GPT-5.5 launch evaluation; no prompt tuning; GPT-4.1 user model
-    num_trials: null
-    pass_at_k: 1
-    context_setting: null
-    scaffold: Tau2-bench Telecom dual-control simulation
-    source_type: official_lab
-    source_url: https://openai.com/index/introducing-gpt-5-5/
-    source_title: Introducing GPT-5.5
-    source_published_at: 2026-04-23
-    extracted_at: 2026-05-03T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 0.96
-    verification_status: official
-    notes: Official lab-reported Tau2-bench Telecom score. Kept as a TAU-bench variant and must not be compared to original TAU-bench without variant labels.
-    raw_quote: "Tau2-bench Telecom: 98.0%"
-    raw_table_json: {model: GPT-5.5, benchmark: Tau2-bench Telecom, score: 98.0, unit: "%"}
-    normalized_json: {source_id: openai_gpt_5_5_launch_2026_04_23, synthetic_example: false}
-  - lab_id: openai
-    model_id: gpt_5_5
-    model_display_name: GPT-5.5 (xhigh)
-    model_release_date: 2026-04-23
-    benchmark_id: gpqa_diamond
-    benchmark_family: reasoning_science
-    benchmark_variant: artificial_analysis_default
-    capability: expert_reasoning
+    unit: '%'
+  normalized_json:
+    source_id: openai_gpt_5_5_launch_2026_04_23
+    synthetic_example: false
+- lab_id: openai
+  model_id: gpt_5_5
+  model_display_name: GPT-5.5 (xhigh)
+  model_release_date: 2026-04-23
+  benchmark_id: gpqa_diamond
+  benchmark_family: reasoning_science
+  benchmark_variant: artificial_analysis_default
+  capability: expert_reasoning
+  score: 93.5
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Artificial Analysis independent evaluation; reasoning_effort=xhigh
+  num_trials: null
+  pass_at_k: 1
+  context_setting: null
+  scaffold: none
+  source_type: independent
+  source_url: https://artificialanalysis.ai/evaluations/gpqa-diamond
+  source_title: GPQA Diamond Benchmark Leaderboard
+  source_published_at: null
+  extracted_at: 2026-05-03 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 0.9
+  verification_status: community_verified
+  notes: Dynamic independent leaderboard row found via Exa. Source did not expose a static publication date.
+  raw_quote: 'GPT-5.5 (xhigh): 93.5%'
+  raw_table_json:
+    model: GPT-5.5 (xhigh)
+    benchmark: GPQA Diamond
     score: 93.5
-    score_unit: "%"
-    higher_is_better: true
-    eval_setting: Artificial Analysis independent evaluation; reasoning_effort=xhigh
-    num_trials: null
-    pass_at_k: 1
-    context_setting: null
-    scaffold: none
-    source_type: independent
-    source_url: https://artificialanalysis.ai/evaluations/gpqa-diamond
-    source_title: GPQA Diamond Benchmark Leaderboard
-    source_published_at: null
-    extracted_at: 2026-05-03T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 0.9
-    verification_status: community_verified
-    notes: Dynamic independent leaderboard row found via Exa. Source did not expose a static publication date.
-    raw_quote: "GPT-5.5 (xhigh): 93.5%"
-    raw_table_json: {model: GPT-5.5 (xhigh), benchmark: GPQA Diamond, score: 93.5, unit: "%"}
-    normalized_json: {source_id: artificial_analysis_gpqa_diamond_2026_05_03, synthetic_example: false}
-  - lab_id: openai
-    model_id: gpt_5_5
-    model_display_name: GPT-5.5 (xhigh)
-    model_release_date: 2026-04-23
-    benchmark_id: terminal_bench
-    benchmark_family: coding
-    benchmark_variant: terminal_bench_hard_artificial_analysis
-    capability: software_engineering
+    unit: '%'
+  normalized_json:
+    source_id: artificial_analysis_gpqa_diamond_2026_05_03
+    synthetic_example: false
+- lab_id: openai
+  model_id: gpt_5_5
+  model_display_name: GPT-5.5 (xhigh)
+  model_release_date: 2026-04-23
+  benchmark_id: terminal_bench
+  benchmark_family: coding
+  benchmark_variant: terminal_bench_hard_artificial_analysis
+  capability: software_engineering
+  score: 60.6
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Artificial Analysis independent evaluation; reasoning_effort=xhigh
+  num_trials: 3
+  pass_at_k: 1
+  context_setting: null
+  scaffold: Terminal-Bench Hard Docker task environment
+  source_type: independent
+  source_url: https://artificialanalysis.ai/evaluations/terminalbench-hard
+  source_title: Terminal-Bench Hard Benchmark Leaderboard
+  source_published_at: null
+  extracted_at: 2026-05-03 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 0.9
+  verification_status: community_verified
+  notes: Dynamic independent leaderboard row found via Exa. Not comparable with OpenAI-reported Terminal-Bench 2.0 without
+    variant labels.
+  raw_quote: 'GPT-5.5 (xhigh): 60.6%'
+  raw_table_json:
+    model: GPT-5.5 (xhigh)
+    benchmark: Terminal-Bench Hard
     score: 60.6
-    score_unit: "%"
-    higher_is_better: true
-    eval_setting: Artificial Analysis independent evaluation; reasoning_effort=xhigh
-    num_trials: 3
-    pass_at_k: 1
-    context_setting: null
-    scaffold: Terminal-Bench Hard Docker task environment
-    source_type: independent
-    source_url: https://artificialanalysis.ai/evaluations/terminalbench-hard
-    source_title: Terminal-Bench Hard Benchmark Leaderboard
-    source_published_at: null
-    extracted_at: 2026-05-03T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 0.9
-    verification_status: community_verified
-    notes: Dynamic independent leaderboard row found via Exa. Not comparable with OpenAI-reported Terminal-Bench 2.0 without variant labels.
-    raw_quote: "GPT-5.5 (xhigh): 60.6%"
-    raw_table_json: {model: GPT-5.5 (xhigh), benchmark: Terminal-Bench Hard, score: 60.6, unit: "%"}
-    normalized_json: {source_id: artificial_analysis_terminalbench_hard_2026_05_03, synthetic_example: false}
-  - lab_id: anthropic
-    model_id: claude_opus_4_1
-    model_display_name: Claude Opus 4.1
-    model_release_date: null
-    benchmark_id: swe_bench_verified
-    benchmark_family: coding
-    benchmark_variant: verified
-    capability: software_engineering
-    score: 74.5
-    score_unit: "%"
-    higher_is_better: true
-    eval_setting: synthetic example, reported-style agent scaffold
-    num_trials: null
-    pass_at_k: null
-    context_setting: null
-    scaffold: synthetic agent scaffold A
-    source_type: community
-    source_url: https://example.com/llm-benchmark-db/synthetic-seed
-    source_title: Synthetic seed rows for API development
-    source_published_at: 2026-04-27
-    extracted_at: 2026-04-27T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 1.0
-    verification_status: unverified
-    notes: Synthetic example score for API testing, not a real benchmark claim.
-    raw_quote: Synthetic seed row.
-    raw_table_json: {}
-    normalized_json: {synthetic_example: true}
-  - lab_id: anthropic
-    model_id: claude_sonnet_4
-    model_display_name: Claude Sonnet 4
-    model_release_date: null
-    benchmark_id: swe_bench_verified
-    benchmark_family: coding
-    benchmark_variant: verified
-    capability: software_engineering
-    score: 68.2
-    score_unit: "%"
-    higher_is_better: true
-    eval_setting: synthetic example, reported-style agent scaffold
-    num_trials: null
-    pass_at_k: null
-    context_setting: null
-    scaffold: synthetic agent scaffold A
-    source_type: community
-    source_url: https://example.com/llm-benchmark-db/synthetic-seed
-    source_title: Synthetic seed rows for API development
-    source_published_at: 2026-04-27
-    extracted_at: 2026-04-27T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 1.0
-    verification_status: unverified
-    notes: Synthetic example score for API testing, not a real benchmark claim.
-    raw_quote: Synthetic seed row.
-    raw_table_json: {}
-    normalized_json: {synthetic_example: true}
-  - lab_id: google_deepmind
-    model_id: gemini_2_5_pro
-    model_display_name: Gemini 2.5 Pro
-    model_release_date: null
-    benchmark_id: gpqa_diamond
-    benchmark_family: reasoning_science
-    benchmark_variant: diamond
-    capability: expert_reasoning
-    score: 83.1
-    score_unit: "%"
-    higher_is_better: true
-    eval_setting: synthetic example, no tools
-    num_trials: null
-    pass_at_k: null
-    context_setting: null
-    scaffold: none
-    source_type: community
-    source_url: https://example.com/llm-benchmark-db/synthetic-seed
-    source_title: Synthetic seed rows for API development
-    source_published_at: 2026-04-27
-    extracted_at: 2026-04-27T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 1.0
-    verification_status: unverified
-    notes: Synthetic example score for API testing, not a real benchmark claim.
-    raw_quote: Synthetic seed row.
-    raw_table_json: {}
-    normalized_json: {synthetic_example: true}
-  - lab_id: deepseek
-    model_id: deepseek_r1
-    model_display_name: DeepSeek R1
-    model_release_date: null
-    benchmark_id: aime_2025
-    benchmark_family: math
-    benchmark_variant: 2025
-    capability: math
-    score: 78.0
-    score_unit: "%"
-    higher_is_better: true
-    eval_setting: synthetic example, pass@1
-    num_trials: null
-    pass_at_k: 1
-    context_setting: null
-    scaffold: none
-    source_type: community
-    source_url: https://example.com/llm-benchmark-db/synthetic-seed
-    source_title: Synthetic seed rows for API development
-    source_published_at: 2026-04-27
-    extracted_at: 2026-04-27T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 1.0
-    verification_status: unverified
-    notes: Synthetic example score for API testing, not a real benchmark claim.
-    raw_quote: Synthetic seed row.
-    raw_table_json: {}
-    normalized_json: {synthetic_example: true}
-  - lab_id: openai
-    model_id: gpt_4_1
-    model_display_name: GPT-4.1
-    model_release_date: null
-    benchmark_id: bfcl
-    benchmark_family: tool_agents
-    benchmark_variant: bfcl_v3
-    capability: tool_use
-    score: 86.4
-    score_unit: accuracy
-    higher_is_better: true
-    eval_setting: synthetic example, default leaderboard protocol
-    num_trials: null
-    pass_at_k: null
-    context_setting: null
-    scaffold: function calling harness
-    source_type: community
-    source_url: https://example.com/llm-benchmark-db/synthetic-seed
-    source_title: Synthetic seed rows for API development
-    source_published_at: 2026-04-27
-    extracted_at: 2026-04-27T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 1.0
-    verification_status: unverified
-    notes: Synthetic example score for API testing, not a real benchmark claim.
-    raw_quote: Synthetic seed row.
-    raw_table_json: {}
-    normalized_json: {synthetic_example: true}
-  - lab_id: qwen
-    model_id: qwen3
-    model_display_name: Qwen3
-    model_release_date: null
-    benchmark_id: mmlu_pro
-    benchmark_family: general
-    benchmark_variant: default
-    capability: general_knowledge
-    score: 75.9
-    score_unit: accuracy
-    higher_is_better: true
-    eval_setting: synthetic example, 5-shot
-    num_trials: null
-    pass_at_k: null
-    context_setting: null
-    scaffold: none
-    source_type: community
-    source_url: https://example.com/llm-benchmark-db/synthetic-seed
-    source_title: Synthetic seed rows for API development
-    source_published_at: 2026-04-27
-    extracted_at: 2026-04-27T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 1.0
-    verification_status: unverified
-    notes: Synthetic example score for API testing, not a real benchmark claim.
-    raw_quote: Synthetic seed row.
-    raw_table_json: {}
-    normalized_json: {synthetic_example: true}
-  - lab_id: meta
-    model_id: llama_4
-    model_display_name: Llama 4
-    model_release_date: null
-    benchmark_id: mmmu
-    benchmark_family: multimodal
-    benchmark_variant: default
-    capability: multimodal_reasoning
-    score: 70.2
-    score_unit: "%"
-    higher_is_better: true
-    eval_setting: synthetic example, no tools
-    num_trials: null
-    pass_at_k: null
-    context_setting: null
-    scaffold: none
-    source_type: community
-    source_url: https://example.com/llm-benchmark-db/synthetic-seed
-    source_title: Synthetic seed rows for API development
-    source_published_at: 2026-04-27
-    extracted_at: 2026-04-27T00:00:00+00:00
-    snapshot_week: 2026-04-27
-    extraction_method: manual
-    confidence: 1.0
-    verification_status: unverified
-    notes: Synthetic example score for API testing, not a real benchmark claim.
-    raw_quote: Synthetic seed row.
-    raw_table_json: {}
-    normalized_json: {synthetic_example: true}
+    unit: '%'
+  normalized_json:
+    source_id: artificial_analysis_terminalbench_hard_2026_05_03
+    synthetic_example: false
+- lab_id: anthropic
+  model_id: claude_opus_4_1
+  model_display_name: Claude Opus 4.1
+  model_release_date: null
+  benchmark_id: swe_bench_verified
+  benchmark_family: coding
+  benchmark_variant: verified
+  capability: software_engineering
+  score: 74.5
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: synthetic example, reported-style agent scaffold
+  num_trials: null
+  pass_at_k: null
+  context_setting: null
+  scaffold: synthetic agent scaffold A
+  source_type: community
+  source_url: https://example.com/llm-benchmark-db/synthetic-seed
+  source_title: Synthetic seed rows for API development
+  source_published_at: 2026-04-27
+  extracted_at: 2026-04-27 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 1.0
+  verification_status: unverified
+  notes: Synthetic example score for API testing, not a real benchmark claim.
+  raw_quote: Synthetic seed row.
+  raw_table_json: {}
+  normalized_json:
+    synthetic_example: true
+- lab_id: anthropic
+  model_id: claude_sonnet_4
+  model_display_name: Claude Sonnet 4
+  model_release_date: null
+  benchmark_id: swe_bench_verified
+  benchmark_family: coding
+  benchmark_variant: verified
+  capability: software_engineering
+  score: 68.2
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: synthetic example, reported-style agent scaffold
+  num_trials: null
+  pass_at_k: null
+  context_setting: null
+  scaffold: synthetic agent scaffold A
+  source_type: community
+  source_url: https://example.com/llm-benchmark-db/synthetic-seed
+  source_title: Synthetic seed rows for API development
+  source_published_at: 2026-04-27
+  extracted_at: 2026-04-27 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 1.0
+  verification_status: unverified
+  notes: Synthetic example score for API testing, not a real benchmark claim.
+  raw_quote: Synthetic seed row.
+  raw_table_json: {}
+  normalized_json:
+    synthetic_example: true
+- lab_id: google_deepmind
+  model_id: gemini_2_5_pro
+  model_display_name: Gemini 2.5 Pro
+  model_release_date: null
+  benchmark_id: gpqa_diamond
+  benchmark_family: reasoning_science
+  benchmark_variant: diamond
+  capability: expert_reasoning
+  score: 83.1
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: synthetic example, no tools
+  num_trials: null
+  pass_at_k: null
+  context_setting: null
+  scaffold: none
+  source_type: community
+  source_url: https://example.com/llm-benchmark-db/synthetic-seed
+  source_title: Synthetic seed rows for API development
+  source_published_at: 2026-04-27
+  extracted_at: 2026-04-27 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 1.0
+  verification_status: unverified
+  notes: Synthetic example score for API testing, not a real benchmark claim.
+  raw_quote: Synthetic seed row.
+  raw_table_json: {}
+  normalized_json:
+    synthetic_example: true
+- lab_id: deepseek
+  model_id: deepseek_r1
+  model_display_name: DeepSeek R1
+  model_release_date: null
+  benchmark_id: aime_2025
+  benchmark_family: math
+  benchmark_variant: 2025
+  capability: math
+  score: 78.0
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: synthetic example, pass@1
+  num_trials: null
+  pass_at_k: 1
+  context_setting: null
+  scaffold: none
+  source_type: community
+  source_url: https://example.com/llm-benchmark-db/synthetic-seed
+  source_title: Synthetic seed rows for API development
+  source_published_at: 2026-04-27
+  extracted_at: 2026-04-27 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 1.0
+  verification_status: unverified
+  notes: Synthetic example score for API testing, not a real benchmark claim.
+  raw_quote: Synthetic seed row.
+  raw_table_json: {}
+  normalized_json:
+    synthetic_example: true
+- lab_id: openai
+  model_id: gpt_4_1
+  model_display_name: GPT-4.1
+  model_release_date: null
+  benchmark_id: bfcl
+  benchmark_family: tool_agents
+  benchmark_variant: bfcl_v3
+  capability: tool_use
+  score: 86.4
+  score_unit: accuracy
+  higher_is_better: true
+  eval_setting: synthetic example, default leaderboard protocol
+  num_trials: null
+  pass_at_k: null
+  context_setting: null
+  scaffold: function calling harness
+  source_type: community
+  source_url: https://example.com/llm-benchmark-db/synthetic-seed
+  source_title: Synthetic seed rows for API development
+  source_published_at: 2026-04-27
+  extracted_at: 2026-04-27 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 1.0
+  verification_status: unverified
+  notes: Synthetic example score for API testing, not a real benchmark claim.
+  raw_quote: Synthetic seed row.
+  raw_table_json: {}
+  normalized_json:
+    synthetic_example: true
+- lab_id: qwen
+  model_id: qwen3
+  model_display_name: Qwen3
+  model_release_date: null
+  benchmark_id: mmlu_pro
+  benchmark_family: general
+  benchmark_variant: default
+  capability: general_knowledge
+  score: 75.9
+  score_unit: accuracy
+  higher_is_better: true
+  eval_setting: synthetic example, 5-shot
+  num_trials: null
+  pass_at_k: null
+  context_setting: null
+  scaffold: none
+  source_type: community
+  source_url: https://example.com/llm-benchmark-db/synthetic-seed
+  source_title: Synthetic seed rows for API development
+  source_published_at: 2026-04-27
+  extracted_at: 2026-04-27 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 1.0
+  verification_status: unverified
+  notes: Synthetic example score for API testing, not a real benchmark claim.
+  raw_quote: Synthetic seed row.
+  raw_table_json: {}
+  normalized_json:
+    synthetic_example: true
+- lab_id: meta
+  model_id: llama_4
+  model_display_name: Llama 4
+  model_release_date: null
+  benchmark_id: mmmu
+  benchmark_family: multimodal
+  benchmark_variant: default
+  capability: multimodal_reasoning
+  score: 70.2
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: synthetic example, no tools
+  num_trials: null
+  pass_at_k: null
+  context_setting: null
+  scaffold: none
+  source_type: community
+  source_url: https://example.com/llm-benchmark-db/synthetic-seed
+  source_title: Synthetic seed rows for API development
+  source_published_at: 2026-04-27
+  extracted_at: 2026-04-27 00:00:00+00:00
+  snapshot_week: 2026-04-27
+  extraction_method: manual
+  confidence: 1.0
+  verification_status: unverified
+  notes: Synthetic example score for API testing, not a real benchmark claim.
+  raw_quote: Synthetic seed row.
+  raw_table_json: {}
+  normalized_json:
+    synthetic_example: true
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: DeepSeek V4 Pro
+    benchmark: gpqa_diamond
+    variant: deepseek_reported_instruct_pro_max
+    score: 90.1
+    unit: '%'
+  normalized_json:
+    source_id: deepseek_v4_pro_hf_2026_04_22
+    synthetic_example: false
+  lab_id: deepseek
+  model_id: deepseek_v4_pro
+  model_display_name: DeepSeek V4 Pro
+  model_release_date: '2026-04-24'
+  benchmark_id: gpqa_diamond
+  benchmark_family: reasoning_science
+  benchmark_variant: deepseek_reported_instruct_pro_max
+  capability: expert_reasoning
+  score: 90.1
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: DeepSeek-reported DeepSeek-V4-Pro Max reasoning mode
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
+  source_title: deepseek-ai/DeepSeek-V4-Pro
+  source_published_at: '2026-04-22'
+  confidence: 0.94
+  verification_status: official
+  notes: DeepSeek-reported DeepSeek-V4-Pro Max reasoning mode; Pass@1.
+  raw_quote: GPQA Diamond ... DS-V4-Pro Max ... 90.1
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: DeepSeek V4 Pro
+    benchmark: swe_bench_verified
+    variant: deepseek_reported_instruct_pro_max
+    score: 80.6
+    unit: '%'
+  normalized_json:
+    source_id: deepseek_v4_pro_hf_2026_04_22
+    synthetic_example: false
+  lab_id: deepseek
+  model_id: deepseek_v4_pro
+  model_display_name: DeepSeek V4 Pro
+  model_release_date: '2026-04-24'
+  benchmark_id: swe_bench_verified
+  benchmark_family: coding
+  benchmark_variant: deepseek_reported_instruct_pro_max
+  capability: software_engineering
+  score: 80.6
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: DeepSeek-reported DeepSeek-V4-Pro Max reasoning mode
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: DeepSeek reported setup
+  source_type: official_lab
+  source_url: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
+  source_title: deepseek-ai/DeepSeek-V4-Pro
+  source_published_at: '2026-04-22'
+  confidence: 0.94
+  verification_status: official
+  notes: DeepSeek-reported DeepSeek-V4-Pro Max reasoning mode; scaffold differences are material.
+  raw_quote: SWE Verified ... DS-V4-Pro Max ... 80.6
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: DeepSeek V4 Pro
+    benchmark: terminal_bench
+    variant: terminal_bench_2_0_deepseek_reported_pro_max
+    score: 67.9
+    unit: '%'
+  normalized_json:
+    source_id: deepseek_v4_pro_hf_2026_04_22
+    synthetic_example: false
+  lab_id: deepseek
+  model_id: deepseek_v4_pro
+  model_display_name: DeepSeek V4 Pro
+  model_release_date: '2026-04-24'
+  benchmark_id: terminal_bench
+  benchmark_family: coding
+  benchmark_variant: terminal_bench_2_0_deepseek_reported_pro_max
+  capability: software_engineering
+  score: 67.9
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: DeepSeek-reported DeepSeek-V4-Pro Max reasoning mode
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: DeepSeek reported setup
+  source_type: official_lab
+  source_url: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
+  source_title: deepseek-ai/DeepSeek-V4-Pro
+  source_published_at: '2026-04-22'
+  confidence: 0.9
+  verification_status: official
+  notes: DeepSeek-reported Terminal Bench 2.0 setup; do not compare to Terminal-Bench Hard.
+  raw_quote: Terminal Bench 2.0 ... DS-V4-Pro Max ... 67.9
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: DeepSeek V4 Pro
+    benchmark: livecodebench
+    variant: deepseek_reported_instruct_pro_max
+    score: 93.5
+    unit: '%'
+  normalized_json:
+    source_id: deepseek_v4_pro_hf_2026_04_22
+    synthetic_example: false
+  lab_id: deepseek
+  model_id: deepseek_v4_pro
+  model_display_name: DeepSeek V4 Pro
+  model_release_date: '2026-04-24'
+  benchmark_id: livecodebench
+  benchmark_family: coding
+  benchmark_variant: deepseek_reported_instruct_pro_max
+  capability: coding
+  score: 93.5
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: DeepSeek-reported DeepSeek-V4-Pro Max reasoning mode
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
+  source_title: deepseek-ai/DeepSeek-V4-Pro
+  source_published_at: '2026-04-22'
+  confidence: 0.9
+  verification_status: official
+  notes: DeepSeek-reported DeepSeek-V4-Pro Max reasoning mode; track date range/version if later available.
+  raw_quote: LiveCodeBench ... DS-V4-Pro Max ... 93.5
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: DeepSeek V4 Pro
+    benchmark: gpqa_diamond
+    variant: caisi_developer_settings_max
+    score: 90.0
+    unit: '%'
+  normalized_json:
+    source_id: nist_caisi_deepseek_v4_pro_2026_05_01
+    synthetic_example: false
+  lab_id: deepseek
+  model_id: deepseek_v4_pro
+  model_display_name: DeepSeek V4 Pro
+  model_release_date: '2026-04-24'
+  benchmark_id: gpqa_diamond
+  benchmark_family: reasoning_science
+  benchmark_variant: caisi_developer_settings_max
+  capability: expert_reasoning
+  score: 90.0
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: CAISI independent evaluation using developer-recommended settings; max reasoning
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: independent
+  source_url: https://www.nist.gov/news-events/news/2026/05/caisi-evaluation-deepseek-v4-pro
+  source_title: CAISI Evaluation of DeepSeek V4 Pro
+  source_published_at: '2026-05-01'
+  confidence: 0.96
+  verification_status: community_verified
+  notes: CAISI independent evaluation using developer-recommended settings; max thinking.
+  raw_quote: GPQA-Diamond ... DeepSeek V4 Pro (max) ... 90%
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: DeepSeek V4 Pro
+    benchmark: swe_bench_verified
+    variant: caisi_inspect_react_500k_weighted_tokens
+    score: 74.0
+    unit: '%'
+  normalized_json:
+    source_id: nist_caisi_deepseek_v4_pro_2026_05_01
+    synthetic_example: false
+  lab_id: deepseek
+  model_id: deepseek_v4_pro
+  model_display_name: DeepSeek V4 Pro
+  model_release_date: '2026-04-24'
+  benchmark_id: swe_bench_verified
+  benchmark_family: coding
+  benchmark_variant: caisi_inspect_react_500k_weighted_tokens
+  capability: software_engineering
+  score: 74.0
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: CAISI independent evaluation using developer-recommended settings; max reasoning
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: Inspect ReAct agent; 500k weighted-token budget
+  source_type: independent
+  source_url: https://www.nist.gov/news-events/news/2026/05/caisi-evaluation-deepseek-v4-pro
+  source_title: CAISI Evaluation of DeepSeek V4 Pro
+  source_published_at: '2026-05-01'
+  confidence: 0.95
+  verification_status: community_verified
+  notes: CAISI independent evaluation with Inspect ReAct agent and 500k weighted-token budget.
+  raw_quote: SWE-Bench Verified ... DeepSeek V4 Pro ... 74%
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Kimi K2.6
+    benchmark: swe_bench_verified
+    variant: swe_bench_verified_moonshot_swe_agent_10_runs
+    score: 80.2
+    unit: '%'
+  normalized_json:
+    source_id: moonshot_kimi_k2_6_hf_2026_04_20
+    synthetic_example: false
+  lab_id: moonshot
+  model_id: kimi_k2_6
+  model_display_name: Kimi K2.6
+  model_release_date: '2026-04-20'
+  benchmark_id: swe_bench_verified
+  benchmark_family: coding
+  benchmark_variant: swe_bench_verified_moonshot_swe_agent_10_runs
+  capability: software_engineering
+  score: 80.2
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: In-house evaluation framework adapted from SWE-agent; averaged over 10 independent runs.
+  num_trials: 10
+  pass_at_k: 1
+  context_setting: 262,144 token context
+  scaffold: Adapted SWE-agent with bash/createfile/insert/view/strreplace/submit tools
+  source_type: official_lab
+  source_url: https://huggingface.co/moonshotai/Kimi-K2.6
+  source_title: moonshotai/Kimi-K2.6
+  source_published_at: '2026-04-20'
+  confidence: 0.94
+  verification_status: official
+  notes: Official Moonshot model-card/eval-file score; benchmark variant preserved for comparability.
+  raw_quote: 'SWE-bench_Verified ... value: 80.2'
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Kimi K2.6
+    benchmark: gpqa_diamond
+    variant: gpqa_diamond_thinking
+    score: 90.5
+    unit: '%'
+  normalized_json:
+    source_id: moonshot_kimi_k2_6_hf_2026_04_20
+    synthetic_example: false
+  lab_id: moonshot
+  model_id: kimi_k2_6
+  model_display_name: Kimi K2.6
+  model_release_date: '2026-04-20'
+  benchmark_id: gpqa_diamond
+  benchmark_family: reasoning_science
+  benchmark_variant: gpqa_diamond_thinking
+  capability: expert_reasoning
+  score: 90.5
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Thinking mode; temperature=1.0, top-p=1.0, context length 262,144 tokens unless otherwise specified.
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 262,144 token context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/moonshotai/Kimi-K2.6
+  source_title: moonshotai/Kimi-K2.6
+  source_published_at: '2026-04-20'
+  confidence: 0.94
+  verification_status: official
+  notes: Official Moonshot model-card/eval-file score; benchmark variant preserved for comparability.
+  raw_quote: 'gpqa ... diamond ... value: 90.5'
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Kimi K2.6
+    benchmark: humanitys_last_exam
+    variant: hle_full_no_tools
+    score: 34.7
+    unit: '%'
+  normalized_json:
+    source_id: moonshot_kimi_k2_6_hf_2026_04_20
+    synthetic_example: false
+  lab_id: moonshot
+  model_id: kimi_k2_6
+  model_display_name: Kimi K2.6
+  model_release_date: '2026-04-20'
+  benchmark_id: humanitys_last_exam
+  benchmark_family: reasoning_science
+  benchmark_variant: hle_full_no_tools
+  capability: expert_reasoning
+  score: 34.7
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Maximum generation length 98,304 tokens; no tools.
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 262,144 token context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/moonshotai/Kimi-K2.6
+  source_title: moonshotai/Kimi-K2.6
+  source_published_at: '2026-04-20'
+  confidence: 0.9
+  verification_status: official
+  notes: Official Moonshot model-card/eval-file score; benchmark variant preserved for comparability.
+  raw_quote: 'cais/hle ... value: 34.7'
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Kimi K2.6
+    benchmark: humanitys_last_exam
+    variant: hle_full_with_tools
+    score: 54.0
+    unit: '%'
+  normalized_json:
+    source_id: moonshot_kimi_k2_6_hf_2026_04_20
+    synthetic_example: false
+  lab_id: moonshot
+  model_id: kimi_k2_6
+  model_display_name: Kimi K2.6
+  model_release_date: '2026-04-20'
+  benchmark_id: humanitys_last_exam
+  benchmark_family: reasoning_science
+  benchmark_variant: hle_full_with_tools
+  capability: expert_reasoning
+  score: 54.0
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Search, code-interpreter, and web-browsing tools; max generation length 262,144 tokens; per-step limit 49,152
+    tokens.
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 262,144 token context
+  scaffold: Tool-augmented agent; simple context management retaining recent tool messages.
+  source_type: official_lab
+  source_url: https://huggingface.co/moonshotai/Kimi-K2.6
+  source_title: moonshotai/Kimi-K2.6
+  source_published_at: '2026-04-20'
+  confidence: 0.9
+  verification_status: official
+  notes: Official Moonshot model-card/eval-file score; benchmark variant preserved for comparability.
+  raw_quote: 'value: 54.0 ... With tools'
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Kimi K2.6
+    benchmark: terminal_bench
+    variant: terminal_bench_2_0_terminus_2
+    score: 66.7
+    unit: '%'
+  normalized_json:
+    source_id: moonshot_kimi_k2_6_hf_2026_04_20
+    synthetic_example: false
+  lab_id: moonshot
+  model_id: kimi_k2_6
+  model_display_name: Kimi K2.6
+  model_release_date: '2026-04-20'
+  benchmark_id: terminal_bench
+  benchmark_family: coding
+  benchmark_variant: terminal_bench_2_0_terminus_2
+  capability: software_engineering
+  score: 66.7
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Default agent framework Terminus-2; JSON parser; preserve thinking mode; averaged over 10 independent runs.
+  num_trials: 10
+  pass_at_k: 1
+  context_setting: 262,144 token context
+  scaffold: Terminus-2
+  source_type: official_lab
+  source_url: https://huggingface.co/moonshotai/Kimi-K2.6
+  source_title: moonshotai/Kimi-K2.6
+  source_published_at: '2026-04-20'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Moonshot model-card/eval-file score; benchmark variant preserved for comparability.
+  raw_quote: 'terminal-bench-2.0 ... value: 66.7'
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Kimi K2.6
+    benchmark: osworld
+    variant: osworld_verified
+    score: 73.1
+    unit: '%'
+  normalized_json:
+    source_id: moonshot_kimi_k2_6_hf_2026_04_20
+    synthetic_example: false
+  lab_id: moonshot
+  model_id: kimi_k2_6
+  model_display_name: Kimi K2.6
+  model_release_date: '2026-04-20'
+  benchmark_id: osworld
+  benchmark_family: tool_agents
+  benchmark_variant: osworld_verified
+  capability: computer_use
+  score: 73.1
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Official model-card table; no detailed OSWorld harness settings found beyond general Kimi settings.
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 262,144 token context
+  scaffold: null
+  source_type: official_lab
+  source_url: https://huggingface.co/moonshotai/Kimi-K2.6
+  source_title: moonshotai/Kimi-K2.6
+  source_published_at: '2026-04-20'
+  confidence: 0.86
+  verification_status: official
+  notes: Official Moonshot model-card/eval-file score; benchmark variant preserved for comparability.
+  raw_quote: OSWorld-Verified 73.1
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Kimi K2.6
+    benchmark: livecodebench
+    variant: livecodebench_v6
+    score: 89.6
+    unit: '%'
+  normalized_json:
+    source_id: moonshot_kimi_k2_6_hf_2026_04_20
+    synthetic_example: false
+  lab_id: moonshot
+  model_id: kimi_k2_6
+  model_display_name: Kimi K2.6
+  model_release_date: '2026-04-20'
+  benchmark_id: livecodebench
+  benchmark_family: coding
+  benchmark_variant: livecodebench_v6
+  capability: coding
+  score: 89.6
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Coding tasks averaged over 10 independent runs.
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 262,144 token context
+  scaffold: null
+  source_type: official_lab
+  source_url: https://huggingface.co/moonshotai/Kimi-K2.6
+  source_title: moonshotai/Kimi-K2.6
+  source_published_at: '2026-04-20'
+  confidence: 0.86
+  verification_status: official
+  notes: Official Moonshot model-card/eval-file score; benchmark variant preserved for comparability.
+  raw_quote: LiveCodeBench (v6) 89.6
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: GLM-5.1
+    benchmark: gpqa_diamond
+    variant: official_model_card
+    score: 86.2
+    unit: '%'
+  normalized_json:
+    source_id: zai_glm_5_1_hf_2026_04_07
+    synthetic_example: false
+  lab_id: zhipu
+  model_id: glm_5_1
+  model_display_name: GLM-5.1
+  model_release_date: '2026-04-07'
+  benchmark_id: gpqa_diamond
+  benchmark_family: reasoning_science
+  benchmark_variant: official_model_card
+  capability: expert_reasoning
+  score: 86.2
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Z.AI/Hugging Face official GLM-5.1 benchmark table
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 200K context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/zai-org/GLM-5.1
+  source_title: zai-org/GLM-5.1
+  source_published_at: '2026-04-07'
+  confidence: 0.95
+  verification_status: official
+  notes: Official Z.AI model-card score; variant preserved for comparability.
+  raw_quote: GPQA-Diamond 86.2
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: GLM-5.1
+    benchmark: humanitys_last_exam
+    variant: official_no_tools
+    score: 31.0
+    unit: '%'
+  normalized_json:
+    source_id: zai_glm_5_1_hf_2026_04_07
+    synthetic_example: false
+  lab_id: zhipu
+  model_id: glm_5_1
+  model_display_name: GLM-5.1
+  model_release_date: '2026-04-07'
+  benchmark_id: humanitys_last_exam
+  benchmark_family: reasoning_science
+  benchmark_variant: official_no_tools
+  capability: expert_reasoning
+  score: 31.0
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Z.AI/Hugging Face official GLM-5.1 benchmark table
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 200K context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/zai-org/GLM-5.1
+  source_title: zai-org/GLM-5.1
+  source_published_at: '2026-04-07'
+  confidence: 0.95
+  verification_status: official
+  notes: Official Z.AI model-card score; variant preserved for comparability.
+  raw_quote: HLE 31.0
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: GLM-5.1
+    benchmark: humanitys_last_exam
+    variant: official_with_tools
+    score: 52.3
+    unit: '%'
+  normalized_json:
+    source_id: zai_glm_5_1_hf_2026_04_07
+    synthetic_example: false
+  lab_id: zhipu
+  model_id: glm_5_1
+  model_display_name: GLM-5.1
+  model_release_date: '2026-04-07'
+  benchmark_id: humanitys_last_exam
+  benchmark_family: reasoning_science
+  benchmark_variant: official_with_tools
+  capability: expert_reasoning
+  score: 52.3
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Z.AI/Hugging Face official GLM-5.1 benchmark table
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 200K context
+  scaffold: tools_enabled
+  source_type: official_lab
+  source_url: https://huggingface.co/zai-org/GLM-5.1
+  source_title: zai-org/GLM-5.1
+  source_published_at: '2026-04-07'
+  confidence: 0.94
+  verification_status: official
+  notes: Official Z.AI model-card score; variant preserved for comparability.
+  raw_quote: HLE (w/ Tools) 52.3
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: GLM-5.1
+    benchmark: terminal_bench
+    variant: terminal_bench_2_0_terminus_2
+    score: 63.5
+    unit: '%'
+  normalized_json:
+    source_id: zai_glm_5_1_hf_2026_04_07
+    synthetic_example: false
+  lab_id: zhipu
+  model_id: glm_5_1
+  model_display_name: GLM-5.1
+  model_release_date: '2026-04-07'
+  benchmark_id: terminal_bench
+  benchmark_family: coding
+  benchmark_variant: terminal_bench_2_0_terminus_2
+  capability: software_engineering
+  score: 63.5
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Z.AI/Hugging Face official GLM-5.1 benchmark table
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 200K context
+  scaffold: Terminus-2
+  source_type: official_lab
+  source_url: https://huggingface.co/zai-org/GLM-5.1
+  source_title: zai-org/GLM-5.1
+  source_published_at: '2026-04-07'
+  confidence: 0.94
+  verification_status: official
+  notes: Official Z.AI model-card score; variant preserved for comparability.
+  raw_quote: Terminal-Bench 2.0 (Terminus-2) 63.5
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-03T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: GLM-5.1
+    benchmark: mcp_atlas
+    variant: public_set_official
+    score: 71.8
+    unit: '%'
+  normalized_json:
+    source_id: zai_glm_5_1_hf_2026_04_07
+    synthetic_example: false
+  lab_id: zhipu
+  model_id: glm_5_1
+  model_display_name: GLM-5.1
+  model_release_date: '2026-04-07'
+  benchmark_id: mcp_atlas
+  benchmark_family: tool_agents
+  benchmark_variant: public_set_official
+  capability: tool_use
+  score: 71.8
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Z.AI/Hugging Face official GLM-5.1 benchmark table
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 200K context
+  scaffold: tools_enabled
+  source_type: official_lab
+  source_url: https://huggingface.co/zai-org/GLM-5.1
+  source_title: zai-org/GLM-5.1
+  source_published_at: '2026-04-07'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Z.AI model-card score; variant preserved for comparability.
+  raw_quote: MCP-Atlas (Public Set) 71.8

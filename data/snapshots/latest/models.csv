@@ -8,3 +8,6 @@ gemini_2_5_pro,google_deepmind,Gemini 2.5 Pro,"[""gemini-2.5-pro""]",,Gemini,clo
 deepseek_r1,deepseek,DeepSeek R1,"[""deepseek-r1""]",,DeepSeek R,open_weight,,,,,"[""text""]",,,,,,
 llama_4,meta,Llama 4,"[""Meta Llama 4""]",,Llama,open_weight,,,,,"[""text"", ""vision""]",,,,,,
 qwen3,qwen,Qwen3,"[""Qwen 3""]",,Qwen,open_weight,,,,,"[""text""]",True,,,,,
+deepseek_v4_pro,deepseek,DeepSeek V4 Pro,"[""DeepSeek-V4-Pro"", ""deepseek-v4-pro"", ""DS-V4-Pro""]",2026-04-24,DeepSeek V,open_weight,MIT,1600000000000.0,49000000000.0,1000000.0,"[""text""]",True,,1.74,3.48,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,
+kimi_k2_6,moonshot,Kimi K2.6,"[""kimi-k2.6"", ""Kimi-K2.6"", ""moonshotai/Kimi-K2.6""]",2026-04-20,Kimi K,open_weight,Modified MIT,1000000000000.0,32000000000.0,262144.0,"[""text"", ""vision"", ""video""]",True,True,0.95,4.0,https://huggingface.co/moonshotai/Kimi-K2.6,
+glm_5_1,zhipu,GLM-5.1,"[""glm-5.1"", ""GLM 5.1"", ""zai-org/GLM-5.1""]",2026-04-07,GLM,open_weight,MIT,754000000000.0,40000000000.0,200000.0,"[""text""]",True,True,1.4,4.4,https://huggingface.co/zai-org/GLM-5.1,
