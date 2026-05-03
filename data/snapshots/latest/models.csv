@@ -2,6 +2,7 @@ model_id,lab_id,canonical_name,aliases,release_date,model_family,openness,licens
 gpt_4_1,openai,GPT-4.1,"[""gpt-4.1"", ""GPT 4.1""]",,GPT,closed_api,,,,,"[""text"", ""vision""]",True,True,,,,
 gpt_5_5,openai,GPT-5.5,"[""gpt-5.5"", ""GPT 5.5"", ""GPT\u20115.5""]",2026-04-23,GPT,closed_api,Proprietary,,,1000000.0,"[""text"", ""vision""]",True,True,,,https://openai.com/index/gpt-5-5-system-card/,
 claude_opus_4_1,anthropic,Claude Opus 4.1,"[""claude-opus-4-1""]",,Claude,closed_api,,,,,"[""text"", ""vision""]",True,True,,,,
+claude_opus_4_7,anthropic,Claude Opus 4.7,"[""claude-opus-4-7"", ""Opus 4.7""]",2026-04-16,Claude,closed_api,Proprietary,,,1000000.0,"[""text"", ""vision""]",True,,5.0,25.0,https://www.anthropic.com/news/claude-opus-4-7,
 claude_sonnet_4,anthropic,Claude Sonnet 4,"[""claude-sonnet-4""]",,Claude,closed_api,,,,,"[""text"", ""vision""]",True,True,,,,
 gemini_2_5_pro,google_deepmind,Gemini 2.5 Pro,"[""gemini-2.5-pro""]",,Gemini,closed_api,,,,,"[""text"", ""vision"", ""audio"", ""video""]",True,True,,,,
 deepseek_r1,deepseek,DeepSeek R1,"[""deepseek-r1""]",,DeepSeek R,open_weight,,,,,"[""text""]",,,,,,

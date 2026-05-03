@@ -50,6 +50,23 @@ models:
     input_price_usd_per_mtok: null
     output_price_usd_per_mtok: null
     model_card_url: null
+  - model_id: claude_opus_4_7
+    lab_id: anthropic
+    canonical_name: Claude Opus 4.7
+    aliases: [claude-opus-4-7, Opus 4.7]
+    release_date: 2026-04-16
+    model_family: Claude
+    openness: closed_api
+    license: Proprietary
+    parameter_count_total: null
+    parameter_count_active: null
+    context_window_tokens: 1000000
+    modalities: [text, vision]
+    supports_tools: true
+    supports_json_schema: null
+    input_price_usd_per_mtok: 5.0
+    output_price_usd_per_mtok: 25.0
+    model_card_url: https://www.anthropic.com/news/claude-opus-4-7
   - model_id: claude_sonnet_4
     lab_id: anthropic
     canonical_name: Claude Sonnet 4
@@ -176,7 +193,289 @@ sources:
     content_hash: null
     license: null
     notes: Dynamic independent leaderboard page; no static publication date exposed, so freshness is represented by fetched_at and extracted_at.
+  - source_id: anthropic_claude_opus_4_7_launch_2026_04_16
+    source_name: Anthropic Claude Opus 4.7 launch post
+    source_type: official_lab
+    url: https://www.anthropic.com/news/claude-opus-4-7
+    title: Introducing Claude Opus 4.7
+    published_at: 2026-04-16
+    fetched_at: 2026-05-03T00:00:00+00:00
+    content_hash: null
+    license: null
+    notes: Official Anthropic launch post. Numeric benchmark table is rendered as an image; text exposes methodology footnotes and release metadata.
+  - source_id: llm_stats_claude_opus_4_7_2026_04_16
+    source_name: LLM Stats Claude Opus 4.7 launch summary
+    source_type: provider_claim
+    url: https://llm-stats.com/blog/research/claude-opus-4-7-launch
+    title: "Claude Opus 4.7: Benchmarks, Pricing, Context & What's New"
+    published_at: 2026-04-16
+    fetched_at: 2026-05-03T00:00:00+00:00
+    content_hash: null
+    license: null
+    notes: Public summary of Anthropic-reported launch benchmark numbers; use as provider-claim provenance unless independently rerun.
+  - source_id: geta_claude_opus_4_7_2026_04_19
+    source_name: getA Claude Opus 4.7 agent benchmark analysis
+    source_type: provider_claim
+    url: https://blog.geta.team/claude-opus-4-7-just-dropped-heres-what-the-benchmarks-actually-mean-for-agent-builders/
+    title: "Claude Opus 4.7 Just Dropped. Here's What the Benchmarks Actually Mean for Agent Builders."
+    published_at: 2026-04-19
+    fetched_at: 2026-05-03T00:00:00+00:00
+    content_hash: null
+    license: null
+    notes: Public analysis summarizing Anthropic-reported agent benchmark numbers; use as provider-claim provenance unless independently rerun.
+  - source_id: officechai_claude_opus_4_7_2026_04_16
+    source_name: OfficeChai Claude Opus 4.7 benchmark summary
+    source_type: provider_claim
+    url: https://officechai.com/ai/ckaude-opus-4-7-benchmarks/
+    title: Anthropic Releases Claude Opus 4.7, Beats GPT-5.4, Gemini 3.1 Pro On Most Benchmarks
+    published_at: 2026-04-16
+    fetched_at: 2026-05-03T00:00:00+00:00
+    content_hash: null
+    license: null
+    notes: Public summary of Anthropic-reported launch benchmark numbers; use as provider-claim provenance unless independently rerun.
+  - source_id: binaryverse_claude_opus_4_7_2026_04_16
+    source_name: BinaryVerse Claude Opus 4.7 benchmark guide
+    source_type: provider_claim
+    url: https://binaryverseai.com/claude-opus-4-7-benchmarks-token-limits-mythos/
+    title: "Claude Opus 4.7: 7 Major Benchmarks And Token Limits Guide"
+    published_at: 2026-04-16
+    fetched_at: 2026-05-03T00:00:00+00:00
+    content_hash: null
+    license: null
+    notes: Public summary table of Anthropic-reported launch benchmark numbers; use as provider-claim provenance unless independently rerun.
 scores:
+  - lab_id: anthropic
+    model_id: claude_opus_4_7
+    model_display_name: Claude Opus 4.7
+    model_release_date: 2026-04-16
+    benchmark_id: swe_bench_verified
+    benchmark_family: coding
+    benchmark_variant: verified_anthropic_reported
+    capability: software_engineering
+    score: 87.6
+    score_unit: "%"
+    higher_is_better: true
+    eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation
+    num_trials: null
+    pass_at_k: 1
+    context_setting: null
+    scaffold: Anthropic reported SWE-bench Verified setup
+    source_type: provider_claim
+    source_url: https://llm-stats.com/blog/research/claude-opus-4-7-launch
+    source_title: "Claude Opus 4.7: Benchmarks, Pricing, Context & What's New"
+    source_published_at: 2026-04-16
+    extracted_at: 2026-05-03T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 0.86
+    verification_status: unverified
+    notes: Provider-reported launch score summarized by LLM Stats; exact scaffold details should be verified against Anthropic chart/source artifacts.
+    raw_quote: "87.6% on SWE-bench Verified"
+    raw_table_json: {model: Claude Opus 4.7, benchmark: SWE-bench Verified, score: 87.6, unit: "%"}
+    normalized_json: {source_id: llm_stats_claude_opus_4_7_2026_04_16, synthetic_example: false}
+  - lab_id: anthropic
+    model_id: claude_opus_4_7
+    model_display_name: Claude Opus 4.7
+    model_release_date: 2026-04-16
+    benchmark_id: gpqa_diamond
+    benchmark_family: reasoning_science
+    benchmark_variant: anthropic_reported
+    capability: expert_reasoning
+    score: 94.2
+    score_unit: "%"
+    higher_is_better: true
+    eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation
+    num_trials: null
+    pass_at_k: 1
+    context_setting: null
+    scaffold: none
+    source_type: provider_claim
+    source_url: https://llm-stats.com/blog/research/claude-opus-4-7-launch
+    source_title: "Claude Opus 4.7: Benchmarks, Pricing, Context & What's New"
+    source_published_at: 2026-04-16
+    extracted_at: 2026-05-03T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 0.86
+    verification_status: unverified
+    notes: Provider-reported launch score summarized by LLM Stats; exact protocol should be verified against Anthropic chart/source artifacts.
+    raw_quote: "94.2% on GPQA Diamond"
+    raw_table_json: {model: Claude Opus 4.7, benchmark: GPQA Diamond, score: 94.2, unit: "%"}
+    normalized_json: {source_id: llm_stats_claude_opus_4_7_2026_04_16, synthetic_example: false}
+  - lab_id: anthropic
+    model_id: claude_opus_4_7
+    model_display_name: Claude Opus 4.7
+    model_release_date: 2026-04-16
+    benchmark_id: terminal_bench
+    benchmark_family: coding
+    benchmark_variant: terminal_bench_2_0
+    capability: software_engineering
+    score: 69.4
+    score_unit: "%"
+    higher_is_better: true
+    eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation
+    num_trials: 5
+    pass_at_k: 1
+    context_setting: null
+    scaffold: Terminus-2 harness; thinking disabled; 1x guaranteed/3x ceiling resource allocation
+    source_type: provider_claim
+    source_url: https://llm-stats.com/blog/research/claude-opus-4-7-launch
+    source_title: "Claude Opus 4.7: Benchmarks, Pricing, Context & What's New"
+    source_published_at: 2026-04-16
+    extracted_at: 2026-05-03T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 0.86
+    verification_status: unverified
+    notes: Provider-reported launch score summarized by LLM Stats; Anthropic launch footnote says Terminal-Bench 2.0 used the Terminus-2 harness with thinking disabled and averaged five attempts per task.
+    raw_quote: "69.4% on Terminal-Bench 2.0"
+    raw_table_json: {model: Claude Opus 4.7, benchmark: Terminal-Bench 2.0, score: 69.4, unit: "%"}
+    normalized_json: {source_id: llm_stats_claude_opus_4_7_2026_04_16, methodology_source_id: anthropic_claude_opus_4_7_launch_2026_04_16, synthetic_example: false}
+  - lab_id: anthropic
+    model_id: claude_opus_4_7
+    model_display_name: Claude Opus 4.7
+    model_release_date: 2026-04-16
+    benchmark_id: osworld
+    benchmark_family: tool_agents
+    benchmark_variant: osworld_verified
+    capability: computer_use
+    score: 78.0
+    score_unit: "%"
+    higher_is_better: true
+    eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation
+    num_trials: null
+    pass_at_k: 1
+    context_setting: null
+    scaffold: Anthropic reported OSWorld-Verified setup
+    source_type: provider_claim
+    source_url: https://blog.geta.team/claude-opus-4-7-just-dropped-heres-what-the-benchmarks-actually-mean-for-agent-builders/
+    source_title: "Claude Opus 4.7 Just Dropped. Here's What the Benchmarks Actually Mean for Agent Builders."
+    source_published_at: 2026-04-19
+    extracted_at: 2026-05-03T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 0.82
+    verification_status: unverified
+    notes: Provider-reported launch score summarized by getA; exact scaffold details should be verified against Anthropic chart/source artifacts.
+    raw_quote: "OSWorld-Verified hit 78%"
+    raw_table_json: {model: Claude Opus 4.7, benchmark: OSWorld-Verified, score: 78.0, unit: "%"}
+    normalized_json: {source_id: geta_claude_opus_4_7_2026_04_19, synthetic_example: false}
+  - lab_id: anthropic
+    model_id: claude_opus_4_7
+    model_display_name: Claude Opus 4.7
+    model_release_date: 2026-04-16
+    benchmark_id: mcp_atlas
+    benchmark_family: tool_agents
+    benchmark_variant: anthropic_reported_revised_grading
+    capability: tool_use
+    score: 77.3
+    score_unit: "%"
+    higher_is_better: true
+    eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation
+    num_trials: null
+    pass_at_k: 1
+    context_setting: null
+    scaffold: scaled tool-use workflow
+    source_type: provider_claim
+    source_url: https://blog.geta.team/claude-opus-4-7-just-dropped-heres-what-the-benchmarks-actually-mean-for-agent-builders/
+    source_title: "Claude Opus 4.7 Just Dropped. Here's What the Benchmarks Actually Mean for Agent Builders."
+    source_published_at: 2026-04-19
+    extracted_at: 2026-05-03T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 0.82
+    verification_status: unverified
+    notes: Provider-reported launch score summarized by getA; Anthropic notes MCP-Atlas Opus 4.6 was updated under revised Scale AI grading methodology.
+    raw_quote: "MCP-Atlas ... shows 77.3% for Opus 4.7"
+    raw_table_json: {model: Claude Opus 4.7, benchmark: MCP-Atlas, score: 77.3, unit: "%"}
+    normalized_json: {source_id: geta_claude_opus_4_7_2026_04_19, methodology_source_id: anthropic_claude_opus_4_7_launch_2026_04_16, synthetic_example: false}
+  - lab_id: anthropic
+    model_id: claude_opus_4_7
+    model_display_name: Claude Opus 4.7
+    model_release_date: 2026-04-16
+    benchmark_id: mmmlu
+    benchmark_family: general
+    benchmark_variant: anthropic_reported
+    capability: multilingual_knowledge
+    score: 91.5
+    score_unit: "%"
+    higher_is_better: true
+    eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation
+    num_trials: null
+    pass_at_k: 1
+    context_setting: null
+    scaffold: none
+    source_type: provider_claim
+    source_url: https://officechai.com/ai/ckaude-opus-4-7-benchmarks/
+    source_title: Anthropic Releases Claude Opus 4.7, Beats GPT-5.4, Gemini 3.1 Pro On Most Benchmarks
+    source_published_at: 2026-04-16
+    extracted_at: 2026-05-03T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 0.8
+    verification_status: unverified
+    notes: Provider-reported launch score summarized by OfficeChai; exact protocol should be verified against Anthropic chart/source artifacts.
+    raw_quote: "MMMLU: 91.5% for Opus 4.7"
+    raw_table_json: {model: Claude Opus 4.7, benchmark: MMMLU, score: 91.5, unit: "%"}
+    normalized_json: {source_id: officechai_claude_opus_4_7_2026_04_16, synthetic_example: false}
+  - lab_id: anthropic
+    model_id: claude_opus_4_7
+    model_display_name: Claude Opus 4.7
+    model_release_date: 2026-04-16
+    benchmark_id: humanitys_last_exam
+    benchmark_family: reasoning_science
+    benchmark_variant: no_tools
+    capability: expert_reasoning
+    score: 46.9
+    score_unit: "%"
+    higher_is_better: true
+    eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation; no tools
+    num_trials: null
+    pass_at_k: 1
+    context_setting: null
+    scaffold: none
+    source_type: provider_claim
+    source_url: https://binaryverseai.com/claude-opus-4-7-benchmarks-token-limits-mythos/
+    source_title: "Claude Opus 4.7: 7 Major Benchmarks And Token Limits Guide"
+    source_published_at: 2026-04-16
+    extracted_at: 2026-05-03T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 0.78
+    verification_status: unverified
+    notes: Provider-reported launch score summarized by BinaryVerse. Kept separate from with-tools HLE because tool setting changes comparability.
+    raw_quote: "Humanity’s Last Exam, no tools: 46.9%"
+    raw_table_json: {model: Claude Opus 4.7, benchmark: "Humanity's Last Exam", variant: no_tools, score: 46.9, unit: "%"}
+    normalized_json: {source_id: binaryverse_claude_opus_4_7_2026_04_16, synthetic_example: false}
+  - lab_id: anthropic
+    model_id: claude_opus_4_7
+    model_display_name: Claude Opus 4.7
+    model_release_date: 2026-04-16
+    benchmark_id: humanitys_last_exam
+    benchmark_family: reasoning_science
+    benchmark_variant: with_tools
+    capability: expert_reasoning
+    score: 54.7
+    score_unit: "%"
+    higher_is_better: true
+    eval_setting: Anthropic-reported Claude Opus 4.7 launch evaluation; with tools
+    num_trials: null
+    pass_at_k: 1
+    context_setting: null
+    scaffold: tools enabled
+    source_type: provider_claim
+    source_url: https://binaryverseai.com/claude-opus-4-7-benchmarks-token-limits-mythos/
+    source_title: "Claude Opus 4.7: 7 Major Benchmarks And Token Limits Guide"
+    source_published_at: 2026-04-16
+    extracted_at: 2026-05-03T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 0.78
+    verification_status: unverified
+    notes: Provider-reported launch score summarized by BinaryVerse. Kept separate from no-tools HLE because tool setting changes comparability.
+    raw_quote: "Humanity’s Last Exam, with tools: 54.7%"
+    raw_table_json: {model: Claude Opus 4.7, benchmark: "Humanity's Last Exam", variant: with_tools, score: 54.7, unit: "%"}
+    normalized_json: {source_id: binaryverse_claude_opus_4_7_2026_04_16, synthetic_example: false}
   - lab_id: openai
     model_id: gpt_5_5
     model_display_name: GPT-5.5

@@ -9,9 +9,10 @@ def test_top_for_benchmark_returns_ranked_seed_result(seeded_db) -> None:
         result = top_for_benchmark(session, benchmark_id="swe_bench_verified", k=3)
 
     assert result["benchmark"]["id"] == "swe_bench_verified"
-    assert len(result["results"]) == 2
+    assert len(result["results"]) >= 2
     assert result["results"][0]["rank"] == 1
     assert result["results"][0]["score"] >= result["results"][1]["score"]
+    assert any(row["model_id"] == "claude_opus_4_7" for row in result["results"])
 
 
 def test_best_available_includes_mode_warning(seeded_db) -> None:
@@ -21,4 +22,3 @@ def test_best_available_includes_mode_warning(seeded_db) -> None:
         )
 
     assert result["warnings"]
-
