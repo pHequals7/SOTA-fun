@@ -97,11 +97,10 @@ amazon:
   source_urls:
     - https://aws.amazon.com/blogs/machine-learning
   notes: Initial tracked lab.
-microsoft:
-  lab_id: microsoft
-  name: Microsoft
-  website: https://www.microsoft.com/ai
+sarvam:
+  lab_id: sarvam
+  name: Sarvam AI
+  website: https://www.sarvam.ai
   source_urls:
-    - https://www.microsoft.com/en-us/research/blog
+    - https://www.sarvam.ai/blog
   notes: Initial tracked lab.
-

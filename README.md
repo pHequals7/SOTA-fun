@@ -210,5 +210,4 @@ When adding labs, answer these questions in the PR:
 5. Are there licensing or redistribution restrictions on reported tables?
 6. What aliases are commonly used for the lab and its model families?
 
-Initial tracked labs are OpenAI, Anthropic, Google DeepMind, Meta, Mistral, DeepSeek, xAI, Qwen, Zhipu, Moonshot, Cohere, AI21, NVIDIA, Amazon, and Microsoft.
-
+Initial tracked labs are OpenAI, Anthropic, Google DeepMind, Meta, Mistral, DeepSeek, xAI, Qwen, Zhipu, Moonshot, Cohere, AI21, NVIDIA, Amazon, and Sarvam AI.
