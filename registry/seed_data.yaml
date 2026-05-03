@@ -16,6 +16,23 @@ models:
     input_price_usd_per_mtok: null
     output_price_usd_per_mtok: null
     model_card_url: null
+  - model_id: gpt_5_5
+    lab_id: openai
+    canonical_name: GPT-5.5
+    aliases: [gpt-5.5, GPT 5.5, GPT‑5.5]
+    release_date: 2026-04-23
+    model_family: GPT
+    openness: closed_api
+    license: Proprietary
+    parameter_count_total: null
+    parameter_count_active: null
+    context_window_tokens: 1000000
+    modalities: [text, vision]
+    supports_tools: true
+    supports_json_schema: true
+    input_price_usd_per_mtok: null
+    output_price_usd_per_mtok: null
+    model_card_url: https://openai.com/index/gpt-5-5-system-card/
   - model_id: claude_opus_4_1
     lab_id: anthropic
     canonical_name: Claude Opus 4.1
@@ -129,7 +146,182 @@ sources:
     content_hash: synthetic
     license: CC0-1.0
     notes: Scores are synthetic examples only and must not be interpreted as real claims.
+  - source_id: openai_gpt_5_5_launch_2026_04_23
+    source_name: OpenAI GPT-5.5 launch post
+    source_type: official_lab
+    url: https://openai.com/index/introducing-gpt-5-5/
+    title: Introducing GPT-5.5
+    published_at: 2026-04-23
+    fetched_at: 2026-05-03T00:00:00+00:00
+    content_hash: null
+    license: null
+    notes: Official OpenAI launch post. Rows from this source are provider-reported and should be labeled as official lab claims.
+  - source_id: artificial_analysis_gpqa_diamond_2026_05_03
+    source_name: Artificial Analysis GPQA Diamond leaderboard
+    source_type: independent
+    url: https://artificialanalysis.ai/evaluations/gpqa-diamond
+    title: GPQA Diamond Benchmark Leaderboard
+    published_at: null
+    fetched_at: 2026-05-03T00:00:00+00:00
+    content_hash: null
+    license: null
+    notes: Dynamic independent leaderboard page; no static publication date exposed, so freshness is represented by fetched_at and extracted_at.
+  - source_id: artificial_analysis_terminalbench_hard_2026_05_03
+    source_name: Artificial Analysis Terminal-Bench Hard leaderboard
+    source_type: independent
+    url: https://artificialanalysis.ai/evaluations/terminalbench-hard
+    title: Terminal-Bench Hard Benchmark Leaderboard
+    published_at: null
+    fetched_at: 2026-05-03T00:00:00+00:00
+    content_hash: null
+    license: null
+    notes: Dynamic independent leaderboard page; no static publication date exposed, so freshness is represented by fetched_at and extracted_at.
 scores:
+  - lab_id: openai
+    model_id: gpt_5_5
+    model_display_name: GPT-5.5
+    model_release_date: 2026-04-23
+    benchmark_id: terminal_bench
+    benchmark_family: coding
+    benchmark_variant: terminal_bench_2_0
+    capability: software_engineering
+    score: 82.7
+    score_unit: "%"
+    higher_is_better: true
+    eval_setting: OpenAI-reported GPT-5.5 launch evaluation
+    num_trials: null
+    pass_at_k: 1
+    context_setting: null
+    scaffold: OpenAI reported Terminal-Bench 2.0 setup
+    source_type: official_lab
+    source_url: https://openai.com/index/introducing-gpt-5-5/
+    source_title: Introducing GPT-5.5
+    source_published_at: 2026-04-23
+    extracted_at: 2026-05-03T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 0.98
+    verification_status: official
+    notes: Official lab-reported GPT-5.5 score. Not directly comparable with Terminal-Bench Hard or other Terminal-Bench variants.
+    raw_quote: "Terminal-Bench 2.0: 82.7%"
+    raw_table_json: {model: GPT-5.5, benchmark: Terminal-Bench 2.0, score: 82.7, unit: "%"}
+    normalized_json: {source_id: openai_gpt_5_5_launch_2026_04_23, synthetic_example: false}
+  - lab_id: openai
+    model_id: gpt_5_5
+    model_display_name: GPT-5.5
+    model_release_date: 2026-04-23
+    benchmark_id: osworld
+    benchmark_family: tool_agents
+    benchmark_variant: osworld_verified
+    capability: computer_use
+    score: 78.7
+    score_unit: "%"
+    higher_is_better: true
+    eval_setting: OpenAI-reported GPT-5.5 launch evaluation
+    num_trials: null
+    pass_at_k: 1
+    context_setting: null
+    scaffold: OpenAI reported OSWorld-Verified setup
+    source_type: official_lab
+    source_url: https://openai.com/index/introducing-gpt-5-5/
+    source_title: Introducing GPT-5.5
+    source_published_at: 2026-04-23
+    extracted_at: 2026-05-03T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 0.98
+    verification_status: official
+    notes: Official lab-reported GPT-5.5 score for OSWorld-Verified.
+    raw_quote: "OSWorld-Verified: 78.7%"
+    raw_table_json: {model: GPT-5.5, benchmark: OSWorld-Verified, score: 78.7, unit: "%"}
+    normalized_json: {source_id: openai_gpt_5_5_launch_2026_04_23, synthetic_example: false}
+  - lab_id: openai
+    model_id: gpt_5_5
+    model_display_name: GPT-5.5
+    model_release_date: 2026-04-23
+    benchmark_id: tau_bench
+    benchmark_family: tool_agents
+    benchmark_variant: tau2_bench_telecom
+    capability: tool_use
+    score: 98.0
+    score_unit: "%"
+    higher_is_better: true
+    eval_setting: OpenAI-reported GPT-5.5 launch evaluation; no prompt tuning; GPT-4.1 user model
+    num_trials: null
+    pass_at_k: 1
+    context_setting: null
+    scaffold: Tau2-bench Telecom dual-control simulation
+    source_type: official_lab
+    source_url: https://openai.com/index/introducing-gpt-5-5/
+    source_title: Introducing GPT-5.5
+    source_published_at: 2026-04-23
+    extracted_at: 2026-05-03T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 0.96
+    verification_status: official
+    notes: Official lab-reported Tau2-bench Telecom score. Kept as a TAU-bench variant and must not be compared to original TAU-bench without variant labels.
+    raw_quote: "Tau2-bench Telecom: 98.0%"
+    raw_table_json: {model: GPT-5.5, benchmark: Tau2-bench Telecom, score: 98.0, unit: "%"}
+    normalized_json: {source_id: openai_gpt_5_5_launch_2026_04_23, synthetic_example: false}
+  - lab_id: openai
+    model_id: gpt_5_5
+    model_display_name: GPT-5.5 (xhigh)
+    model_release_date: 2026-04-23
+    benchmark_id: gpqa_diamond
+    benchmark_family: reasoning_science
+    benchmark_variant: artificial_analysis_default
+    capability: expert_reasoning
+    score: 93.5
+    score_unit: "%"
+    higher_is_better: true
+    eval_setting: Artificial Analysis independent evaluation; reasoning_effort=xhigh
+    num_trials: null
+    pass_at_k: 1
+    context_setting: null
+    scaffold: none
+    source_type: independent
+    source_url: https://artificialanalysis.ai/evaluations/gpqa-diamond
+    source_title: GPQA Diamond Benchmark Leaderboard
+    source_published_at: null
+    extracted_at: 2026-05-03T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 0.9
+    verification_status: community_verified
+    notes: Dynamic independent leaderboard row found via Exa. Source did not expose a static publication date.
+    raw_quote: "GPT-5.5 (xhigh): 93.5%"
+    raw_table_json: {model: GPT-5.5 (xhigh), benchmark: GPQA Diamond, score: 93.5, unit: "%"}
+    normalized_json: {source_id: artificial_analysis_gpqa_diamond_2026_05_03, synthetic_example: false}
+  - lab_id: openai
+    model_id: gpt_5_5
+    model_display_name: GPT-5.5 (xhigh)
+    model_release_date: 2026-04-23
+    benchmark_id: terminal_bench
+    benchmark_family: coding
+    benchmark_variant: terminal_bench_hard_artificial_analysis
+    capability: software_engineering
+    score: 60.6
+    score_unit: "%"
+    higher_is_better: true
+    eval_setting: Artificial Analysis independent evaluation; reasoning_effort=xhigh
+    num_trials: 3
+    pass_at_k: 1
+    context_setting: null
+    scaffold: Terminal-Bench Hard Docker task environment
+    source_type: independent
+    source_url: https://artificialanalysis.ai/evaluations/terminalbench-hard
+    source_title: Terminal-Bench Hard Benchmark Leaderboard
+    source_published_at: null
+    extracted_at: 2026-05-03T00:00:00+00:00
+    snapshot_week: 2026-04-27
+    extraction_method: manual
+    confidence: 0.9
+    verification_status: community_verified
+    notes: Dynamic independent leaderboard row found via Exa. Not comparable with OpenAI-reported Terminal-Bench 2.0 without variant labels.
+    raw_quote: "GPT-5.5 (xhigh): 60.6%"
+    raw_table_json: {model: GPT-5.5 (xhigh), benchmark: Terminal-Bench Hard, score: 60.6, unit: "%"}
+    normalized_json: {source_id: artificial_analysis_terminalbench_hard_2026_05_03, synthetic_example: false}
   - lab_id: anthropic
     model_id: claude_opus_4_1
     model_display_name: Claude Opus 4.1
@@ -333,4 +525,3 @@ scores:
     raw_quote: Synthetic seed row.
     raw_table_json: {}
     normalized_json: {synthetic_example: true}
-

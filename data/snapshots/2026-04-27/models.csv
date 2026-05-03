@@ -1,5 +1,6 @@
 model_id,lab_id,canonical_name,aliases,release_date,model_family,openness,license,parameter_count_total,parameter_count_active,context_window_tokens,modalities,supports_tools,supports_json_schema,input_price_usd_per_mtok,output_price_usd_per_mtok,model_card_url,last_seen_at
 gpt_4_1,openai,GPT-4.1,"[""gpt-4.1"", ""GPT 4.1""]",,GPT,closed_api,,,,,"[""text"", ""vision""]",True,True,,,,
+gpt_5_5,openai,GPT-5.5,"[""gpt-5.5"", ""GPT 5.5"", ""GPT\u20115.5""]",2026-04-23,GPT,closed_api,Proprietary,,,1000000.0,"[""text"", ""vision""]",True,True,,,https://openai.com/index/gpt-5-5-system-card/,
 claude_opus_4_1,anthropic,Claude Opus 4.1,"[""claude-opus-4-1""]",,Claude,closed_api,,,,,"[""text"", ""vision""]",True,True,,,,
 claude_sonnet_4,anthropic,Claude Sonnet 4,"[""claude-sonnet-4""]",,Claude,closed_api,,,,,"[""text"", ""vision""]",True,True,,,,
 gemini_2_5_pro,google_deepmind,Gemini 2.5 Pro,"[""gemini-2.5-pro""]",,Gemini,closed_api,,,,,"[""text"", ""vision"", ""audio"", ""video""]",True,True,,,,

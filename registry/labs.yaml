@@ -90,12 +90,12 @@ nvidia:
   source_urls:
     - https://www.nvidia.com/en-us/ai-data-science
   notes: Initial tracked lab.
-amazon:
-  lab_id: amazon
-  name: Amazon
-  website: https://aws.amazon.com/ai
+xiaomi:
+  lab_id: xiaomi
+  name: Xiaomi
+  website: https://www.mi.com
   source_urls:
-    - https://aws.amazon.com/blogs/machine-learning
+    - https://github.com/XiaomiMiMo
   notes: Initial tracked lab.
 sarvam:
   lab_id: sarvam

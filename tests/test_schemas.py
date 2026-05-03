@@ -20,8 +20,8 @@ def test_seed_score_schema_accepts_expected_enums(seeded_db) -> None:
     from app.db import SessionLocal
 
     with SessionLocal() as session:
-        row = session.scalars(select(models.ReportedBenchmarkScore)).first()
-        assert row is not None
-        score = ScoreRead.model_validate(row)
-        assert score.verification_status == "unverified"
-
+        rows = list(session.scalars(select(models.ReportedBenchmarkScore)))
+        assert rows
+        statuses = {ScoreRead.model_validate(row).verification_status for row in rows}
+        assert "official" in statuses
+        assert "unverified" in statuses
