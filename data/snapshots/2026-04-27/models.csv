@@ -5,7 +5,7 @@ claude_opus_4_1,anthropic,Claude Opus 4.1,"[""claude-opus-4-1""]",,Claude,closed
 claude_opus_4_7,anthropic,Claude Opus 4.7,"[""claude-opus-4-7"", ""Opus 4.7""]",2026-04-16,Claude,closed_api,Proprietary,,,1000000.0,"[""text"", ""vision""]",True,,5.0,25.0,https://www.anthropic.com/news/claude-opus-4-7,
 claude_sonnet_4,anthropic,Claude Sonnet 4,"[""claude-sonnet-4""]",,Claude,closed_api,,,,,"[""text"", ""vision""]",True,True,,,,
 gemini_2_5_pro,google_deepmind,Gemini 2.5 Pro,"[""gemini-2.5-pro""]",,Gemini,closed_api,,,,,"[""text"", ""vision"", ""audio"", ""video""]",True,True,,,,
-deepseek_r1,deepseek,DeepSeek R1,"[""deepseek-r1""]",,DeepSeek R,open_weight,,,,,"[""text""]",,,,,,
+deepseek_r1,deepseek,DeepSeek R1,"[""deepseek-r1"", ""DeepSeek-R1""]",2025-01-20,DeepSeek R,open_weight,MIT,671000000000.0,37000000000.0,128000.0,"[""text""]",,,,,https://huggingface.co/deepseek-ai/DeepSeek-R1,
 llama_4,meta,Llama 4,"[""Meta Llama 4""]",,Llama,open_weight,,,,,"[""text"", ""vision""]",,,,,,
 qwen3,qwen,Qwen3,"[""Qwen 3""]",,Qwen,open_weight,,,,,"[""text""]",True,,,,,
 deepseek_v4_pro,deepseek,DeepSeek V4 Pro,"[""DeepSeek-V4-Pro"", ""deepseek-v4-pro"", ""DS-V4-Pro""]",2026-04-24,DeepSeek V,open_weight,MIT,1600000000000.0,49000000000.0,1000000.0,"[""text""]",True,,1.74,3.48,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,

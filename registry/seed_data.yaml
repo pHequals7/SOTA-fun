@@ -130,20 +130,21 @@ models:
   canonical_name: DeepSeek R1
   aliases:
   - deepseek-r1
-  release_date: null
+  - DeepSeek-R1
+  release_date: '2025-01-20'
   model_family: DeepSeek R
   openness: open_weight
-  license: null
-  parameter_count_total: null
-  parameter_count_active: null
-  context_window_tokens: null
+  license: MIT
+  parameter_count_total: 671000000000
+  parameter_count_active: 37000000000
+  context_window_tokens: 128000
   modalities:
   - text
   supports_tools: null
   supports_json_schema: null
   input_price_usd_per_mtok: null
   output_price_usd_per_mtok: null
-  model_card_url: null
+  model_card_url: https://huggingface.co/deepseek-ai/DeepSeek-R1
 - model_id: llama_4
   lab_id: meta
   canonical_name: Llama 4
@@ -685,6 +686,16 @@ sources:
   content_hash: null
   license: null
   notes: Community analysis reporting Grok 4.20 SWE-bench Verified; kept unverified.
+- source_id: deepseek_r1_hf_2025_01_20
+  source_name: DeepSeek-R1 Hugging Face model card
+  source_type: official_lab
+  url: https://huggingface.co/deepseek-ai/DeepSeek-R1
+  title: deepseek-ai/DeepSeek-R1
+  published_at: '2025-01-20'
+  fetched_at: '2026-05-06T00:00:00+00:00'
+  content_hash: null
+  license: MIT
+  notes: Official DeepSeek model card listing 671B total parameters, 37B activated parameters, and 128K context length.
 scores:
 - lab_id: anthropic
   model_id: claude_opus_4_7
