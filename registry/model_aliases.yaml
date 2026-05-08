@@ -78,3 +78,23 @@ claude_opus_4_6:
 - Claude Opus 4.6
 - claude-opus-4-6
 - claude-opus-4-6-thinking
+nvidia_nemotron_3_super_120b_a12b_nvfp4:
+- NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+- NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+- Nemotron 3 Super
+- nemotron-3-super-120b-a12b
+nvidia_nemotron_3_nano_30b_a3b_nvfp4:
+- NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+- NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+- Nemotron 3 Nano
+- nemotron-3-nano-30b-a3b
+sarvam_30b:
+- Sarvam 30B
+- Sarvam-30B
+- sarvam-30b
+- sarvamai/sarvam-30b
+sarvam_105b:
+- Sarvam 105B
+- Sarvam-105B
+- sarvam-105b
+- sarvamai/sarvam-105b

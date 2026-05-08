@@ -425,6 +425,90 @@ models:
   input_price_usd_per_mtok: 5.0
   output_price_usd_per_mtok: 25.0
   model_card_url: https://www.anthropic.com/news/claude-opus-4-6
+- model_id: nvidia_nemotron_3_super_120b_a12b_nvfp4
+  lab_id: nvidia
+  canonical_name: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+  aliases:
+  - NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  - Nemotron 3 Super
+  - nemotron-3-super-120b-a12b
+  release_date: '2026-03-11'
+  model_family: Nemotron 3
+  openness: open_weight
+  license: NVIDIA Nemotron Open Model License
+  parameter_count_total: 120000000000
+  parameter_count_active: 12000000000
+  context_window_tokens: 1000000
+  modalities:
+  - text
+  supports_tools: true
+  supports_json_schema: null
+  input_price_usd_per_mtok: null
+  output_price_usd_per_mtok: null
+  model_card_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+- model_id: nvidia_nemotron_3_nano_30b_a3b_nvfp4
+  lab_id: nvidia
+  canonical_name: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+  aliases:
+  - NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  - Nemotron 3 Nano
+  - nemotron-3-nano-30b-a3b
+  release_date: '2026-01-28'
+  model_family: Nemotron 3
+  openness: open_weight
+  license: NVIDIA Nemotron Open Model License
+  parameter_count_total: 30000000000
+  parameter_count_active: 3500000000
+  context_window_tokens: 1000000
+  modalities:
+  - text
+  supports_tools: true
+  supports_json_schema: null
+  input_price_usd_per_mtok: null
+  output_price_usd_per_mtok: null
+  model_card_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+- model_id: sarvam_30b
+  lab_id: sarvam
+  canonical_name: Sarvam 30B
+  aliases:
+  - Sarvam-30B
+  - sarvam-30b
+  - sarvamai/sarvam-30b
+  release_date: '2026-03-06'
+  model_family: Sarvam
+  openness: open_weight
+  license: Apache-2.0
+  parameter_count_total: 30000000000
+  parameter_count_active: 2400000000
+  context_window_tokens: 128000
+  modalities:
+  - text
+  supports_tools: true
+  supports_json_schema: null
+  input_price_usd_per_mtok: null
+  output_price_usd_per_mtok: null
+  model_card_url: https://huggingface.co/sarvamai/sarvam-30b
+- model_id: sarvam_105b
+  lab_id: sarvam
+  canonical_name: Sarvam 105B
+  aliases:
+  - Sarvam-105B
+  - sarvam-105b
+  - sarvamai/sarvam-105b
+  release_date: '2026-03-06'
+  model_family: Sarvam
+  openness: open_weight
+  license: Apache-2.0
+  parameter_count_total: 105000000000
+  parameter_count_active: 10300000000
+  context_window_tokens: 128000
+  modalities:
+  - text
+  supports_tools: true
+  supports_json_schema: null
+  input_price_usd_per_mtok: null
+  output_price_usd_per_mtok: null
+  model_card_url: https://huggingface.co/sarvamai/sarvam-105b
 sources:
 - source_id: synthetic_seed_2026_04_27
   source_name: Synthetic seed data
@@ -696,6 +780,56 @@ sources:
   content_hash: null
   license: MIT
   notes: Official DeepSeek model card listing 671B total parameters, 37B activated parameters, and 128K context length.
+- source_id: nvidia_nemotron_3_super_hf_2026_03_11
+  source_name: NVIDIA Nemotron 3 Super Hugging Face model card
+  source_type: official_lab
+  url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  title: NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  published_at: '2026-03-11'
+  fetched_at: '2026-05-08T00:00:00+00:00'
+  content_hash: null
+  license: NVIDIA Nemotron Open Model License
+  notes: Official NVIDIA model card with parameter counts, 1M context, and benchmark rows for BF16/FP8/NVFP4 variants.
+- source_id: nvidia_nemotron_3_nano_hf_2026_01_28
+  source_name: NVIDIA Nemotron 3 Nano Hugging Face model card
+  source_type: official_lab
+  url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  title: NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  published_at: '2026-01-28'
+  fetched_at: '2026-05-08T00:00:00+00:00'
+  content_hash: null
+  license: NVIDIA Nemotron Open Model License
+  notes: Official NVIDIA model card with 30B total, 3.5B active parameters, 1M context, and benchmark rows for BF16/FP8/NVFP4 variants.
+- source_id: sarvam_30b_hf_2026_03_06
+  source_name: Sarvam 30B Hugging Face model card
+  source_type: official_lab
+  url: https://huggingface.co/sarvamai/sarvam-30b
+  title: sarvamai/sarvam-30b
+  published_at: '2026-03-06'
+  fetched_at: '2026-05-08T00:00:00+00:00'
+  content_hash: null
+  license: Apache-2.0
+  notes: Official Sarvam model card with architecture, active parameter count, and benchmark table.
+- source_id: sarvam_105b_hf_2026_03_06
+  source_name: Sarvam 105B Hugging Face model card
+  source_type: official_lab
+  url: https://huggingface.co/sarvamai/sarvam-105b
+  title: sarvamai/sarvam-105b
+  published_at: '2026-03-06'
+  fetched_at: '2026-05-08T00:00:00+00:00'
+  content_hash: null
+  license: Apache-2.0
+  notes: Official Sarvam model card with architecture, active parameter count, and benchmark table.
+- source_id: sarvam_30b_105b_blog_2026_03_06
+  source_name: Sarvam 30B and 105B launch blog
+  source_type: official_lab
+  url: https://www.sarvam.ai/blogs/sarvam-30b-105b
+  title: Open-Sourcing Sarvam 30B and 105B
+  published_at: '2026-03-06'
+  fetched_at: '2026-05-08T00:00:00+00:00'
+  content_hash: null
+  license: null
+  notes: Official Sarvam blog announcing open-source 30B and 105B models and benchmark comparison tables.
 scores:
 - lab_id: anthropic
   model_id: claude_opus_4_7
@@ -4858,3 +4992,1695 @@ scores:
   extraction_method: manual
   num_trials: null
   pass_at_k: 1
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+    benchmark: mmlu_pro
+    variant: nvfp4_official
+    score: 83.33
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_super_hf_2026_03_11
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_super_120b_a12b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+  model_release_date: '2026-03-11'
+  benchmark_id: mmlu_pro
+  benchmark_family: general
+  benchmark_variant: nvfp4_official
+  capability: general_knowledge
+  score: 83.33
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: NVIDIA model-card NVFP4 evaluation via NeMo Evaluator SDK
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_published_at: '2026-03-11'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: MMLU-Pro 83.33
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+    benchmark: gpqa
+    variant: no_tools_nvfp4_official
+    score: 79.42
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_super_hf_2026_03_11
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_super_120b_a12b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+  model_release_date: '2026-03-11'
+  benchmark_id: gpqa
+  benchmark_family: reasoning_science
+  benchmark_variant: no_tools_nvfp4_official
+  capability: expert_reasoning
+  score: 79.42
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: GPQA no tools, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_published_at: '2026-03-11'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: GPQA (no tools) 79.42
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+    benchmark: livecodebench
+    variant: v6_2024_08_to_2025_05_nvfp4
+    score: 78.44
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_super_hf_2026_03_11
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_super_120b_a12b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+  model_release_date: '2026-03-11'
+  benchmark_id: livecodebench
+  benchmark_family: coding
+  benchmark_variant: v6_2024_08_to_2025_05_nvfp4
+  capability: coding
+  score: 78.44
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: LiveCodeBench v6 2024-08 to 2025-05, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_published_at: '2026-03-11'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: LiveCodeBench v6 78.44
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+    benchmark: humanitys_last_exam
+    variant: no_tools_nvfp4_official
+    score: 17.42
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_super_hf_2026_03_11
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_super_120b_a12b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+  model_release_date: '2026-03-11'
+  benchmark_id: humanitys_last_exam
+  benchmark_family: reasoning_science
+  benchmark_variant: no_tools_nvfp4_official
+  capability: expert_reasoning
+  score: 17.42
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: HLE no tools, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_published_at: '2026-03-11'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: HLE (no tools) 17.42
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+    benchmark: terminal_bench
+    variant: hard_subset_nvfp4
+    score: 24.48
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_super_hf_2026_03_11
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_super_120b_a12b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+  model_release_date: '2026-03-11'
+  benchmark_id: terminal_bench
+  benchmark_family: coding
+  benchmark_variant: hard_subset_nvfp4
+  capability: software_engineering
+  score: 24.48
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Terminal Bench hard subset, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: Terminal Bench Hard container
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_published_at: '2026-03-11'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: Terminal Bench hard subset 24.48
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+    benchmark: tau_bench
+    variant: tau2_airline_nvfp4
+    score: 54.75
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_super_hf_2026_03_11
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_super_120b_a12b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+  model_release_date: '2026-03-11'
+  benchmark_id: tau_bench
+  benchmark_family: tool_agents
+  benchmark_variant: tau2_airline_nvfp4
+  capability: tool_use
+  score: 54.75
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: TauBench V2 Airline, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: Tau-2 Bench default prompt
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_published_at: '2026-03-11'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: TauBench V2 Airline 54.75
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+    benchmark: tau_bench
+    variant: tau2_retail_nvfp4
+    score: 63.38
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_super_hf_2026_03_11
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_super_120b_a12b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+  model_release_date: '2026-03-11'
+  benchmark_id: tau_bench
+  benchmark_family: tool_agents
+  benchmark_variant: tau2_retail_nvfp4
+  capability: tool_use
+  score: 63.38
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: TauBench V2 Retail, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: Tau-2 Bench default prompt
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_published_at: '2026-03-11'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: TauBench V2 Retail 63.38
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+    benchmark: tau_bench
+    variant: tau2_telecom_nvfp4
+    score: 63.27
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_super_hf_2026_03_11
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_super_120b_a12b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+  model_release_date: '2026-03-11'
+  benchmark_id: tau_bench
+  benchmark_family: tool_agents
+  benchmark_variant: tau2_telecom_nvfp4
+  capability: tool_use
+  score: 63.27
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: TauBench V2 Telecom, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: Tau-2 Bench default prompt
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_published_at: '2026-03-11'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: TauBench V2 Telecom 63.27
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+    benchmark: tau_bench
+    variant: tau2_average_nvfp4
+    score: 60.46
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_super_hf_2026_03_11
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_super_120b_a12b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+  model_release_date: '2026-03-11'
+  benchmark_id: tau_bench
+  benchmark_family: tool_agents
+  benchmark_variant: tau2_average_nvfp4
+  capability: tool_use
+  score: 60.46
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: TauBench V2 Average, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: Tau-2 Bench default prompt
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_published_at: '2026-03-11'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: TauBench V2 Average 60.46
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+    benchmark: ifbench
+    variant: prompt_nvfp4
+    score: 73.3
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_super_hf_2026_03_11
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_super_120b_a12b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+  model_release_date: '2026-03-11'
+  benchmark_id: ifbench
+  benchmark_family: general
+  benchmark_variant: prompt_nvfp4
+  capability: instruction_following
+  score: 73.3
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: IFBench prompt, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_published_at: '2026-03-11'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: IFBench prompt 73.30
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+    benchmark: arenahard
+    variant: hard_prompt_v2_nvfp4
+    score: 76.0
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_super_hf_2026_03_11
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_super_120b_a12b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+  model_release_date: '2026-03-11'
+  benchmark_id: arenahard
+  benchmark_family: preference
+  benchmark_variant: hard_prompt_v2_nvfp4
+  capability: preference
+  score: 76.0
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Arena-Hard-V2 hard prompt, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: Arena-Hard-V2
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_published_at: '2026-03-11'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: Arena-Hard-V2 76.00
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+    benchmark: ruler
+    variant: ruler_500_128k_nvfp4
+    score: 95.99
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_super_hf_2026_03_11
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_super_120b_a12b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+  model_release_date: '2026-03-11'
+  benchmark_id: ruler
+  benchmark_family: long_context
+  benchmark_variant: ruler_500_128k_nvfp4
+  capability: long_context
+  score: 95.99
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: RULER-500 at 128k, 500 samples per task, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: RULER
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_published_at: '2026-03-11'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: RULER-500 @ 128k 95.99
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+    benchmark: ruler
+    variant: ruler_500_256k_nvfp4
+    score: 96.52
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_super_hf_2026_03_11
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_super_120b_a12b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+  model_release_date: '2026-03-11'
+  benchmark_id: ruler
+  benchmark_family: long_context
+  benchmark_variant: ruler_500_256k_nvfp4
+  capability: long_context
+  score: 96.52
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: RULER-500 at 256k, 500 samples per task, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: RULER
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_published_at: '2026-03-11'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: RULER-500 @ 256k 96.52
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+    benchmark: ruler
+    variant: ruler_500_512k_nvfp4
+    score: 96.23
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_super_hf_2026_03_11
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_super_120b_a12b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Super 120B-A12B NVFP4
+  model_release_date: '2026-03-11'
+  benchmark_id: ruler
+  benchmark_family: long_context
+  benchmark_variant: ruler_500_512k_nvfp4
+  capability: long_context
+  score: 96.23
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: RULER-500 at 512k, 500 samples per task, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: RULER
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+  source_published_at: '2026-03-11'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: RULER-500 @ 512k 96.23
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+    benchmark: mmlu_pro
+    variant: nvfp4_official
+    score: 77.4
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_nano_hf_2026_01_28
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_nano_30b_a3b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+  model_release_date: '2026-01-28'
+  benchmark_id: mmlu_pro
+  benchmark_family: general
+  benchmark_variant: nvfp4_official
+  capability: general_knowledge
+  score: 77.4
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: NVIDIA model-card NVFP4 evaluation via NeMo Evaluator SDK
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_published_at: '2026-01-28'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: MMLU-Pro 77.4
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+    benchmark: aime_2025
+    variant: no_tools_nvfp4
+    score: 86.7
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_nano_hf_2026_01_28
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_nano_30b_a3b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+  model_release_date: '2026-01-28'
+  benchmark_id: aime_2025
+  benchmark_family: math
+  benchmark_variant: no_tools_nvfp4
+  capability: math
+  score: 86.7
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: AIME25 no tools, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_published_at: '2026-01-28'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: AIME25 (no tools) 86.7
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+    benchmark: gpqa
+    variant: no_tools_nvfp4_official
+    score: 71.9
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_nano_hf_2026_01_28
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_nano_30b_a3b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+  model_release_date: '2026-01-28'
+  benchmark_id: gpqa
+  benchmark_family: reasoning_science
+  benchmark_variant: no_tools_nvfp4_official
+  capability: expert_reasoning
+  score: 71.9
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: GPQA no tools, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_published_at: '2026-01-28'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: GPQA (no tools) 71.9
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+    benchmark: livecodebench
+    variant: v6_nvfp4
+    score: 65.4
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_nano_hf_2026_01_28
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_nano_30b_a3b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+  model_release_date: '2026-01-28'
+  benchmark_id: livecodebench
+  benchmark_family: coding
+  benchmark_variant: v6_nvfp4
+  capability: coding
+  score: 65.4
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: LiveCodeBench v6, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_published_at: '2026-01-28'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: LiveCodeBench v6 65.4
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+    benchmark: humanitys_last_exam
+    variant: no_tools_nvfp4_official
+    score: 9.4
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_nano_hf_2026_01_28
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_nano_30b_a3b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+  model_release_date: '2026-01-28'
+  benchmark_id: humanitys_last_exam
+  benchmark_family: reasoning_science
+  benchmark_variant: no_tools_nvfp4_official
+  capability: expert_reasoning
+  score: 9.4
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: HLE no tools, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_published_at: '2026-01-28'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: HLE (no tools) 9.4
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+    benchmark: tau_bench
+    variant: tau2_airline_nvfp4
+    score: 41.5
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_nano_hf_2026_01_28
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_nano_30b_a3b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+  model_release_date: '2026-01-28'
+  benchmark_id: tau_bench
+  benchmark_family: tool_agents
+  benchmark_variant: tau2_airline_nvfp4
+  capability: tool_use
+  score: 41.5
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: TauBench V2 Airline, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: Tau-2 Bench
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_published_at: '2026-01-28'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: TauBench V2 Airline 41.5
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+    benchmark: tau_bench
+    variant: tau2_retail_nvfp4
+    score: 54.1
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_nano_hf_2026_01_28
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_nano_30b_a3b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+  model_release_date: '2026-01-28'
+  benchmark_id: tau_bench
+  benchmark_family: tool_agents
+  benchmark_variant: tau2_retail_nvfp4
+  capability: tool_use
+  score: 54.1
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: TauBench V2 Retail, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: Tau-2 Bench
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_published_at: '2026-01-28'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: TauBench V2 Retail 54.1
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+    benchmark: tau_bench
+    variant: tau2_telecom_nvfp4
+    score: 41.2
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_nano_hf_2026_01_28
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_nano_30b_a3b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+  model_release_date: '2026-01-28'
+  benchmark_id: tau_bench
+  benchmark_family: tool_agents
+  benchmark_variant: tau2_telecom_nvfp4
+  capability: tool_use
+  score: 41.2
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: TauBench V2 Telecom, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: Tau-2 Bench
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_published_at: '2026-01-28'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: TauBench V2 Telecom 41.2
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+    benchmark: tau_bench
+    variant: tau2_average_nvfp4
+    score: 45.6
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_nano_hf_2026_01_28
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_nano_30b_a3b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+  model_release_date: '2026-01-28'
+  benchmark_id: tau_bench
+  benchmark_family: tool_agents
+  benchmark_variant: tau2_average_nvfp4
+  capability: tool_use
+  score: 45.6
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: TauBench V2 Average, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: Tau-2 Bench
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_published_at: '2026-01-28'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: TauBench V2 Average 45.6
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+    benchmark: ifbench
+    variant: prompt_nvfp4
+    score: 70.7
+    unit: '%'
+  normalized_json:
+    source_id: nvidia_nemotron_3_nano_hf_2026_01_28
+    synthetic_example: false
+  lab_id: nvidia
+  model_id: nvidia_nemotron_3_nano_30b_a3b_nvfp4
+  model_display_name: NVIDIA Nemotron 3 Nano 30B-A3B NVFP4
+  model_release_date: '2026-01-28'
+  benchmark_id: ifbench
+  benchmark_family: general
+  benchmark_variant: prompt_nvfp4
+  capability: instruction_following
+  score: 70.7
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: IFBench prompt, NVFP4 column
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 1M context
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_title: NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+  source_published_at: '2026-01-28'
+  confidence: 0.92
+  verification_status: official
+  notes: Official NVIDIA NVFP4 column score; variant preserved to avoid mixing BF16/FP8/NVFP4 results.
+  raw_quote: IFBench prompt 70.7
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 30B
+    benchmark: math_500
+    variant: sarvam_official
+    score: 97.0
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_30b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_30b
+  model_display_name: Sarvam 30B
+  model_release_date: '2026-03-06'
+  benchmark_id: math_500
+  benchmark_family: math
+  benchmark_variant: sarvam_official
+  capability: math
+  score: 97.0
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official Math500 evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-30b
+  source_title: sarvamai/sarvam-30b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: Math500 97.0
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 30B
+    benchmark: humaneval
+    variant: sarvam_official
+    score: 92.1
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_30b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_30b
+  model_display_name: Sarvam 30B
+  model_release_date: '2026-03-06'
+  benchmark_id: humaneval
+  benchmark_family: coding
+  benchmark_variant: sarvam_official
+  capability: coding
+  score: 92.1
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official HumanEval evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-30b
+  source_title: sarvamai/sarvam-30b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: HumanEval 92.1
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 30B
+    benchmark: mbpp
+    variant: sarvam_official
+    score: 92.7
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_30b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_30b
+  model_display_name: Sarvam 30B
+  model_release_date: '2026-03-06'
+  benchmark_id: mbpp
+  benchmark_family: coding
+  benchmark_variant: sarvam_official
+  capability: coding
+  score: 92.7
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official MBPP evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-30b
+  source_title: sarvamai/sarvam-30b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: MBPP 92.7
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 30B
+    benchmark: livecodebench
+    variant: v6_sarvam_official
+    score: 70.0
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_30b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_30b
+  model_display_name: Sarvam 30B
+  model_release_date: '2026-03-06'
+  benchmark_id: livecodebench
+  benchmark_family: coding
+  benchmark_variant: v6_sarvam_official
+  capability: coding
+  score: 70.0
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official Live Code Bench v6 evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-30b
+  source_title: sarvamai/sarvam-30b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: Live Code Bench v6 70.0
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 30B
+    benchmark: mmlu
+    variant: sarvam_official
+    score: 85.1
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_30b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_30b
+  model_display_name: Sarvam 30B
+  model_release_date: '2026-03-06'
+  benchmark_id: mmlu
+  benchmark_family: general
+  benchmark_variant: sarvam_official
+  capability: general_knowledge
+  score: 85.1
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official MMLU evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-30b
+  source_title: sarvamai/sarvam-30b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: MMLU 85.1
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 30B
+    benchmark: mmlu_pro
+    variant: sarvam_official
+    score: 80.0
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_30b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_30b
+  model_display_name: Sarvam 30B
+  model_release_date: '2026-03-06'
+  benchmark_id: mmlu_pro
+  benchmark_family: general
+  benchmark_variant: sarvam_official
+  capability: general_knowledge
+  score: 80.0
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official MMLU Pro evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-30b
+  source_title: sarvamai/sarvam-30b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: MMLU Pro 80.0
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 30B
+    benchmark: arenahard
+    variant: v2_sarvam_official
+    score: 49.0
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_30b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_30b
+  model_display_name: Sarvam 30B
+  model_release_date: '2026-03-06'
+  benchmark_id: arenahard
+  benchmark_family: preference
+  benchmark_variant: v2_sarvam_official
+  capability: preference
+  score: 49.0
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official Arena Hard v2 evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: Arena Hard v2
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-30b
+  source_title: sarvamai/sarvam-30b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: Arena Hard v2 49.0
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 30B
+    benchmark: gpqa_diamond
+    variant: sarvam_official
+    score: 66.5
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_30b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_30b
+  model_display_name: Sarvam 30B
+  model_release_date: '2026-03-06'
+  benchmark_id: gpqa_diamond
+  benchmark_family: reasoning_science
+  benchmark_variant: sarvam_official
+  capability: expert_reasoning
+  score: 66.5
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official GPQA Diamond evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-30b
+  source_title: sarvamai/sarvam-30b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: GPQA Diamond 66.5
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 30B
+    benchmark: aime_2025
+    variant: no_tools_sarvam_official
+    score: 88.3
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_30b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_30b
+  model_display_name: Sarvam 30B
+  model_release_date: '2026-03-06'
+  benchmark_id: aime_2025
+  benchmark_family: math
+  benchmark_variant: no_tools_sarvam_official
+  capability: math
+  score: 88.3
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official AIME 25 Pass@1 without tools
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-30b
+  source_title: sarvamai/sarvam-30b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: AIME 25 88.3
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 30B
+    benchmark: aime_2025
+    variant: with_tools_sarvam_official
+    score: 96.7
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_30b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_30b
+  model_display_name: Sarvam 30B
+  model_release_date: '2026-03-06'
+  benchmark_id: aime_2025
+  benchmark_family: math
+  benchmark_variant: with_tools_sarvam_official
+  capability: math
+  score: 96.7
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official AIME 25 with tools
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: tools_enabled
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-30b
+  source_title: sarvamai/sarvam-30b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: AIME 25 with tools 96.7
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 30B
+    benchmark: swe_bench_verified
+    variant: sarvam_official
+    score: 34.0
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_30b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_30b
+  model_display_name: Sarvam 30B
+  model_release_date: '2026-03-06'
+  benchmark_id: swe_bench_verified
+  benchmark_family: coding
+  benchmark_variant: sarvam_official
+  capability: software_engineering
+  score: 34.0
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official SWE-Bench Verified evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: unspecified agent scaffold
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-30b
+  source_title: sarvamai/sarvam-30b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: SWE Bench Verified 34.0
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 30B
+    benchmark: tau_bench
+    variant: tau2_average_sarvam_official
+    score: 45.7
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_30b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_30b
+  model_display_name: Sarvam 30B
+  model_release_date: '2026-03-06'
+  benchmark_id: tau_bench
+  benchmark_family: tool_agents
+  benchmark_variant: tau2_average_sarvam_official
+  capability: tool_use
+  score: 45.7
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official Tau2 average evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: tools_enabled
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-30b
+  source_title: sarvamai/sarvam-30b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: Tau2 avg. 45.7
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 105B
+    benchmark: math_500
+    variant: sarvam_official
+    score: 98.6
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_105b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_105b
+  model_display_name: Sarvam 105B
+  model_release_date: '2026-03-06'
+  benchmark_id: math_500
+  benchmark_family: math
+  benchmark_variant: sarvam_official
+  capability: math
+  score: 98.6
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official Math500 evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-105b
+  source_title: sarvamai/sarvam-105b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: Math500 98.6
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 105B
+    benchmark: livecodebench
+    variant: v6_sarvam_official
+    score: 71.7
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_105b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_105b
+  model_display_name: Sarvam 105B
+  model_release_date: '2026-03-06'
+  benchmark_id: livecodebench
+  benchmark_family: coding
+  benchmark_variant: v6_sarvam_official
+  capability: coding
+  score: 71.7
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official Live Code Bench v6 evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-105b
+  source_title: sarvamai/sarvam-105b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: Live Code Bench v6 71.7
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 105B
+    benchmark: mmlu
+    variant: sarvam_official
+    score: 90.6
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_105b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_105b
+  model_display_name: Sarvam 105B
+  model_release_date: '2026-03-06'
+  benchmark_id: mmlu
+  benchmark_family: general
+  benchmark_variant: sarvam_official
+  capability: general_knowledge
+  score: 90.6
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official MMLU evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-105b
+  source_title: sarvamai/sarvam-105b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: MMLU 90.6
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 105B
+    benchmark: mmlu_pro
+    variant: sarvam_official
+    score: 81.7
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_105b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_105b
+  model_display_name: Sarvam 105B
+  model_release_date: '2026-03-06'
+  benchmark_id: mmlu_pro
+  benchmark_family: general
+  benchmark_variant: sarvam_official
+  capability: general_knowledge
+  score: 81.7
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official MMLU Pro evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-105b
+  source_title: sarvamai/sarvam-105b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: MMLU Pro 81.7
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 105B
+    benchmark: arenahard
+    variant: v2_sarvam_official
+    score: 71.0
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_105b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_105b
+  model_display_name: Sarvam 105B
+  model_release_date: '2026-03-06'
+  benchmark_id: arenahard
+  benchmark_family: preference
+  benchmark_variant: v2_sarvam_official
+  capability: preference
+  score: 71.0
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official Arena Hard v2 evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: Arena Hard v2
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-105b
+  source_title: sarvamai/sarvam-105b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: Arena Hard v2 71.0
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 105B
+    benchmark: ifeval
+    variant: sarvam_official
+    score: 84.8
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_105b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_105b
+  model_display_name: Sarvam 105B
+  model_release_date: '2026-03-06'
+  benchmark_id: ifeval
+  benchmark_family: general
+  benchmark_variant: sarvam_official
+  capability: instruction_following
+  score: 84.8
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official IF Eval evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-105b
+  source_title: sarvamai/sarvam-105b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: IF Eval 84.8
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 105B
+    benchmark: gpqa_diamond
+    variant: sarvam_official
+    score: 78.7
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_105b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_105b
+  model_display_name: Sarvam 105B
+  model_release_date: '2026-03-06'
+  benchmark_id: gpqa_diamond
+  benchmark_family: reasoning_science
+  benchmark_variant: sarvam_official
+  capability: expert_reasoning
+  score: 78.7
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official GPQA Diamond evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-105b
+  source_title: sarvamai/sarvam-105b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: GPQA Diamond 78.7
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 105B
+    benchmark: aime_2025
+    variant: no_tools_sarvam_official
+    score: 88.3
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_105b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_105b
+  model_display_name: Sarvam 105B
+  model_release_date: '2026-03-06'
+  benchmark_id: aime_2025
+  benchmark_family: math
+  benchmark_variant: no_tools_sarvam_official
+  capability: math
+  score: 88.3
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official AIME 25 Pass@1 without tools
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: none
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-105b
+  source_title: sarvamai/sarvam-105b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: AIME 25 88.3
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 105B
+    benchmark: aime_2025
+    variant: with_tools_sarvam_official
+    score: 96.7
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_105b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_105b
+  model_display_name: Sarvam 105B
+  model_release_date: '2026-03-06'
+  benchmark_id: aime_2025
+  benchmark_family: math
+  benchmark_variant: with_tools_sarvam_official
+  capability: math
+  score: 96.7
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official AIME 25 with tools
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: tools_enabled
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-105b
+  source_title: sarvamai/sarvam-105b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: AIME 25 with tools 96.7
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 105B
+    benchmark: swe_bench_verified
+    variant: swe_agent_harness_sarvam_official
+    score: 45.0
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_105b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_105b
+  model_display_name: Sarvam 105B
+  model_release_date: '2026-03-06'
+  benchmark_id: swe_bench_verified
+  benchmark_family: coding
+  benchmark_variant: swe_agent_harness_sarvam_official
+  capability: software_engineering
+  score: 45.0
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official SWE Bench Verified using SWE-Agent Harness
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: SWE-Agent Harness
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-105b
+  source_title: sarvamai/sarvam-105b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: SWE Bench Verified (SWE-Agent Harness) 45.0
+- snapshot_week: '2026-04-27'
+  extracted_at: '2026-05-08T00:00:00+00:00'
+  extraction_method: manual
+  raw_table_json:
+    model: Sarvam 105B
+    benchmark: tau_bench
+    variant: tau2_average_sarvam_official
+    score: 68.3
+    unit: '%'
+  normalized_json:
+    source_id: sarvam_105b_hf_2026_03_06
+    synthetic_example: false
+  lab_id: sarvam
+  model_id: sarvam_105b
+  model_display_name: Sarvam 105B
+  model_release_date: '2026-03-06'
+  benchmark_id: tau_bench
+  benchmark_family: tool_agents
+  benchmark_variant: tau2_average_sarvam_official
+  capability: tool_use
+  score: 68.3
+  score_unit: '%'
+  higher_is_better: true
+  eval_setting: Sarvam official Tau2 average evaluation
+  num_trials: null
+  pass_at_k: 1
+  context_setting: 128K context; benchmarks evaluated with max context length 65,536 tokens
+  scaffold: tools_enabled
+  source_type: official_lab
+  source_url: https://huggingface.co/sarvamai/sarvam-105b
+  source_title: sarvamai/sarvam-105b
+  source_published_at: '2026-03-06'
+  confidence: 0.92
+  verification_status: official
+  notes: Official Sarvam model-card benchmark row; provider evaluation settings preserved in variant and eval_setting.
+  raw_quote: Tau2 avg. 68.3

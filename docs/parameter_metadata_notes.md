@@ -14,10 +14,13 @@ Parameter counts are filled only when the provider or official model card explic
 | `glm_5_1` | 754B | 40B | Z.AI/GLM Hugging Face model card |
 | `minimax_m2_5` | 229B | 10B | MiniMax Hugging Face model card |
 | `mimo_v2_5_pro` | 1.02T | 42B | XiaomiMiMo Hugging Face model card |
+| `nvidia_nemotron_3_super_120b_a12b_nvfp4` | 120B | 12B | NVIDIA Hugging Face model card |
+| `nvidia_nemotron_3_nano_30b_a3b_nvfp4` | 30B | 3.5B | NVIDIA Hugging Face model card |
+| `sarvam_30b` | 30B | 2.4B | Sarvam Hugging Face model card |
+| `sarvam_105b` | 105B | 10.3B | Sarvam Hugging Face model card |
 
 ## Intentionally Blank
 
 Closed-source models from OpenAI, Anthropic, Google DeepMind, xAI, Meta Muse, and Qwen API releases are blank because the providers do not publish total and active parameter counts in the cited sources.
 
 `llama_4` and `qwen3` are still generic placeholder IDs from the initial synthetic seed, so no parameter count is assigned. Those should either be removed from the active dataset or split into specific model IDs before adding parameter metadata.
-
